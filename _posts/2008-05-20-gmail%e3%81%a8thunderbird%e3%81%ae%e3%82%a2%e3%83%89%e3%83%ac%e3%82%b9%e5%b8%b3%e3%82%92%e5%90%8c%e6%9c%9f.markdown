@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: "Gmail\xE3\x81\xA8Thunderbird\xE3\x81\xAE\xE3\x82\xA2\xE3\x83\x89\xE3\x83\xAC\xE3\x82\xB9\xE5\xB8\xB3\xE3\x82\x92\xE5\x90\x8C\xE6\x9C\x9F"
+wordpress_id: 356
+wordpress_url: http://zzz.jeeet.net/?p=11
+date: 2008-05-20 00:48:09 +09:00
+---
+参考にしたサイト：<a title="Mozilla-Remix" href="http://mozilla-remix.seesaa.net/article/97065836.html">Mozilla-Remix</a>
+
+Thunderbirdの<a href="http://www.zindus.com/blog/2008/04/30/release-075-and-thunderbird-google-address-sync/">zindus</a>というアドオンを利用すると，Thunderbirdのアドレス帳とGmailのアドレス帳を同期すること賀できます．
+<h3>手順</h3>
+まず，<a href="http://www.zindus.com/download-extension/">zindusのサイト</a>のInstall 1,のDownloadというところをクリックして，拡張子が.xpiとなっているファイルをダウンロードします．
+
+次にThunderbirdを起動して，「ツール」-&gt;「アドオン」から別窓を開き，左下の「インストール」をクリックして先ほどダウンロードしたzindus-... .xpiを選択するとインストールされます．
+
+そして，Thunderbirdを再起動した後，もう一度「ツール」-&gt;「アドオン」で別窓を開いてzindusを選択し「設定」をクリック．まず「Server Settings」の「select server type」で「google」を選択．下の「Email address」には自分のgmailのメールアドレス，パスワードにGmailのパスワードを入力します．
+
+次に「Preferance」の「action」から「sync now」を選択．これで同期されて設定は完了です．
+<h3>最後の同期がうまくいかない場合</h3>
+sync failedと表示が出ます．
+アドレス帳に同じメールアドレスがある場合はそのような内容の表示が出るはずなので，同じメールアドレスの片方を削除してください．
+
+そのような表示でない場合は，パスワードなどの打ち間違えがないか確かめ，それでもだめならしばらく待ってみるとうまくいく場合があります．

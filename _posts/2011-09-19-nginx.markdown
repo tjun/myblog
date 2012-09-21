@@ -1,0 +1,242 @@
+--- 
+layout: post
+title: "\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS+ubuntu+wordpress\xE3\x81\xABnginx\xE5\x85\xA5\xE3\x82\x8C\xE3\x81\x9F\xE3\x83\xA1\xE3\x83\xA2"
+wordpress_id: 930
+wordpress_url: http://tjun.jp/blog/?p=930
+date: 2011-09-19 22:41:49 +09:00
+---
+最近nginx（とリバースプロキシ）さくらVPSでwordpressを高速化する、系のpostをたびたび見るので、自分もやってみました。
+アクセスあんまりないからapacheでも十分だけど、nginx触ってみるのが主な目的です。
+
+centosの場合ですが、以下のサイトが解説が丁寧でわかりやすかったです。
+ <a href="http://sakuratan.biz/archives/4582" title="さくらVPSとnginxリバースプロクシで最速WordPressブログを作る方法（ベンチマーク付き） | さくらたんどっとびーず">さくらVPSとnginxリバースプロクシで最速WordPressブログを作る方法（ベンチマーク付き） | さくらたんどっとびーず</a>
+
+さくらvpsをデフォルトのcentosで使ってる人も多いと思いますが、自分はゆとりなのでyumよりaptの方が好きだったりなどの理由でubuntuで使っています。
+
+
+主に参考にしたサイト
+<ul>
+  <li><a href="http://hima-j.in/linux/sakura-vps-ubuntu-10-04-nginx-php-fastcgi-web-server/">さくら VPS の Ubuntu 10.04 に nginx + PHP(FastCGI) な Web サーバーを構築する | 暇人じゃない</a></li>
+  <li><a href="http://kray.jp/blog/wordpress-tuning/">WordPressを100倍速くする！ MySQLの調整やnginx proxy cache | KRAY Inc</a></li>
+  <li> <a href="http://hara19.jp/archives/5817" title="さくらVPSのWordPressをチューニングして30倍高速化した方法">さくらVPSのWordPressをチューニングして30倍高速化した方法</a></li>
+</ul>
+基本的には上記の3つのサイトを参考に、設定をコピペして使っています。
+ 
+<h3>nginxのインストール</h3>
+/etc/apt/sources.listをに以下を追加
+<pre>
+deb http://ppa.launchpad.net/nginx/stable/ubuntu lucid main
+</pre>
+
+以下を実行
+<pre>
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+$ sudo aptitude update
+$ sudo aptitude install nginx
+</pre>
+
+
+<h3>php + fastCGI</h3>
+自分はphpのインストールはすでにやっていました。
+<pre>
+$ sudo aptitude install php5-cli php5-cgi php5-gd spawn-fcgi
+</pre>
+
+/usr/bin/php-fastcgi を作成
+<pre>
+#!/bin/sh
+/usr/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -C 6 -u www-data -f /usr/bin/php5-cgi
+</pre>
+
+permissionの設定
+<pre>
+$ sudo chmod a+x /usr/bin/php-fastcgi
+</pre>
+
+/etc/init.d/php-fastcgi を作成
+<pre>
+#!/bin/bash
+PHP_SCRIPT=/usr/bin/php-fastcgi
+FASTCGI_USER=www-data
+RETVAL=0
+case "$1" in
+    start)
+        su - $FASTCGI_USER -c $PHP_SCRIPT
+        RETVAL=$?
+    ;;
+    stop)
+        killall -9 php5-cgi
+        RETVAL=$?
+    ;;
+    restart)
+        killall -9 php5-cgi
+        su - $FASTCGI_USER -c $PHP_SCRIPT
+        RETVAL=$?
+    ;;
+    *)
+        echo "Usage: php-fastcgi {start|stop|restart}"
+        exit 1
+    ;;
+esac
+exit $RETVAL
+console output
+</pre>
+
+自動起動の設定
+<pre>
+$ sudo chmod a+x /etc/init.d/php-fastcgi
+$ sudo update-rc.d php-fastcgi defaults
+$ sudo /etc/init.d/php-fastcgi start
+</pre>
+
+<h3>nginxの設定</h3>
+
+デフォルトの設定を削除
+（どこかに保存しておいた方がいいと思います）
+<pre>
+$ sudo rm /etc/nginx/sites-enabled/default
+</pre>
+
+
+/etc/nginx/site-enable/tjun.jp の作成
+※自分の場合は、rootがtjun.jp というサイトで、/blog/以下がwordpressとなります。
+wordpressのダッシュボートが/blog/wp-admin/でアクセスできなかったので、そこを少しいじっています。
+
+<pre>
+server {
+listen 8001;
+server_name _;
+access_log /var/log/nginx/fastcgi-access.log;
+
+location / {
+root /home/www;
+index index.php index.html;
+# static files
+if (-f $request_filename) {
+expires 30d;
+break;
+}
+}
+location ~ \.php$ {
+root /home/www;
+include /etc/nginx/fastcgi_params;
+fastcgi_pass 127.0.0.1:9000;
+fastcgi_index index.php;
+fastcgi_param SCRIPT_FILENAME /home/www/$fastcgi_script_name;
+}
+location ~/\.ht {
+deny all;
+}
+location /blog {
+root /home/www/blog;
+index index.php;
+if (-f $request_filename) {
+expires 30d;
+break;
+}
+if (!-e $request_filename) {
+rewrite ^.+?(/wp-admin/) /blog/wp-admin/index.php last;
+rewrite ^.+?(/wp-.*) $1 last;
+rewrite ^.+?(/.*\.php)$ $1 last;
+rewrite ^ /blog/index.php last;
+}
+}
+location ~* ^.+.(jpg|jpeg|gif|png|css|js|flv|swf|ico|xml)$ {
+access_log off;
+expires 30d;
+root /home/www;
+}
+}
+upstream backend {
+ip_hash;
+server 127.0.0.1:8001;
+}
+server {
+listen 80; server_name tjun.jp;
+access_log /var/log/nginx/tjun.jp.access.log;
+error_log /var/log/nginx/tjun.jp.error.log;
+location ~ .*\.(htm|html|jpg|JPG|gif|GIF|png|PNG|swf|SWF|css|CSS|js|JS|inc|INC|ico|ICO) {
+root /home/www;
+index index.php;
+ssi on;
+break;
+}
+location /blog/wp-admin { proxy_pass http://backend; }
+location /blog/wp-login.php { proxy_pass http://backend; }
+location / {
+if ($http_cookie ~* "comment_author_|wordpress_(?!test_cookie)|wp-postpass_" ) {
+set $do_not_cache 1;
+}
+if ($http_user_agent ~* “2.0\ 2MMP|240×320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800″) {
+set $do_not_cache 1;
+}
+proxy_no_cache $do_not_cache;
+proxy_cache_bypass $do_not_cache;
+proxy_pass http://backend;
+proxy_cache czone;
+proxy_cache_key $scheme$proxy_host$uri$is_args$args;
+proxy_cache_valid 200 10m;
+}
+}
+</pre>
+
+/etc/nginx/nginx.confの編集
+proxy cacheの設定をvirtual host configより上に書かないとエラーになります。
+<pre>
+
+user www-data;
+worker_processes 4;
+pid /var/run/nginx.pid;
+events {
+worker_connections 768;
+# multi_accept on;
+}
+http {
+##
+# Basic Settings
+##
+sendfile on;
+tcp_nopush on;
+tcp_nodelay on;
+keepalive_timeout 65;
+types_hash_max_size 2048;
+# server_tokens off;
+# server_names_hash_bucket_size 64;
+# server_name_in_redirect off;
+include /etc/nginx/mime.types;
+default_type application/octet-stream;
+##
+# Logging Settings
+##
+access_log /var/log/nginx/access.log;
+error_log /var/log/nginx/error.log;
+##
+# Gzip Settings
+##
+gzip on;
+gzip_disable "msie6";
+# gzip_vary on;
+# gzip_proxied any;
+# gzip_comp_level 6;
+# gzip_buffers 16 8k;
+# gzip_http_version 1.1;
+# gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+##
+# proxy cache
+##
+proxy_cache_path /home/www/nginx_cache levels=1:2 keys_zone=czone:4m max_size=50m inactive=120m;
+proxy_temp_path /home/www/nginx_tmp;
+##
+# Virtual Host Configs
+##
+include /etc/nginx/conf.d/*.conf;
+include /etc/nginx/sites-enabled/*;
+}
+</pre>
+
+以上です。
+
+これで、apache止めてnginx動かすと、正しく動いているように見えます。
+性能は測ってませんが、キャッシュがちゃんと効けば速くなるはずです。
+
+アクセスも更新もあまりないサイトなので、この後少し設定を直しました。

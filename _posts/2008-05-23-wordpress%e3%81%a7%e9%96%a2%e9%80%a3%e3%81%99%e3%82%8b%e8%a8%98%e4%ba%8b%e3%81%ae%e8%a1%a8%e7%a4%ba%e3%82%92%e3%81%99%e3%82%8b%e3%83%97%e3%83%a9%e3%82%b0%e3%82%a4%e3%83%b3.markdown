@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: "Wordpress\xE3\x81\xA7\xE9\x96\xA2\xE9\x80\xA3\xE3\x81\x99\xE3\x82\x8B\xE8\xA8\x98\xE4\xBA\x8B\xE3\x82\x84\xE3\x82\xBF\xE3\x82\xB0\xE3\x82\xAF\xE3\x83\xA9\xE3\x82\xA6\xE3\x83\x89\xE3\x81\xAE\xE8\xA1\xA8\xE7\xA4\xBA\xE3\x82\x92\xE3\x81\x99\xE3\x82\x8B\xE3\x83\x97\xE3\x83\xA9\xE3\x82\xB0\xE3\x82\xA4\xE3\x83\xB3"
+wordpress_id: 360
+wordpress_url: http://zzz.jeeet.net/?p=18
+date: 2008-05-23 03:05:08 +09:00
+---
+今回紹介するプラグインは，<a href="http://wordpress.org/extend/plugins/simple-tags/">Simple Tags</a>というプラグイン．
+
+これを使うと，タグの管理がしやすくなり，関連する記事が表示できるようになります．このページの下の方にあるのがそうです．
+
+ダウンロードはこちらから→　<a href="http://wordpress.org/extend/plugins/simple-tags/">Simple Tags</a>
+
+インストールは，上記のページの右上の「<strong>Download</strong>」からダウンロードして解凍した「<strong>simple-tags</strong>」というフォルダをそのままwordpressの<strong>/wp-content/plugins/</strong>におけば完了．
+
+次に，プラグインを有効にすると，さまざまなサービスが利用できるようになります．
+
+関連する記事を表示するには，「<strong>設定</strong>」の「<strong>Simple Tags</strong>」から「<strong>関連投稿</strong>」というタブを選び，「<strong>投稿内に関連投稿を自動的に表示する</strong>:」の設定を「<strong>blogonly</strong>」にすればok．
+
+タグクラウドは「<strong>デザイン</strong>」の「<strong>ウィジェット</strong>」から選択できます．
+
+他にもいくつかオプションが選べます．
+
+関連投稿をどのように選んでいるのかアルゴリズムは分かりませんが，同じタグを持つものなどになっていると思われます．

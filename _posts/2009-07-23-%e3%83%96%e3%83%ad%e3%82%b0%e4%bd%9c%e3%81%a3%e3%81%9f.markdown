@@ -1,0 +1,8 @@
+--- 
+layout: post
+title: "\xE3\x83\x96\xE3\x83\xAD\xE3\x82\xB0\xE4\xBD\x9C\xE3\x81\xA3\xE3\x81\x9F"
+wordpress_id: 3
+wordpress_url: http://tjun.jp/blog/?p=3
+date: 2009-07-23 20:04:58 +09:00
+---
+新しくドメイン取ったのに合わせてブログを始めます

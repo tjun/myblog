@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: "spaces\xE3\x81\x8C\xE5\x9B\xBA\xE3\x81\xBE\xE3\x82\x8B"
+wordpress_id: 166
+wordpress_url: http://tjun.jp/blog/2009/12/spaces%e3%81%8c%e5%9b%ba%e3%81%be%e3%82%8b/
+date: 2009-12-08 02:27:04 +09:00
+---
+Snow Leopardでたまーにspacesが固まって，spaceの移動以外のキーボード入力を受け付けなくなる。
+
+同じ問題に困っている人は他にもいるようで，解決方法が載っていたので今度ためす。
+<ul>
+	<li><a title="Snow LeopardでSpacesがキーボードを返してくれないバグ? - by edvakf in hatena" href="http://d.hatena.ne.jp/edvakf/20091027/1256675493">Snow LeopardでSpacesがキーボードを返してくれないバグ? - by edvakf in hatena</a></li>
+</ul>

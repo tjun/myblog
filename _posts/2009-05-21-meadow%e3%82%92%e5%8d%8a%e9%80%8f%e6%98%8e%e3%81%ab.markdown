@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: "Meadow\xE3\x82\x92\xE5\x8D\x8A\xE9\x80\x8F\xE6\x98\x8E\xE3\x81\xAB"
+wordpress_id: 343
+wordpress_url: http://zzz.jeeet.net/?p=343
+date: 2009-05-21 07:37:31 +09:00
+---
+半透明だったらちょっとかっこよくなります。
+
+<span style="color: #ff0000;"><strong>追記
+しばらくやってたけど、正直いまいちなのでやめました。</strong></span>
+
+.emacsに以下を追加するだけ
+<pre>(modify-all-frames-parameters (list (cons 'alpha '(97 70 50 30))))
+</pre>
+よくわからないけど、数字を変えれば透明具合が変えられるんだと思います。
+ウィンドウがアクティブな時と非アクティブな時でも変わります。

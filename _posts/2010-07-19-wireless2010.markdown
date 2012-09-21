@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: "\xE3\x83\xAF\xE3\x82\xA4\xE3\x83\xA4\xE3\x83\xAC\xE3\x82\xB9\xE3\x82\xB8\xE3\x83\xA3\xE3\x83\x91\xE3\x83\xB32010"
+wordpress_id: 566
+wordpress_url: http://tjun.jp/blog/?p=566
+date: 2010-07-19 18:22:55 +09:00
+---
+ワイヤレスジャパンに行きました。
+３年連続、３回目。
+
+<a href="http://www.flickr.com/photos/taka-jun/4801289246/" title="ワイアレスジャパン by taka-jun, on Flickr"><img src="http://farm5.static.flickr.com/4139/4801289246_53d484749f.jpg" width="500" height="375" alt="ワイアレスジャパン" /></a>
+
+センサを使ったアプリケーションでは、めざましテレビでもやってた自転車のいろいろな情報を取るやつとか、手足を動かすだけでドラムの演奏ができるやつとか、しっかり作っていて面白かった。
+
+<a href="http://www.flickr.com/photos/taka-jun/4800952230/" title="センサー自転車@ワイアレスジャパン by taka-jun, on Flickr"><img src="http://farm5.static.flickr.com/4135/4800952230_c8e6d49c2f_m.jpg" width="240" height="180" alt="センサー自転車@ワイアレスジャパン" /></a>
+
+大手は3DやARが人気集めていたが、それワイヤレス関係ないじゃんという感じもした。
+
+全体的に少し規模が小さくなったと思う。
+
+
+自分の所属する研究室も少し出しています。
+<a href="http://www.flickr.com/photos/taka-jun/4800655853/" title="森川研究室 by taka-jun, on Flickr"><img src="http://farm5.static.flickr.com/4139/4800655853_fe82633743_m.jpg" width="180" height="240" alt="森川研究室" /></a>
+
+でも、小難しそうなポスターとか、英語のポスターとか、奥の方にあるデモとか、あまり「見て貰おう」「アピールしよう」「知って貰おう」という感じがないのが残念。研究室の人にあまり余裕がないのが原因な気がします。何のために出しているんだっけ･･･

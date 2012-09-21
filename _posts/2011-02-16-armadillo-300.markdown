@@ -1,0 +1,191 @@
+--- 
+layout: post
+title: "armadillo-300\xE3\x81\xAB\xE3\x81\xA4\xE3\x81\x84\xE3\x81\xA6\xE3\x81\xAE\xE3\x83\xA1\xE3\x83\xA2"
+wordpress_id: 775
+wordpress_url: http://tjun.jp/blog/?p=775
+date: 2011-02-16 21:25:50 +09:00
+---
+別のところに作っていたメモを消すので、こっちに転記します。
+armadillo-300にdebianをインストールして無線Lanにつないだりする設定のメモです。
+前に書いたものなので、内容を覚えてません。
+
+<h3>参考にしたサイト</h3>
+<ul>
+	<li>マニュアルなど：<a href="http://armadillo.atmark-techno.com/armadillo-300">Armadillo-300 | Armadillo 開発者サイト</a></li>
+	<li><a href="http://armadillo.atmark-techno.com/howto/debian-setup">Debianのセットアップ | Armadillo 開発者サイト</a></li>
+	<li><a href="http://armadillo.atmark-techno.com/armadillo-300/howto">Armadillo-300 Howto | Armadillo 開発者サイト</a></li>
+</ul>
+
+
+<h2>debianを入れて使えるようにするまで</h2>
+基本はマニュアル読んで． 自分はlinuxからminicomを使って作業しました． debianなら
+<pre>sudo apt-get install minicom</pre>
+
+<h3>まずネットワークにつなげる</h3>
+/etc/config/interfacesを編集。
+
+<pre>auto lo eth0
+iface lo inet loopback
+iface eth0 inet dhcp
+</pre>
+
+そして，
+<pre>
+# /etc/init.d/networking restart
+# ifconfig
+</pre>
+でIPアドレスの確認．
+
+
+
+<h3>CFにパーティションを作る等</h3>
+<a href="http://armadillo.atmark-techno.com/howto/debian-setup">Debianのセットアップ | Armadillo 開発者サイト</a>を参考に．
+
+<pre>
+# fdisk /dev/hda
+
+Command (m for help): d
+Selected partition 1
+Command (m for help): n
+Command action
+   e   extended
+   p   primary partition (1-4)
+p
+Partition number (1-4): 1
+First cylinder (1-993, default 1): 1
+Last cylinder or +size or +sizeM or +sizeK (1-993, default 993): 993
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+
+# mke2fs -O -filetype /dev/hda1
+</pre>
+
+<h3>Debianをftpで送る</h3>
+/home/ftp/pubにftpでファイルを送ります．もちろん，ネットワークにつながっていてIPアドレスが分かってる必要があります．
+<pre>
+# mount /dev/hda1 /mnt
+# mount -t ramfs none /home/ftp/pub
+# chmod 777 /home/ftp/pub
+</pre>
+
+<a href="http://armadillo.atmark-techno.com/filebrowser/armadillo-300/debian">Debianをダウンロード</a>
+
+これをftpで１つ送って解凍，展開，削除　を繰り返す．
+<a href="http://armadillo.atmark-techno.com/howto/ftp">ftpでファイルを送受信する | Armadillo 開発者サイト</a>
+
+/home/ftp/pub に送ります．
+
+<pre>
+$ ftp [armadilloのIPアドレス]
+Connected to 192.168.・・・
+220 armadillo FTP server (Version 6.2/OpenBSD/Linux-0.10) ready.
+Name (192.168.10.69:armadillo): ftp ftpユーザでログイン 
+331 Guest login ok, type your name as password.
+Password: パスワードは入力しない
+
+ftp> ls
+200 PORT command successful.
+150 Opening ASCII mode dataconnection for '/bin/ls'.
+dr-x--x--x                 2 0   0 1024 Dec 20 11:48 bin
+dr-x--x--x                 2 0   0 1024 Dec 20 11:48 etc
+dr-x--x--x                 2 0   0 1024 Dec 20 11:48 lib
+dr-x--x--x                 2 0   0 1024 Dec 20 11:48 pub
+
+ftp> cd pub
+
+ftp> put debian-etch-a300-1.tgz
+200 PORT command sucessful.
+150 Opening BINARY mode data connection for 'debian-~'.
+226 Transfer complete.
+186 bytes sent in 0.00 secs (4036.5 kB/s)
+</pre>
+
+これで送信ができたので，armadillo側で解凍して展開して削除
+<pre>
+# tar zxvf /home/ftp/pub/arm-sarge-200xxxxx-x.tgz -C /mnt
+# rm -f /home/ftp/pub/arm-sarge-200xxxxx-x.tgz
+</pre>
+これをファイルの数だけ行います．
+
+
+<h3>起動モードの設定</h3>
+armadilloの電源を抜く ジャンパを左から右へ動かす． そして起動
+<pre>
+Hermit v1.3-armadillo9-2 compiled at 22:13:37, Mar 11 2005
+hermit> setenv noinitrd root=/dev/hda1 console=ttyAM1,115200 video=ns9750fb:enable,CRT-VGA
+hermit>
+</pre>
+videoの後にはスペースを一切入れないでください．
+
+<h3>debianの起動，設定</h3>
+armadilloの電源を抜く ジャンパを左へ戻す 起動 でdebianが立ち上がるはずです．
+<pre>
+debian login: root
+debian:~# apt-get update
+debian:~# apt-get upgrade
+</pre>
+できなかったらネットワークにつながってないかもです． その場合は，/etc/network/interfacesを編集．
+<pre>
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet dhcp
+</pre>
+
+そして，
+<pre>#/etc/init.d/networking restart</pre>
+
+<h3>Debianを無線LANにつなぐ</h3>
+<a href="http://armadillo.atmark-techno.com/howto/debian-wlan">debianで無線LAN</a>を参考に．
+
+/etc/apt/source.listを
+<pre>deb http://ftp.jp.debian.org/debian/ etch main contrib</pre>
+に編集します．
+
+<pre># apt-get update
+# apt-get install wireless-tools madwifi-tools</pre>
+エラーが出るけど気にしない．
+そして，まず/etc/network/interfacesを編集
+
+<pre>
+auto lo ath0
+iface lo inet loopback
+iface ath inet dhcp</pre>
+固定IPにする場合はマニュアル参照．
+
+そして無線の設定 + ネットワーク再起動
+
+<pre>
+# iwconfig ath0 essid MLAB
+# iwconfig ath0 enc [WEPキー]
+# /etc/init.d/networking restart
+</pre>
+これで無線も使えるはず．
+
+再起動すると無線LANの情報が消えてしまうので，/etc/network/interfacesを編集
+<pre>
+auto lo ath0
+iface lo inet loopback
+iface ath inet dhcp
+wireless-essid MLAB
+wireless-enc [WEPKEY]
+</pre>
+これで自動的に接続してくれるはず．
+
+
+<h3>シリアルポートを使いたい</h3>
+シリアルコンソールがシリアルポートを占拠してしまっているため，そのままではシリアルポートが他の用途に使えません．そこで
+
+<pre>$ vim /etc/inittab</pre>
+で
+<pre>
+:respawn:/sbin/getty -L 115200 ttyAM0 vt102
+をコメントアウトし
+:respawn:/sbin/getty -L 115200 ttyAM1 vt102
+</pre>
+にします．これで再起動．
+
+とりあえず以上です． 　

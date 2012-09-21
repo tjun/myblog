@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: "du\xE3\x81\xA8df\xE3\x81\xAF\xE9\x81\x95\xE3\x81\x86"
+wordpress_id: 150
+wordpress_url: http://tjun.jp/blog/?p=150
+date: 2009-11-29 00:59:58 +09:00
+---
+管理してるサーバのログのディレクトリが一杯で、
+
+[code]df -h[/code]
+
+やると95%くらい。
+
+apacheのログを別の場所に移動して、duで見るとサイズが減ってるんだけど、df で見るとサイズが変わらない。
+
+どうもプロセス(apache)に使用中と判断されているためにdfには反映されないらしい。apacheを再起動したら大丈夫でした。

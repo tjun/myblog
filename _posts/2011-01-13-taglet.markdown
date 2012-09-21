@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: "\xE6\x96\xB0\xE6\x84\x9F\xE8\xA6\x9A\xE6\x83\x85\xE5\xA0\xB1\xE5\x85\xB1\xE6\x9C\x89\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x93\xE3\x82\xB9taglet\xE3\x81\x8C\xE9\x9D\xA2\xE7\x99\xBD\xE3\x81\x9D\xE3\x81\x86"
+wordpress_id: 720
+wordpress_url: http://tjun.jp/blog/?p=720
+date: 2011-01-13 05:12:17 +09:00
+---
+わくわくしたのでblogでも紹介する。 
+
+<h3><a href="http://nfc-taglet.com/">おそらく日本初！Android2.3向けNFC情報交換サービス「taglet」</a></h3>
+
+
+<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/AQNjDjLgTYA?fs=1&amp;hl=ja_JP&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/AQNjDjLgTYA?fs=1&amp;hl=ja_JP&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+
+
+FelicaなどのNFCのIDに対して，情報を仮想的に付与して共有する，というサービス。
+
+固有のIDに勝手に情報を割り当てることで，新たなサービスを作る，というのを何かに応用できないだろうか。
+と思ったら結構やられている。
+
+位置情報にエアタグ付けてカメラを通して見せるセカイカメラも、固有の座標に勝手に情報を割り当ててる。
+位置情報にソーシャルな情報を付加したらfoursquare。
+バーコードに商品の評判を付加したサービスもあった。（名前忘れた）
+
+
+<strong>
+・何に、（位置情報、バーコード、NFCのID．．．）
+・何を付加して、（評判等の情報タグ、ソーシャル．．．）
+・どう見せるか</strong>
+
+他に何かいいターゲットないかな。
+
+位置情報なんかはかなりやられていて今更感がある。
+Smart Phone関連はみんながネタ探している。
+未踏で一緒だった岩崎さんのやつは、方向としてセンスがいい気がする。
+
+
+あとは付与するものと、見せ方も重要で、そのあたりtagletはまだうまくない気がする。
+何でもできる、もいいけど、いまいちその先の世界が見えないので、まだ使ってみようと思えない。
+
+どこかに持って行ってブラッシュアップされればいいのに、と思います。
+
+なんとなく未踏のころを思い出すポストでした。
+またネタを考えてみよう。

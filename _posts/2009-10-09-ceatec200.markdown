@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: "CEATEC\xE3\x81\xAB\xE8\xA1\x8C\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x8D\xE3\x81\x9F"
+wordpress_id: 94
+wordpress_url: http://tjun.jp/blog/?p=94
+date: 2009-10-09 01:35:20 +09:00
+---
+2009/10/6＠幕張メッセ
+
+はじめて行ったけど，でかかった．
+
+電子部品・デバイスゾーンと，デジタルネットワークゾーンに分かれてるんだけど，全然雰囲気が違った．
+デジタルネットワークゾーンは大手のメーカーがお金をかけてやってるって感じで，派手だった．
+<img src="http://tjun.jp/blog/wp-content/uploads/2009/10/R0010678-300x225.jpg" alt="ceatec01" title="ceatec01" width="300" height="225" class="aligncenter size-medium wp-image-96" />
+
+ソニーも東芝もシャープもパナソニックも日立もMITSUBISHIもメインはテレビ．
+CELL REGZAとか3Dテレビとか.
+<img src="http://tjun.jp/blog/wp-content/uploads/2009/10/R0010674-300x225.jpg" alt="SONY" title="SONY" width="300" height="225" class="aligncenter size-medium wp-image-99" /><img src="http://tjun.jp/blog/wp-content/uploads/2009/10/R0010677-300x225.jpg" alt="TOSHIBA" title="TOSHIBA" width="300" height="225" class="aligncenter size-medium wp-image-101" />
+
+個人的には3Dテレビは別に欲しいと思わないが，環境によって明るさ変えたり，高画質に補正したりするHITACHIのテレビはちょっと欲しいと思った．
+
+
+あと，マイナーだけど個人的にすごいと思ったのは，ドイツの企業？が出してたVirtual Mirrorってやつ．
+これは，その鏡の前に立つと，好きな服を自分に着せたりしたものを画面にリアルタイムで表示するっていう技術．
+<img src="http://tjun.jp/blog/wp-content/uploads/2009/10/R0010669-300x225.jpg" alt="virtual mirror" title="virtual mirror" width="400" height="300" class="aligncenter size-medium wp-image-102" />
+
+この画像の画面に映っているTシャツを，画面の正面の人は本当は着ていないのに，本当に着てるかのようにぴったり合っている．
+
+横向いたりしても，ちゃんと服の柄がそれに合わせて動く．
+
+
+これで服を着なくても試着ができるというわけ．面白い．
+
+
+
+土曜日までやっているので，暇な人はぜひ．

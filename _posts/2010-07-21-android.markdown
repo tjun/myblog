@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: "Android\xE9\x9B\x91\xE6\x84\x9F"
+wordpress_id: 571
+wordpress_url: http://tjun.jp/blog/?p=571
+date: 2010-07-21 03:00:41 +09:00
+---
+なんか最近、Androidがこれから流行るんじゃないか、と今さら考えています。
+
+iPhone3GSユーザでしたが、しばらくAndroid(Nexus one)にSIMカードを移して設定して使ってみました。
+なかなかいいです。
+(料金が心配なので今は元に戻しました)
+
+
+あのiPhoneアプリがAndroidにはない、みたいな不便さは少しあるけど、それはそのうち解決されるとして、
+
+Androidのいいところ
+・自由度が高い
+
+iPhoneだとAppleの作った庭で遊んでいるような感じがするのが最近いやになってきました。
+やりたいと思ったことが実現できる可能性が、Androidの方が高いことが多いです。
+
+反面、iPhoneは制約をかけることで一貫したインターフェースだとか操作性を実現しているので、やはり操作感はiPhoneの方がいいです。
+
+
+あとはiPhoneは最近持ってる人が多すぎて個性がなくなってしまうのと、Appleが最近調子に乗りすぎな感じがしている、っていうのもあります。
+Androidはまだまだインターフェースとか(個人的にはwifi周りの実装がよくない気がするのとか)改善の余地があると思うので、今後に期待。
+
+そして、
+<ul>
+	<li><a href="http://japanese.engadget.com/2010/07/12/google-android-app-inventor/">Google、コードを書かずにAndroidアプリが作れる App Inventorを公開</a></li>
+</ul>
+<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/8ADwPLSFeY8&amp;hl=en_US&amp;fs=1?rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/8ADwPLSFeY8&amp;hl=en_US&amp;fs=1?rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+これ気になります。
+しょうもないアプリが量産されるだけかもしれないけど。
+
+
+落ち着いたらアプリを作ってみたいです。

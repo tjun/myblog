@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: "mixi\xE3\x82\xA2\xE3\x83\x97\xE3\x83\xAA\xE3\x81\xAF\xE3\x81\x98\xE3\x81\xBE\xE3\x81\xA3\xE3\x81\x9F"
+wordpress_id: 33
+wordpress_url: http://tjun.jp/blog/2009/08/mixi%e3%82%a2%e3%83%97%e3%83%aa%e3%81%af%e3%81%98%e3%81%be%e3%81%a3%e3%81%9f/
+date: 2009-08-26 14:05:50 +09:00
+---
+<p>なんかまだバグが多いけど、何か作ってみようかなあ。</p>
+<p>練習として、latitudeと連携して、自分の居場所をマイミクに見せたり、近くにいるマイミクを表示したり、なんてことができそう。</p>
+<p>問題はマイミクにgoogle latitudeやってる人がいないところか。</p>

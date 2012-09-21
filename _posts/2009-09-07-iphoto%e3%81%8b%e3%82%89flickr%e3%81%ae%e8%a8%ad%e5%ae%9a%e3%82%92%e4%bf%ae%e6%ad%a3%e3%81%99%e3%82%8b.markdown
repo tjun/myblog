@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: "iPhoto\xE3\x81\x8B\xE3\x82\x89Flickr\xE3\x81\xAE\xE8\xA8\xAD\xE5\xAE\x9A\xE3\x82\x92\xE4\xBF\xAE\xE6\xAD\xA3\xE3\x81\x99\xE3\x82\x8B"
+wordpress_id: 56
+wordpress_url: http://tjun.jp/blog/2009/09/iphoto%e3%81%8b%e3%82%89flickr%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%82%92%e4%bf%ae%e6%ad%a3%e3%81%99%e3%82%8b/
+date: 2009-09-07 23:38:04 +09:00
+---
+<p>以前は普通にアップロードできていたのですが、最近iPhotoからFlickrへのアップロードをしたいのに</p>
+<p>「ログインエラー、認証トークンが無効です」</p>
+<p>というエラーが出て困っていました。</p>
+<p>アカウントをいじった覚えはないし、どこでアカウント情報を修正できるのかもわからず、googleで調べたところ、</p>
+<p><a href="http://www.laloopa.com/20090214/flickr-uploading-problem-on-iphoto-solved?wscr=1280x800">iPhoto から Flickr へのアップロード拒否されてた問題が解決 : ☆ La Loopa ★☆☆</a><br /></p>
+<p>に解決法が載っていました。</p>
+<p>Flickrのマークをoptionキーを押しながらクリックすると、アカウントの再設定ができます。</p>
+<p><img src="http://tjun.jp/blog/wp-content/uploads/2009/09/iPhoto.jpg" width="480" height="265" alt="iPhoto.jpg" /></p>
+<p>これで無事にiPhotoからFlickrへアップロードできるようになりました。</p>

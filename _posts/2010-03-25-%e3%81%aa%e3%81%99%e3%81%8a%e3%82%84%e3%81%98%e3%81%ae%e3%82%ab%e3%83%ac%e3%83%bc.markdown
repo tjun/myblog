@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: "\xE3\x81\xAA\xE3\x81\x99\xE3\x81\x8A\xE3\x82\x84\xE3\x81\x98\xE3\x81\xAE\xE3\x82\xAB\xE3\x83\xAC\xE3\x83\xBC"
+wordpress_id: 219
+wordpress_url: http://tjun.jp/blog/2010/03/%e3%81%aa%e3%81%99%e3%81%8a%e3%82%84%e3%81%98%e3%81%ae%e3%82%ab%e3%83%ac%e3%83%bc/
+date: 2010-03-25 03:32:24 +09:00
+---
+<a href="http://www.flickr.com/photos/taka-jun/4459843111/" title="photo sharing"><img src="http://farm3.static.flickr.com/2720/4459843111_1e821ed173_m.jpg" alt="" style="border: solid 2px #000000;" /></a>
+<br />
+
+下北のなすおやじというお店でカレーを食べました。
+
+餃子の王将の近くの路地の方にあります。2回目ですがおすすめです。
+
+<ul>
+	<li><a href="http://r.tabelog.com/tokyo/A1318/A131802/13001385/">茄子おやじ ナスオヤジ - 下北沢/欧風カレー [食べログ]</a></li>
+</ul>
+

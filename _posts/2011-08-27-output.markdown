@@ -1,0 +1,48 @@
+--- 
+layout: post
+title: "\xE3\x83\xA1\xE3\x83\xA2(2011/8/28)"
+wordpress_id: 918
+wordpress_url: http://tjun.jp/blog/?p=918
+date: 2011-08-27 21:00:49 +09:00
+---
+インプットだけじゃなくてアウトプットもしましょう、というよくあることを言われたので、久しぶりにブログを書こうと思います。
+
+
+なんか会社入ってから、そこで得た知識とそうでない知識の境目が曖昧になって、書いちゃいけないことをうっかり書いちゃうのを恐れてブログを書くのをサボってました。
+
+
+<h2>最近気になったニュース・ウェブサービス</h2>
+<h3>1, <a href="http://www.codecademy.com/">Codecademy</a></h3>
+これは、ちょっと触ってもらえばわかるんだけど、その場でJavascriptが体験しながら学べるサイトです。
+なんの準備もいらず、ブラウザさえあればチュートリアルに沿って書いて動かせるので、とても簡単。
+
+Javascriptを勉強したかったので、ちょっと続けてみようかと思う。
+
+
+<h3>2, <a href="http://twitter.github.com/bootstrap/">Bootstrap, from Twitter</a></h3>
+Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites.
+It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.
+このフレームワークを使うと、ウェブサービスの見た目や機能が、簡単に、おしゃれに作れる、らしい。
+
+日本語だと、
+<ul>
+	<li><a href="http://www.ideaxidea.com/archives/2011/08/twitter_bootstrap.html">デザインが苦手なWebサービス開発者に朗報！今風のデザインがさくっと作れる『Twitter Bootstrap』が凄まじく充実している件 | IDEA*IDEA</a></li>
+</ul>
+で紹介されていました。
+
+自分もデザインが苦手なので、ちょっと時間があるときに触ってみたいと思います。
+
+
+
+<h3>3, ジョブス引退</h3>
+自分はiPhoneもMacbookAirも持ってるライトなジョブス信者です。
+ジョブスがいなくなってもしばらくは大丈夫だと思うけど、変化が早い業界なので、2年後にはどうなってるか分からないとも思います。変化を先取りしないといけないけど、余計なことをして失敗するような気もする。
+
+<a href="http://ja.favstar.fm/users/chibicode/status/33769337827368960">イノベーションとは、今にない新しいものを作るのではなく、未来にある普通のものを作ること</a>　と聞いて、なるほど！、と思いました。
+今では多くの人が使ってるスマートフォンもiPhoneから始まった(と自分は思ってます。)
+
+ときどきこの有名なスピーチも見ます。
+<iframe width="420" height="345" src="http://www.youtube.com/embed/UF8uR6Z6KLc" frameborder="0" allowfullscreen></iframe>
+
+
+今週は以上！

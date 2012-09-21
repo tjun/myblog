@@ -1,0 +1,39 @@
+--- 
+layout: post
+title: "Mac\xE3\x81\xA7DLNA\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x90"
+wordpress_id: 828
+wordpress_url: http://tjun.jp/blog/?p=828
+date: 2011-05-30 22:11:39 +09:00
+---
+<span style="font-size:10px;"><a href="http://www.igosso.net/flk/4234591869.html" target="_blank"><img src="http://farm3.static.flickr.com/2469/4234591869_55581100d0_m.jpg" alt="" /></a><br />ps3 / smemon87</span>
+
+ふと、macに入っている音楽や動画をPS3から見れないかと思って調べてみました。
+<a href="http://ps3mediaserver.blogspot.com/">PS3 Media Server</a>を利用すると、とても簡単にDLNAサーバとしてMac内の音楽や動画をPS3から再生できるようになります。
+日本語にも対応。
+※もちろんPS3が同じLAN内にある必要があります。
+
+
+ダウンロードはここから
+<a href="http://code.google.com/p/ps3mediaserver/downloads/list">Downloads - ps3mediaserver - Java Upnp Media Server, dedicated to PS3 - Google Project Hosting</a>
+
+インストールして、起動してから、「表示/共有設定」から共有するディレクトリを選びます。
+音楽と動画なら
+/Users/(ユーザ名)/Music/iTunes/iTunes Music/
+/Users/(ユーザ名)/Movies/
+でいいと思います。
+設定を変えたら上のボタンからサーバを再起動します。
+
+<a href="http://tjun.jp/blog/2011/05/mac-dlna/ps3mediaserver/" rel="attachment wp-att-848"><img src="http://tjun.jp/blog/wp-content/uploads/2011/05/PS3MediaServer-300x224.jpg" alt="" title="PS3MediaServer" width="300" height="224" class="aligncenter size-medium wp-image-848" /></a>
+
+これでネットワークの設定がうまくできていればPS3を起動すると、「ステータス」のタブにPS3の絵が出るんだけど、ダメな場合は×マークが出ます。「基本設定」のネットワークの設定を確認しましょう。
+基本的には、システム環境設定などからMac端末自身のIPを調べて、ネットワーク設定のIP設定に書きこめばOKだと思います。
+またサーバ再起動します。
+
+これで、「ステータス」にPS3の絵が出ていることを確認したら、PS3のメニューの「音楽」や「ビデオ」のあたりから「メディアサーバの検索」、を行うと出てくると思います。
+
+
+参考にしたサイト
+<ul>
+	<li><a href="http://saya.s145.xrea.com/archives/2009/01/ps3_media_serve.html">フリーDLNAサーバの決定版 PS3 Media Server でMacとPS3の連携 - Digital Life Innovator</a></li>
+</ul>
+

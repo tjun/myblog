@@ -1,0 +1,8 @@
+--- 
+layout: post
+title: "foursquare\xE3\x81\xAF\xE3\x81\x98\xE3\x82\x81\xE3\x81\xBE\xE3\x81\x97\xE3\x81\x9F"
+wordpress_id: 194
+wordpress_url: http://tjun.jp/blog/2010/01/foursquare%e3%81%af%e3%81%98%e3%82%81%e3%81%be%e3%81%97%e3%81%9f/
+date: 2010-01-25 11:42:30 +09:00
+---
+位置情報を使ったSNSみたいなやつ。<br /><a href="http://foursquare.com/user/tjun">foursquare :: Junichiro T.</a><br /><br />最近とりあげられて日本でもユーザが増えてきているらしいです。<br /><br /><a href="http://www.ideaxidea.com/archives/2010/01/foursquare.html">Twitterの次はこれじゃね？今一番イケてる（と僕が思っている）『foursquare』について調べてみた - IDEA*IDEA ? 百式管理人のライフハックブログ</a><br /><br />古くは、自分の先輩のudanaさんが未踏でやっていたserendiの頃から位置情報を友達と共有してなんかやろう、っていうのはあるけど、ケータイのGPS機能やiPhoneのようなアプリケーションプラットフォームが充実してきてようやくユーザに受け入れられたという感じだろうか。<br /><br /><br />まだfriendが一人しかいないので自分の行動ログにしかなってないけど、いずれ友人に使う人が増えて、他の人が残した情報が増えれば面白くなるのかもしれない。<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=395fc68a-f0f8-85d4-9bba-14705589ec95" /></div>

@@ -1,0 +1,54 @@
+--- 
+layout: post
+title: "wordpress\xE3\x81\xAB\xE3\x82\xBD\xE3\x83\xBC\xE3\x82\xB9\xE3\x82\xB3\xE3\x83\xBC\xE3\x83\x89\xE3\x82\x92\xE6\x9B\xB8\xE3\x81\x8D\xE3\x81\x9F\xE3\x81\x84"
+wordpress_id: 352
+wordpress_url: http://zzz.jeeet.net/?p=7
+date: 2008-05-15 03:44:19 +09:00
+---
+wordpressにソースコードを書きたいとき，それを見やすくしてくれるプラグインを紹介．
+<h3><a title="syntaxhighlighter" href="http://wordpress.org/extend/plugins/syntaxhighlighter/">SyntaxHighlighter</a></h3>
+wordpress2.5での動作を確認．
+
+上記リンクの右上にある「Download」からzipファイルをし、解凍したsyntaxhighlighterフォルダをwp-content/plugins/にアップロードすればok．そのあとプラグインを有効に．
+<h2>使いかた</h2>
+記事を書く際に，
+
+[soucecode　language='言語']
+
+//ここにコードを書く
+
+[/soucecode]
+
+と書けばよい．'言語'の部分には，言語名を，たとえば<span style="color: #333399;">c</span>だとかあるいは<span style="color: #333399;">css</span>だとか書いてやればよい．
+
+上記コードはsourcecode と language　の間に全角スペースが入っているためコピペしてもだめです．
+
+実際の例
+
+[sourcecode language='cpp']
+
+int main(){
+cout << "hello, world!\n";
+return 0;
+}
+
+[/sourcecode]
+
+wordpressの記事作成においてインデントを入れると下のようになってしまうから注意．
+
+[sourcecode language='c']
+
+int main(){
+<p style="padding-left: 30px;">printf("hello, world!\n");</p>
+<p style="padding-left: 30px;">return 0;</p>
+}
+
+[/sourcecode]
+
+インデントを入れる方法が分かりません．
+
+参考にしたサイト：
+
+<a href="http://faq.wordpress.com/2007/09/03/how-do-i-post-source-code/">How do I post source code?</a>
+
+このサイトを見る限り，もしかして新しいバージョンのwordpressを使っていればプラグインがなくてもできることなのかもしれない．

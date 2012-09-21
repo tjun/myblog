@@ -1,0 +1,88 @@
+--- 
+layout: post
+title: "ruby\xE3\x81\xA7storm\xE3\x81\x8C\xE6\x9B\xB8\xE3\x81\x91\xE3\x82\x8B\xE3\x80\x81Redstorm\xE3\x82\x92\xE8\xA9\xA6\xE3\x81\x99"
+wordpress_id: 1181
+wordpress_url: http://tjun.jp/blog/?p=1181
+date: 2012-06-04 22:53:23 +09:00
+---
+Redstormを使うと、stormの処理をrubyで書くことができます。
+Redstormの詳しいことはProjectのページを読んでみてください。
+<ul>
+  <li><a href="https://github.com/colinsurprenant/redstorm">colinsurprenant/redstorm</a></li>
+</ul>
+
+stormはJavaで処理を書くことができますが、Redstormを使うとrubyでtopologyやboltを書くことができます。
+
+<h3>準備</h3>
+redstorm-0.5.0はstorm-0.7.1まで対応しているということなので、storm-0.7.1を入れて使えるようpathを通しておきます。
+
+クラスタ環境で動かす場合の、stormのセットアップは以下を参照してください。
+<a href="http://tjun.jp/blog/2012/01/storm-cluster-setup/">stormのcluster環境のセットアップ(centos) | tjun memo</a>
+<a href="http://tjun.jp/blog/2012/04/storm-cluster-setup2-one/">stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て動かす) | tjun memo</a>
+
+
+今回のようにとりあえずlocalで動かす場合はJavaとStormにPathが通っていればいいと思います。
+<pre>
+$ wget https://github.com/downloads/nathanmarz/storm/storm-0.7.1.zip --no-check-certificate
+$ unzip storm-0.7.1.zip
+$ sudo cp -R storm-0.7.1 /usr/local/
+$ export STORM_HOME=/usr/local/storm-0.7.1
+$ export PATH=$PATH:$STORM_HOME/bin
+</pre>
+
+Javaとantも必要です。
+Javaは <a href="http://d.hatena.ne.jp/a_halka/20120501/1335871019">Ubuntu 12.04にSunというかOracleのJDK 7をインストールした話 - ナントカ嬢</a> を参考に、JDK6を入れています。
+JAVA_HOMEも設定してください。
+antはとりあえず<pre>$ sudo aptitude install ant</pre>で入れました。
+
+<h3>JRubyのインストール</h3>
+まずJRubyを入れます。
+rvmを入れておいて、rvmから入れるのがいいんじゃないかと思います。
+RedstormのページにJRuby1.6.7で動作確認してあると書いてあったので、JRubyのバージョンは1.6.7にしました。
+<pre>
+$ rvm install jruby-1.6.7
+$ rvm use jruby-1.6.7
+</pre>
+
+<h3>Redstormのインストール</h3>
+<pre>$ gem install redstorm</pre>
+今回はredstorm-0.5.0が入りました。
+
+
+<h3>Redstormを動かす</h3>
+とりあえず作業用ディレクトリを作ります。
+<pre>
+$ mkdir redtest
+$ cd redtest
+</pre>
+
+<h4>Redstormプロジェクトをセットアップ</h4>
+<pre>
+$ redstorm --1.9 install
+</pre>
+これで、target というディレクトリができます。
+この --1.9 というのはrubyのバージョンを指定しているそうです。
+<h4>サンプルのセットアップ</h4>
+<pre>
+$ redstorm examples
+</pre>
+これでexamplesというディレクトリができます。
+
+<h4>サンプルの実行</h4>
+とりあえずexamples/simple/word_count_topology.rbをlocalで実行してみます。
+
+<pre>
+$ redstorm --1.9 local examples/simple/word_count_topology.rb
+</pre>
+
+これで、特にエラーが出ずに出力されれば成功です。
+オリジナルのstormに比べると、出力されるまでに少し時間がかかるような気がします。
+
+
+
+処理が実行されるまでのオーバヘッドが大きくなったり、Storm本体の開発からちょっと遅れちゃうけど、rubyで書けるのはいいなと思いました。
+
+例えばword_count_bolt.rbは、 <a href="https://github.com/colinsurprenant/redstorm/blob/master/examples/simple/word_count_bolt.rb">redstorm/examples/simple/word_count_bolt.rb at master · colinsurprenant/redstorm · GitHub</a> のように書けます。spoutもtopologyもrubyで書けます。
+
+
+クラスタでの実行は試していません。

@@ -4,3 +4,6 @@
 [submodule "_plugins/jekyll-rss-feeds"]
 	path = _plugins/jekyll-rss-feeds
 	url = git://github.com/snaptortoise/jekyll-rss-feeds.git
+[submodule "_plugins/sitemap_generator"]
+	path = _plugins/sitemap_generator
+	url = git://github.com/kinnetica/jekyll-plugins.git

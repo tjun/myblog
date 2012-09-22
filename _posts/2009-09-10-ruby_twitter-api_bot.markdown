@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "ruby\xE3\x81\x8B\xE3\x82\x89twitter API\xE3\x82\x92\xE5\x88\xA9\xE7\x94\xA8\xE3\x81\x97\xE3\x81\xA6bot\xE3\x82\x92\xE4\xBD\x9C\xE3\x82\x8B"
+status: publish
+published: true
+title: rubyからtwitter APIを利用してbotを作る
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 57
 wordpress_url: http://tjun.jp/blog/2009/09/ruby%e3%81%8b%e3%82%89twitter-api%e3%82%92%e5%88%a9%e7%94%a8%e3%81%97%e3%81%a6bot%e3%82%92%e4%bd%9c%e3%82%8b/
-date: 2009-09-10 20:40:00 +09:00
+date: 2009-09-10 20:40:00.000000000 +09:00
+categories:
+- ruby
+- twitter
+tags:
+- twitter
+- ruby
+comments: []
 ---
 rubyからtwitter APIをたたくbotを作ります。
 

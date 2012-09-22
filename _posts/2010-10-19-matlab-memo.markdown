@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE3\x81\xAF\xE3\x81\x98\xE3\x82\x81\xE3\x81\xA6\xE3\x81\xAEMATLAB\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: はじめてのMATLABメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 627
 wordpress_url: http://tjun.jp/blog/?p=627
-date: 2010-10-19 21:00:12 +09:00
+date: 2010-10-19 21:00:12.000000000 +09:00
+categories:
+- programming
+tags:
+- matlab
+comments: []
 ---
 はじめてMATLABを5時間くらい使ったのでメモ。
 
@@ -11,7 +22,7 @@ date: 2010-10-19 21:00:12 +09:00
 <ul>
 	<li><a href="http://user.numazu-ct.ac.jp/~mochizuki-k/matlab/index.html">MATLAB</a></li>
 	<li><a href="http://www.math.meiji.ac.jp/~mk/labo/text/matlab/">MATLAB 使い方入門</a></li>
-	<li><a href="http://www.mathworks.co.jp/academia/student_center/tutorials/register.html?s_cid=0310_delg_1890_318222">MathWorks 日本 - MATLAB 入門チュートリアル 無料</a></li>
+	<li><a href="http://www.mathworks.co.jp/academia/student_center/tutorials/register.html?s_cid=0310_delg_1890_318222">MathWorks 日本 - MATLAB 入門チュートリアル&nbsp;無料</a></li>
 </ul>
 <div class="amazlet-box" style="margin-bottom: 0px;">
 <div class="amazlet-image" style="float: left; margin: 0px 12px 1px 0px;"><a name="amazletlink" href="http://www.amazon.co.jp/exec/obidos/ASIN/4434155911/tjun-22/ref=nosim/" target="_blank"></a><img src="http://ecx.images-amazon.com/images/I/41zxIxSa6zL._SL160_.jpg" alt="MATLABプログラミング入門" style="border: none;" /></div>

@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "iPod touch\xE3\x81\xAE\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88\xE3\x82\x92\xE6\x92\xAE\xE3\x82\x8B"
+status: publish
+published: true
+title: iPod touchのスクリーンショットを撮る
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 387
 wordpress_url: http://zzz.jeeet.net/2008/10/ipod-touch%e3%81%ae%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%b7%e3%83%a7%e3%83%83%e3%83%88%e3%82%92%e6%92%ae%e3%82%8b/
-date: 2008-10-03 20:00:53 +09:00
+date: 2008-10-03 20:00:53.000000000 +09:00
+categories:
+- iphone
+- tips
+- ubuntu
+tags:
+- iphone
+comments: []
 ---
 初めてiPod touchから更新．
 

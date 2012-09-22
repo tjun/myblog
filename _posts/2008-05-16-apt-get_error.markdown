@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "apt-get\xE3\x81\xAE\xE3\x82\xA8\xE3\x83\xA9\xE3\x83\xBC\xE3\x81\xAE\xE5\xAF\xBE\xE5\x87\xA6\xEF\xBC\x88ubuntu, debian\xEF\xBC\x89"
+status: publish
+published: true
+title: apt-getのエラーの対処（ubuntu, debian）
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 355
 wordpress_url: http://zzz.jeeet.net/?p=9
-date: 2008-05-16 00:28:54 +09:00
+date: 2008-05-16 00:28:54.000000000 +09:00
+categories:
+- ubuntu
+tags:
+- ubuntu
+- linux
+- debian
+comments: []
 ---
 ここに示すのは，あくまでひとつの可能性であり，必ず解決できるというわけではありません．
 また，無理矢理解決してるので，システムに悪影響を及ぼす可能性があります．自己責任でお願いします．

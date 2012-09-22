@@ -1,9 +1,25 @@
---- 
+---
 layout: post
-title: "Cygwin\xE3\x82\xBF\xE3\x83\xBC\xE3\x83\x9F\xE3\x83\x8A\xE3\x83\xAB\xE3\x81\xA7\xE3\x81\xAE\xE3\x83\x95\xE3\x82\xA9\xE3\x83\xB3\xE3\x83\x88\xE3\x82\x92\xE5\xA4\x89\xE3\x81\x88\xE3\x82\x8B"
+status: publish
+published: true
+title: Cygwinターミナルでのフォントを変える
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 381
 wordpress_url: http://zzz.jeeet.net/?p=84
-date: 2008-07-16 03:04:28 +09:00
+date: 2008-07-16 03:04:28.000000000 +09:00
+categories:
+- programming
+- tips
+- Windows
+tags:
+- cygwin
+- meadow
+- vista
+- Windows
+comments: []
 ---
 Windows vistaとcygwinの環境です。
 

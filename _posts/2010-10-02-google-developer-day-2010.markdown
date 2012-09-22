@@ -1,9 +1,21 @@
---- 
+---
 layout: post
+status: publish
+published: true
 title: Google Developer Day 2010
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 617
 wordpress_url: http://tjun.jp/blog/?p=617
-date: 2010-10-02 03:56:54 +09:00
+date: 2010-10-02 03:56:54.000000000 +09:00
+categories:
+- Diary
+- android
+tags:
+- google
+comments: []
 ---
 <strong><a href="http://www.google.co.jp/events/developerday/2010/">Google Developer Day 2010</a></strong>
 

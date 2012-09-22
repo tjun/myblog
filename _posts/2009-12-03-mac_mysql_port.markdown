@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "Mac\xE3\x81\xABMySQL\xE5\x85\xA5\xE3\x82\x8C\xE3\x81\x9F"
+status: publish
+published: true
+title: MacにMySQL入れた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 156
 wordpress_url: http://tjun.jp/blog/?p=156
-date: 2009-12-03 04:44:19 +09:00
+date: 2009-12-03 04:44:19.000000000 +09:00
+categories:
+- db
+- mac
+tags:
+- mac
+- db
+- mysql
+comments: []
 ---
 ちょっと必要があったのでMySQLをMac Bookに入れました。
 

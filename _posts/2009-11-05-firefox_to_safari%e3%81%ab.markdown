@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Firefox\xE3\x81\x8B\xE3\x82\x89safari\xE3\x81\xAB\xE7\xA7\xBB\xE8\xA1\x8C"
+status: publish
+published: true
+title: Firefoxからsafariに移行
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 122
 wordpress_url: http://tjun.jp/blog/?p=122
-date: 2009-11-05 02:25:25 +09:00
+date: 2009-11-05 02:25:25.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+- safari
+- firefox
+comments: []
 ---
 safariの方が速いらしいので，メインをsafariにすることに．
 

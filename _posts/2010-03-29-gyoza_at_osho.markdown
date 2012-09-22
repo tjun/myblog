@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE7\x8E\x8B\xE5\xB0\x86\xE3\x81\xAE\xE9\xA3\x9F\xE3\x81\xB9\xE6\x94\xBE\xE9\xA1\x8C"
+status: publish
+published: true
+title: 王将の食べ放題
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 225
 wordpress_url: http://tjun.jp/blog/2010/03/%e7%8e%8b%e5%b0%86%e3%81%ae%e9%a3%9f%e3%81%b9%e6%94%be%e9%a1%8c/
-date: 2010-03-29 23:18:19 +09:00
+date: 2010-03-29 23:18:19.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+comments: []
 ---
 <a href="http://www.flickr.com/photos/taka-jun/4472703511/" title="photo sharing"><img src="http://farm5.static.flickr.com/4066/4472703511_d481d73605_m.jpg" alt="" style="border: solid 2px #000000;" /></a>
 <br />

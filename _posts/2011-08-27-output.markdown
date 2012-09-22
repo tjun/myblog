@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "\xE3\x83\xA1\xE3\x83\xA2(2011/8/28)"
+status: publish
+published: true
+title: メモ(2011/8/28)
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 918
 wordpress_url: http://tjun.jp/blog/?p=918
-date: 2011-08-27 21:00:49 +09:00
+date: 2011-08-27 21:00:49.000000000 +09:00
+categories:
+- Diary
+- web
+tags:
+- web
+- Diary
+comments: []
 ---
 インプットだけじゃなくてアウトプットもしましょう、というよくあることを言われたので、久しぶりにブログを書こうと思います。
 

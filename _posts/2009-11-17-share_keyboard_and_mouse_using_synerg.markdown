@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE8\xA4\x87\xE6\x95\xB0\xE3\x81\xAEmac\xE3\x81\xA7\xE3\x82\xAD\xE3\x83\xBC\xE3\x83\x9C\xE3\x83\xBC\xE3\x83\x89\xE3\x81\xA8\xE3\x83\x9E\xE3\x82\xA6\xE3\x82\xB9\xE3\x82\x92\xE5\x85\xB1\xE6\x9C\x89\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: 複数のmacでキーボードとマウスを共有する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 139
 wordpress_url: http://tjun.jp/blog/?p=139
-date: 2009-11-17 22:22:35 +09:00
+date: 2009-11-17 22:22:35.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+comments: []
 ---
 デスクトップのMacにはワイアレスのキーボードとマウスがつながっていて，となりにMac Book Proがあって，ワイアレスキーボードで両方を操作できたら便利だなと思うわけです．
 

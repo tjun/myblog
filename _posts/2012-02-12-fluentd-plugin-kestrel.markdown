@@ -1,9 +1,29 @@
---- 
+---
 layout: post
-title: "fluentd-plugin-kestrel\xE3\x82\x92\xE4\xBD\x9C\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\xBF\xE3\x81\x9F"
+status: publish
+published: true
+title: fluentd-plugin-kestrelを作ってみた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1102
 wordpress_url: http://tjun.jp/blog/?p=1102
-date: 2012-02-12 03:25:39 +09:00
+date: 2012-02-12 03:25:39.000000000 +09:00
+categories:
+- ruby
+tags:
+- ruby
+- kestrel
+- fluentd
+comments:
+- id: 471
+  author: fluentd-plugin-kestrelを更新しました | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/06/fluentd-plugin-kestrel-updated/
+  date: '2012-06-03 04:09:53 +0900'
+  date_gmt: '2012-06-02 19:09:53 +0900'
+  content: ! '[...] fluentd-plugin-kestrelを作ってみた | tjun memo    最近の記事やイベントでまたfluentdが盛り上がっているようなので、久しぶりにプラグインの更新をしました。  [...]'
 ---
 先週末くらいにTLにたくさん流れてきた"fluentd"について調べてみたらよさそうだったので、勉強を兼ねてpluginを書いてみました。
 <ul>
@@ -20,7 +40,7 @@ fluentdについてもっと知りたい人に参考になるのは以下のサ�
 
 
 最近ちょっと触っていたKestrelというメッセージキューへログを投げられたら便利かな、ということで、fluentdで集めたログをkestrelにenqueueするpluginを作ってみました。
-実装は、<a title="Fluent plugins" href="http://fluentd.org/plugin/">既にあるいろいろなプラグイン</a>を参考にしました。Gemを作るのも初めてでよく分かんなかったけど、<a href="http://d.hatena.ne.jp/tagomoris/20111117/1321511988">fluentdのためのプラグインをイチから書く手順 - tagomorisのメモ置き場</a>　や <a href="http://d.hatena.ne.jp/seiunsky/20090723/1248357767">jeweler でらくらく rubygems 作成（github編）- @sugamasao.blog.title # =&gt; ”コードで世界を変えたい”</a>の通りにやっていたらできました。
+実装は、<a title="Fluent plugins" href="http://fluentd.org/plugin/">既にあるいろいろなプラグイン</a>を参考にしました。Gemを作るのも初めてでよく分かんなかったけど、<a href="http://d.hatena.ne.jp/tagomoris/20111117/1321511988">fluentdのためのプラグインをイチから書く手順 - tagomorisのメモ置き場</a>　や <a href="http://d.hatena.ne.jp/seiunsky/20090723/1248357767">jeweler でらくらく rubygems 作成（github編）- @sugamasao.blog.title # => &rdquo;コードで世界を変えたい&rdquo;</a>の通りにやっていたらできました。
 
 jewelerって便利。
 
@@ -35,14 +55,14 @@ jewelerって便利。
 
 
 使い方は、kestrelが動いている状態で、fluentdの設定に
-<pre>&lt;match kestrel.**&gt;
+<pre><match kestrel.**>
   type kestrel
 
   host localhost     # kestrel host (required)
   queue test         # queue name of kestrel (required)
 
   # port 22133         # optional, default 22133
-&lt;/match&gt;</pre>
+</match></pre>
 のように書けばOKです。
 
 どんな感じのデータが入ってるかというと、

@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "WindowsXP\xE3\x81\xA7\xE3\x82\xAF\xE3\x83\xBC\xE3\x83\xAB\xE3\x81\xAA\xE3\x83\x87\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\x88\xE3\x83\x83\xE3\x83\x97\xE3\x82\x92vol.\xEF\xBC\x91\xEF\xBC\x9A\xE3\x82\xAD\xE3\x83\xA5\xE3\x83\xBC\xE3\x83\x96\xE3\x83\x87\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\x88\xE3\x83\x83\xE3\x83\x97"
+status: publish
+published: true
+title: WindowsXPでクールなデスクトップをvol.１：キューブデスクトップ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 362
 wordpress_url: http://zzz.jeeet.net/?p=25
-date: 2008-05-25 02:49:10 +09:00
+date: 2008-05-25 02:49:10.000000000 +09:00
+categories:
+- Windows
+tags:
+- 3DDesktop
+- Windows
+comments: []
 ---
 Vistaを使ったことないのでわからないのですが，Ubuntuなどにもあるデスクトップをキューブのように回転させたりできるソフトがWindowsXPにもあるので紹介します．
 
@@ -28,13 +40,13 @@ Yodm3dは，Yet anOther Desktop Manager 3D　からきてるみたい．
 
 デフォルトではホットキーが「<strong>Shift+Ctrl</strong>」になっていると思うので，<span style="color: #ff6600;"><strong>使い方</strong></span>は
 
-「<strong>Shift+Ctrl</strong>」押しながら「<strong>←</strong>」や「→」でキューブ回転．
+「<strong>Shift+Ctrl</strong>」押しながら「<strong>&larr;</strong>」や「&rarr;」でキューブ回転．
 
-「<strong>Shift+Ctrl</strong>」押しながら「↑」「↓」でズーム．
+「<strong>Shift+Ctrl</strong>」押しながら「&uarr;」「&darr;」でズーム．
 
 「<strong>Shift+Ctrl</strong>」押しながらデスクトップをドラッグすると，少しずつ回転させることができます．
 
-またデフォルトではオプションの「<strong>Mouse</strong>」の「<strong>Cube acition</strong>」は左上だけチェックがついていたと思うのですが，これはマウスを画面左上に持っていくと”<strong>ホットキーが押された状態</strong>”になるということです．そのまま矢印キーやマウスで操作できます．元の状態に戻すには画面をダブルクリックです．
+またデフォルトではオプションの「<strong>Mouse</strong>」の「<strong>Cube acition</strong>」は左上だけチェックがついていたと思うのですが，これはマウスを画面左上に持っていくと&rdquo;<strong>ホットキーが押された状態</strong>&rdquo;になるということです．そのまま矢印キーやマウスで操作できます．元の状態に戻すには画面をダブルクリックです．
 
 オプションの「<strong>Display</strong>」の「<strong>Cube transparency</strong>」は，ホットキーを押した状態でのデスクトップの透過具合が変えれたと思います．これが反映されるのは再起動後のようです．
 

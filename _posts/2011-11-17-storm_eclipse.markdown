@@ -1,9 +1,35 @@
---- 
+---
 layout: post
-title: "Eclipse\xE3\x81\xA7Storm\xE3\x81\xAE\xE9\x96\x8B\xE7\x99\xBA\xE7\x92\xB0\xE5\xA2\x83\xE3\x82\x92\xE4\xBD\x9C\xE3\x82\x8B"
+status: publish
+published: true
+title: EclipseでStormの開発環境を作る
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1021
 wordpress_url: http://tjun.jp/blog/?p=1021
-date: 2011-11-17 22:48:44 +09:00
+date: 2011-11-17 22:48:44.000000000 +09:00
+categories:
+- cloud
+- storm
+tags:
+- storm
+comments:
+- id: 349
+  author: Stormをlocalmodeで実行する | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/11/storm_localmode/
+  date: '2011-11-18 01:37:50 +0900'
+  date_gmt: '2011-11-17 16:37:50 +0900'
+  content: ! '[...] EclipseでStormの開発環境を作る | tjun memo   の続き。  [...]'
+- id: 362
+  author: stormのcluster環境のセットアップ(centos) | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/01/storm-cluster-setup/
+  date: '2012-01-11 00:16:20 +0900'
+  date_gmt: '2012-01-10 15:16:20 +0900'
+  content: ! '[...] EclipseでStormの開発環境を作る | tjun memo [...]'
 ---
 Stormはtwitterが公開しているリアルタイム分散処理フレームワークです。
 以前のエントリを参照ください。

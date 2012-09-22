@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE3\x81\xAA\xE3\x81\x9CStorm\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\x86\xE3\x81\x8B"
+status: publish
+published: true
+title: なぜStormを使うか
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1095
 wordpress_url: http://tjun.jp/blog/?p=1095
-date: 2012-02-02 00:01:51 +09:00
+date: 2012-02-02 00:01:51.000000000 +09:00
+categories:
+- storm
+tags:
+- storm
+comments: []
 ---
 Stormとは、twitterが公開して開発中のリアルタイム分散処理フレームワークです。
 開発も活発で結構よいのでこれからHadoopのように使われるようになるんじゃないかと個人的に思っていて、日本語の情報が全然ないので勝手に日本語で紹介しています。

@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "VLDB09\xE5\xA0\xB1\xE5\x91\x8A\xE4\xBC\x9A\xE3\x81\xA7\xE8\x81\x9E\xE3\x81\x84\xE3\x81\x9F\xE8\xA9\xB1"
+status: publish
+published: true
+title: VLDB09報告会で聞いた話
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 169
 wordpress_url: http://tjun.jp/blog/?p=169
-date: 2009-12-12 19:30:54 +09:00
+date: 2009-12-12 19:30:54.000000000 +09:00
+categories:
+- db
+tags:
+- db
+- kvs
+- hadoop
+comments: []
 ---
 先週のことですが，VLDB報告会というのに行ってみました．
 <ul>

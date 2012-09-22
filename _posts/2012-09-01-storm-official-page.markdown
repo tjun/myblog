@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "Storm\xE3\x81\xAE\xE5\x85\xAC\xE5\xBC\x8F\xE3\x82\xB5\xE3\x82\xA4\xE3\x83\x88\xE3\x81\x8C\xE3\x81\xA7\xE3\x81\x8D\xE3\x81\xA6\xE3\x81\x9F"
+status: publish
+published: true
+title: Stormの公式サイトができてた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1255
 wordpress_url: http://tjun.jp/blog/?p=1255
-date: 2012-09-01 02:09:35 +09:00
+date: 2012-09-01 02:09:35.000000000 +09:00
+categories:
+- storm
+tags:
+- storm
+comments: []
 ---
 知らぬ間にStormの公式ページができてた。
 <ul>

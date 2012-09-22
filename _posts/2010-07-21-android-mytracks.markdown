@@ -1,9 +1,36 @@
---- 
+---
 layout: post
-title: "Android\xE3\x81\xAEMy Tracks\xE3\x81\xA7\xE8\x87\xAA\xE8\xBB\xA2\xE8\xBB\x8A\xE3\x83\xAD\xE3\x82\xB0"
+status: publish
+published: true
+title: AndroidのMy Tracksで自転車ログ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 579
 wordpress_url: http://tjun.jp/blog/?p=579
-date: 2010-07-21 04:05:34 +09:00
+date: 2010-07-21 04:05:34.000000000 +09:00
+categories:
+- Diary
+- android
+tags:
+- android
+- cycling
+comments:
+- id: 134
+  author: yoko
+  author_email: y.tomomasa@gmail.com
+  author_url: ''
+  date: '2010-08-09 11:48:47 +0900'
+  date_gmt: '2010-08-09 02:48:47 +0900'
+  content: ! "いいなこれ\r\nSIM無しでもPDAっぽく使えるのか\r\n\r\n自転車はダイエットによさそう"
+- id: 147
+  author: tjun
+  author_email: t.junichiro@gmail.com
+  author_url: ''
+  date: '2010-08-25 01:42:22 +0900'
+  date_gmt: '2010-08-24 16:42:22 +0900'
+  content: ! "うん、なかなかいいよ。\r\n自転車は疲れるわりに消費カロリーは高くないらしい"
 ---
 最近健康のために、自宅から研究室まで自転車で通い始めました。
 片道約15km。

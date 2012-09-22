@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "SparkleShare\xE3\x81\xA7\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS\xE3\x81\xAB\xE3\x82\xAA\xE3\x83\xAC\xE3\x82\xAA\xE3\x83\xACDropbox\xE3\x82\x92\xE4\xBD\x9C\xE3\x82\x8B"
+status: publish
+published: true
+title: SparkleShareでさくらVPSにオレオレDropboxを作る
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1124
 wordpress_url: http://tjun.jp/blog/?p=1124
-date: 2012-04-05 00:43:29 +09:00
+date: 2012-04-05 00:43:29.000000000 +09:00
+categories:
+- linux
+- mac
+tags:
+- linux
+- さくらvps
+comments: []
 ---
 さくらVPSを同じお値段で移行して、サーバの容量にかなり余裕ができたので、それを使って自分専用Dropbox的なことをやってみようと思いました。
 
@@ -15,7 +28,7 @@ date: 2012-04-05 00:43:29 +09:00
 <h3>クライアントのインストール</h3>
 
 まずは、クライアントを入れます。
-<a href="https://github.com/hbons/SparkleShare/downloads">Downloads · hbons/SparkleShare</a>からダウンロードできます。
+<a href="https://github.com/hbons/SparkleShare/downloads">Downloads &middot; hbons/SparkleShare</a>からダウンロードできます。
 自分は、mac版を入れて、Applicationsに入れました。他にもLinux版とWindows版のクライアントもあります。
 
 それを起動すると、以下のような画面でユーザ名とメールアドレスを入力します。
@@ -37,8 +50,8 @@ date: 2012-04-05 00:43:29 +09:00
 以下のコマンドで、ユーザと、gitのプロジェクトと、.ssh以下のキーファイルを書くためのファイルの作成を行います。
 MyProject は他の名前でも大丈夫です。
 <pre>
-sudo adduser ––disabled-password git
-sudo git init ––bare /home/git/MyProject
+sudo adduser &ndash;&ndash;disabled-password git
+sudo git init &ndash;&ndash;bare /home/git/MyProject
 sudo mkdir /home/git/.ssh
 sudo touch /home/git/.ssh/authorized_keys
 </pre>
@@ -80,7 +93,7 @@ S3をバックエンドに持つDropboxのようなデータの冗長性はな�
 
 <h3>関連しそうなサイト：</h3>
 <ul>
-	<li><a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0210">Ubuntu Weekly Recipe：第210回　SparkleShareで自分専用のDropboxサービスを立ち上げる｜gihyo.jp … 技術評論社</a></li>
+	<li><a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0210">Ubuntu Weekly Recipe：第210回　SparkleShareで自分専用のDropboxサービスを立ち上げる｜gihyo.jp &hellip; 技術評論社</a></li>
 	<li><a href="http://www.nofuture.tv/linux/sparkleshare">SparkleShareメモ - nofuture.tv</a></li>
 </ul>
 

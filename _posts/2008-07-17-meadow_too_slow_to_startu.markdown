@@ -1,9 +1,43 @@
---- 
+---
 layout: post
-title: "meadow3\xE3\x81\xAE\xE8\xB5\xB7\xE5\x8B\x95\xE3\x81\x8C\xE9\x87\x8D\xE3\x81\x99\xE3\x81\x8E\xE3\x82\x8B\xE3\x81\xAE\xE3\x81\xA7"
+status: publish
+published: true
+title: meadow3の起動が重すぎるので
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 382
 wordpress_url: http://zzz.jeeet.net/?p=85
-date: 2008-07-17 01:57:16 +09:00
+date: 2008-07-17 01:57:16.000000000 +09:00
+categories:
+- programming
+- Windows
+tags:
+- cygwin
+- meadow
+- vista
+- Windows
+comments:
+- id: 68
+  author: koichiro
+  author_email: koichiro@meadowy.org
+  author_url: http://ko.meadowy.net/~koichiro/diary/
+  date: '2008-11-23 13:15:37 +0900'
+  date_gmt: '2008-11-23 04:15:37 +0900'
+  content: ! 'MeadowのNetinstallerに付属するパッケージをすべてインストールするとそうなってしまうので、必要なパッケージだけ選択してインストールすると良いですよ。
+
+    setup.exeを使ってインストール済みのパッケージをアンインストールすることもできるので試してみてください。'
+- id: 69
+  author: tjun
+  author_email: t.junichiro@gmail.com
+  author_url: http://jeeet.net/
+  date: '2008-11-25 01:28:35 +0900'
+  date_gmt: '2008-11-24 16:28:35 +0900'
+  content: ! 'なるほど、たしかに何も考えずにfull installしたかもしれません。
+
+
+    アンインストール、試してみます'
 ---
 自分はVista, Cygwin, Meadow3という環境です．
 

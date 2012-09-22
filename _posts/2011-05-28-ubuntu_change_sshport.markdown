@@ -1,9 +1,30 @@
---- 
+---
 layout: post
-title: "Ubuntu\xE3\x81\xA7ssh\xE3\x81\xAE\xE3\x83\x9D\xE3\x83\xBC\xE3\x83\x88\xE3\x82\x92\xE5\xA4\x89\xE6\x9B\xB4\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: Ubuntuでsshのポートを変更する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 818
 wordpress_url: http://tjun.jp/blog/?p=818
-date: 2011-05-28 12:05:15 +09:00
+date: 2011-05-28 12:05:15.000000000 +09:00
+categories:
+- server
+- ubuntu
+tags:
+- ubuntu
+- security
+comments:
+- id: 312
+  author: Ubuntuのufwでファイアウォール設定 | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/05/ubuntu_ufw/
+  date: '2011-05-28 12:08:31 +0900'
+  date_gmt: '2011-05-28 03:08:31 +0900'
+  content: ! '[...] Ubuntuでsshのポートを変更する | tjun memo   それが無理ならLIMITにしましょう。 LIMITは30秒間に6回アクセスしてきた
+    IP の接続を一定時間拒否するという設定です。ブルートフォース対策です [...]'
 ---
 sshポートをデフォルトの22にしていると攻撃を受けるので、変えましょう。
 

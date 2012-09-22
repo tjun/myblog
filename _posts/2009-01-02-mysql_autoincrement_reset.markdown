@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "MySQL\xE3\x81\xA7autoincrement\xE3\x82\x921\xE3\x81\xAB\xE6\x88\xBB\xE3\x81\x99"
+status: publish
+published: true
+title: MySQLでautoincrementを1に戻す
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 402
 wordpress_url: http://zzz.jeeet.net/?p=225
-date: 2009-01-02 15:03:37 +09:00
+date: 2009-01-02 15:03:37.000000000 +09:00
+categories:
+- db
+- tips
+tags:
+- mysql
+comments: []
 ---
 MySQLでautoincrementを1に戻すSQL．忘れてしまうので自分のためにメモ
 

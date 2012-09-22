@@ -1,9 +1,30 @@
---- 
+---
 layout: post
-title: "Kestrel\xE3\x82\x92centos\xE3\x81\xAB\xE3\x82\xBB\xE3\x83\x83\xE3\x83\x88\xE3\x82\xA2\xE3\x83\x83\xE3\x83\x97"
+status: publish
+published: true
+title: Kestrelをcentosにセットアップ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1066
 wordpress_url: http://tjun.jp/blog/?p=1066
-date: 2011-12-20 00:01:05 +09:00
+date: 2011-12-20 00:01:05.000000000 +09:00
+categories:
+- centos
+tags:
+- java
+- kestrel
+- centos
+comments:
+- id: 352
+  author: KestrelをJavaから利用する | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/12/kestrel-java/
+  date: '2011-12-20 00:12:19 +0900'
+  date_gmt: '2011-12-19 15:12:19 +0900'
+  content: ! '[...] Kestrelをcentosにセットアップ | tjun memo     以下では、JavaのプログラムからKestrelのキューを利用する方法を説明します。  Kestrelは、memcachedプロトコルで利用できるので、memcachedのライブラ
+    [...]'
 ---
 # 2011/12/01時点のものです、最新のものがあるかもしれないので確認してください。
 

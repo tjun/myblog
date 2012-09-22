@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE5\x8D\x83\xE9\x87\x8C\xE7\x9C\xBC"
+status: publish
+published: true
+title: 千里眼
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 539
 wordpress_url: http://tjun.jp/blog/?p=539
-date: 2010-07-10 07:40:13 +09:00
+date: 2010-07-10 07:40:13.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+comments: []
 ---
 研究室から近いこともあって、月に何度かいくラーメン屋。
 <ul>

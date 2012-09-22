@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "iPhone\xE3\x82\xB1\xE3\x83\xBC\xE3\x82\xB9\xE3\x81\xAB\xE3\x82\xAB\xE3\x83\xBC\xE3\x83\x89\xE3\x82\x92"
+status: publish
+published: true
+title: iPhoneケースにカードを
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 244
 wordpress_url: http://tjun.jp/blog/?p=244
-date: 2010-06-10 01:00:30 +09:00
+date: 2010-06-10 01:00:30.000000000 +09:00
+categories:
+- Diary
+- iphone
+tags:
+- iphone
+comments: []
 ---
 iPhoneのケースを変えました。
 

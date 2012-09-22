@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS\xE3\x81\xB8\xE7\xA7\xBB\xE8\xA1\x8C"
+status: publish
+published: true
+title: さくらVPSへ移行
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 783
 wordpress_url: http://tjun.jp/blog/?p=783
-date: 2011-03-17 16:11:19 +09:00
+date: 2011-03-17 16:11:19.000000000 +09:00
+categories:
+- server
+- wordpress
+tags:
+- server
+- linux
+- wordpress
+comments: []
 ---
 <a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Sakura" target="_blank"><img src="http://farm6.static.flickr.com/5299/5526129241_37cf9c65a8_m.jpg" alt="Sakura" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-nd/2.0/" title="Attribution-NoDerivs License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Windslash" target="_blank">Windslash</a></small>
 

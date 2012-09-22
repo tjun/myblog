@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "iTunes\xE3\x81\xAB\xE5\x85\xA5\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x84\xE3\x82\x8B\xE6\x9B\xB2\xE3\x81\xAE\xE6\xAD\x8C\xE8\xA9\x9E\xE3\x82\x92\xE5\x8F\x96\xE5\xBE\x97\xEF\xBC\x8C\xE7\x99\xBB\xE9\x8C\xB2\xE3\x81\x99\xE3\x82\x8B\xE3\x82\xBD\xE3\x83\x95\xE3\x83\x88Lyric Master"
+status: publish
+published: true
+title: iTunesに入っている曲の歌詞を取得，登録するソフトLyric Master
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 393
 wordpress_url: http://zzz.jeeet.net/?p=143
-date: 2008-11-09 02:35:43 +09:00
+date: 2008-11-09 02:35:43.000000000 +09:00
+categories:
+- iphone
+- Windows
+tags:
+- iphone
+- Tips
+- Windows
+comments: []
 ---
 iTunesに入れている曲の歌詞が見たくなったときに，iTunesに歌詞を入れる方法として以前に
 「歌詞をwebからテキストとして手に入れる」を紹介しました．

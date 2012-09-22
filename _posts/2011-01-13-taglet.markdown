@@ -1,9 +1,25 @@
---- 
+---
 layout: post
-title: "\xE6\x96\xB0\xE6\x84\x9F\xE8\xA6\x9A\xE6\x83\x85\xE5\xA0\xB1\xE5\x85\xB1\xE6\x9C\x89\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x93\xE3\x82\xB9taglet\xE3\x81\x8C\xE9\x9D\xA2\xE7\x99\xBD\xE3\x81\x9D\xE3\x81\x86"
+status: publish
+published: true
+title: 新感覚情報共有サービスtagletが面白そう
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 720
 wordpress_url: http://tjun.jp/blog/?p=720
-date: 2011-01-13 05:12:17 +09:00
+date: 2011-01-13 05:12:17.000000000 +09:00
+categories:
+- Diary
+- web
+- android
+- idea
+tags:
+- webservice
+- android
+- idea
+comments: []
 ---
 わくわくしたのでblogでも紹介する。 
 

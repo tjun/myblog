@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Meadow\xE3\x82\x92\xE5\x8D\x8A\xE9\x80\x8F\xE6\x98\x8E\xE3\x81\xAB"
+status: publish
+published: true
+title: Meadowを半透明に
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 343
 wordpress_url: http://zzz.jeeet.net/?p=343
-date: 2009-05-21 07:37:31 +09:00
+date: 2009-05-21 07:37:31.000000000 +09:00
+categories:
+- Windows
+tags:
+- meadow
+- Windows
+comments: []
 ---
 半透明だったらちょっとかっこよくなります。
 

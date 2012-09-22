@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "iPhone\xE3\x81\x8CiPhoto\xE3\x81\x8B\xE3\x82\x89\xE8\xAA\x8D\xE8\xAD\x98\xE3\x81\x95\xE3\x82\x8C\xE3\x81\xAA\xE3\x81\x84"
+status: publish
+published: true
+title: iPhoneがiPhotoから認識されない
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 196
 wordpress_url: http://tjun.jp/blog/?p=196
-date: 2010-02-07 11:40:35 +09:00
+date: 2010-02-07 11:40:35.000000000 +09:00
+categories:
+- iphone
+- mac
+tags:
+- mac
+- iphone
+comments: []
 ---
 先日のiPhone OSアップデートくらいから、iPhoneをMac BookにつないでもiPhotoが立ち上がらなくなりました。
 iPhotoを起動しても、認識されていないため写真を吸い出せない。

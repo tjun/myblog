@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "fluentd-plugin-kestrel\xE3\x82\x92\xE6\x9B\xB4\xE6\x96\xB0\xE3\x81\x97\xE3\x81\xBE\xE3\x81\x97\xE3\x81\x9F"
+status: publish
+published: true
+title: fluentd-plugin-kestrelを更新しました
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1137
 wordpress_url: http://tjun.jp/blog/?p=1137
-date: 2012-06-03 04:09:48 +09:00
+date: 2012-06-03 04:09:48.000000000 +09:00
+categories:
+- server
+- ruby
+tags:
+- ruby
+- kestrel
+- fluentd
+comments: []
 ---
 kestrelへoutputするプラグインを以前作りました。
 
@@ -34,7 +48,7 @@ gemの作り方などいろいろ忘れていたのでメモ。
 参考にしたのは、
 <ul>
 	<li><a href="http://d.hatena.ne.jp/tagomoris/20120221/1329815126">fluentdのためのプラグインをイチから書く手順(bundler版) - tagomorisのメモ置き場</a></li>
-	<li><a href="http://d.hatena.ne.jp/seiunsky/20090723/1248357767">jeweler でらくらく rubygems 作成（github編） - @sugamasao.blog.title # =&gt; ”コードで世界を変えたい”</a></li>
+	<li><a href="http://d.hatena.ne.jp/seiunsky/20090723/1248357767">jeweler でらくらく rubygems 作成（github編） - @sugamasao.blog.title # => &rdquo;コードで世界を変えたい&rdquo;</a></li>
 </ul>
 
 updateの流れは、

@@ -1,9 +1,35 @@
---- 
+---
 layout: post
-title: "\xE7\x86\xB1\xE6\xB5\xB7\xE3\x81\xAE\xE3\x82\xBF\xE3\x82\xAF\xE3\x82\xB7\xE3\x83\xBC"
+status: publish
+published: true
+title: 熱海のタクシー
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 54
 wordpress_url: http://tjun.jp/blog/2009/09/%e7%86%b1%e6%b5%b7%e3%81%ae%e3%82%bf%e3%82%af%e3%82%b7%e3%83%bc/
-date: 2009-09-07 14:19:20 +09:00
+date: 2009-09-07 14:19:20.000000000 +09:00
+categories:
+- Diary
+tags:
+- blog
+- iphone
+comments:
+- id: 33
+  author: crescent1966
+  author_email: moon1629@topaz.plala.or.jp
+  author_url: http://www.moon1629.com
+  date: '2010-04-21 08:05:56 +0900'
+  date_gmt: '2010-04-20 23:05:56 +0900'
+  content: ! "今度熱海に行かれたら、中華の名店「壹番」に立ち寄ってみてはいかがですか？\r\nすごく美味しいですよ！\r\nhttp://www.ichiban-atami.com/\r\n是非おすすめです。"
+- id: 47
+  author: tjun
+  author_email: t.junichiro@gmail.com
+  author_url: http://tjun.jp/blog/
+  date: '2010-07-01 02:03:18 +0900'
+  date_gmt: '2010-06-30 17:03:18 +0900'
+  content: ありがとうございます、是非行ってみたいです！
 ---
 プロジェクトの合宿で熱海に行きました。
 

@@ -1,9 +1,35 @@
---- 
+---
 layout: post
-title: "\xE4\xBD\xBF\xE3\x81\x88\xE3\x82\x8B\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\xBC\xE3\x83\x88\xE3\x82\xAB\xE3\x83\x83\xE3\x83\x88\xE3\x82\xAD\xE3\x83\xBC(Windows)\xE3\x81\xBE\xE3\x81\xA8\xE3\x82\x81"
+status: publish
+published: true
+title: 使えるショートカットキー(Windows)まとめ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 337
 wordpress_url: http://zzz.jeeet.net/?p=337
-date: 2009-05-19 23:17:44 +09:00
+date: 2009-05-19 23:17:44.000000000 +09:00
+categories:
+- Diary
+- Windows
+tags:
+- Windows
+comments:
+- id: 92
+  author: ''
+  author_email: ''
+  author_url: ''
+  date: '2009-05-29 09:18:16 +0900'
+  date_gmt: '2009-05-29 00:18:16 +0900'
+  content: Fn+何とかは機種固有では？
+- id: 93
+  author: tjun
+  author_email: t.junichiro@gmail.com
+  author_url: ''
+  date: '2009-06-02 09:34:44 +0900'
+  date_gmt: '2009-06-02 00:34:44 +0900'
+  content: たしかにそうですね。ある程度共通しているものもあるようです。
 ---
 ショートカットキーを使えば作業効率も上がるし、パソコン慣れてる人に見えるので、使えるといいことばかりです。
 

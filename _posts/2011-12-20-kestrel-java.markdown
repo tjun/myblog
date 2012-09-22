@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Kestrel\xE3\x82\x92Java\xE3\x81\x8B\xE3\x82\x89\xE5\x88\xA9\xE7\x94\xA8\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: KestrelをJavaから利用する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1067
 wordpress_url: http://tjun.jp/blog/?p=1067
-date: 2011-12-20 00:12:16 +09:00
+date: 2011-12-20 00:12:16.000000000 +09:00
+categories:
+- java
+tags:
+- java
+- kestrel
+comments: []
 ---
 kestrelのセットアップについては以前の記事を参照してください。
 <ul>
@@ -44,15 +56,15 @@ import net.rubyeye.xmemcached.utils.AddrUtil;
     private XMemcachedClientBuilder builder = null;
     private MemcachedClient client = null;
     int expirationTime = 0;
-    String queueName = &quot;test&quot;;
-    Striing host = &quot;localhost&quot;;
-    int port = &quot;22133&quot;;
+    String queueName = "test";
+    Striing host = "localhost";
+    int port = "22133";
   
-    builder = new XMemcachedClientBuilder(AddrUtil.getAddresses(host + &quot;:&quot; + port));
+    builder = new XMemcachedClientBuilder(AddrUtil.getAddresses(host + ":" + port));
     builder.setCommandFactory(new KestrelCommandFactory());
     client = builder.build();
 
-    client.set(queueName, expirationTime, &quot;hello&quot;);
+    client.set(queueName, expirationTime, "hello");
 
     String res = client.get(queueName);
     System.out.println(res);

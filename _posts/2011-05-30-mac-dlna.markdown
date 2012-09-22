@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Mac\xE3\x81\xA7DLNA\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x90"
+status: publish
+published: true
+title: MacでDLNAサーバ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 828
 wordpress_url: http://tjun.jp/blog/?p=828
-date: 2011-05-30 22:11:39 +09:00
+date: 2011-05-30 22:11:39.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+- dlna
+- ps3
+comments: []
 ---
 <span style="font-size:10px;"><a href="http://www.igosso.net/flk/4234591869.html" target="_blank"><img src="http://farm3.static.flickr.com/2469/4234591869_55581100d0_m.jpg" alt="" /></a><br />ps3 / smemon87</span>
 
@@ -25,7 +38,7 @@ date: 2011-05-30 22:11:39 +09:00
 
 <a href="http://tjun.jp/blog/2011/05/mac-dlna/ps3mediaserver/" rel="attachment wp-att-848"><img src="http://tjun.jp/blog/wp-content/uploads/2011/05/PS3MediaServer-300x224.jpg" alt="" title="PS3MediaServer" width="300" height="224" class="aligncenter size-medium wp-image-848" /></a>
 
-これでネットワークの設定がうまくできていればPS3を起動すると、「ステータス」のタブにPS3の絵が出るんだけど、ダメな場合は×マークが出ます。「基本設定」のネットワークの設定を確認しましょう。
+これでネットワークの設定がうまくできていればPS3を起動すると、「ステータス」のタブにPS3の絵が出るんだけど、ダメな場合は&times;マークが出ます。「基本設定」のネットワークの設定を確認しましょう。
 基本的には、システム環境設定などからMac端末自身のIPを調べて、ネットワーク設定のIP設定に書きこめばOKだと思います。
 またサーバ再起動します。
 

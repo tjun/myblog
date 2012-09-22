@@ -1,9 +1,31 @@
---- 
+---
 layout: post
-title: "smart phone\xE5\x90\x91\xE3\x81\x91web\xE3\x82\xA2\xE3\x83\x97\xE3\x83\xAA\xE3\x81\xA7\xE5\x8A\xA0\xE9\x80\x9F\xE5\xBA\xA6\xE3\x82\xBB\xE3\x83\xB3\xE3\x82\xB5\xE3\x81\xAF\xE4\xBD\xBF\xE3\x81\x88\xE3\x81\xAA\xE3\x81\x84?"
+status: publish
+published: true
+title: smart phone向けwebアプリで加速度センサは使えない?
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 254
 wordpress_url: http://tjun.jp/blog/?p=254
-date: 2010-06-13 02:05:52 +09:00
+date: 2010-06-13 02:05:52.000000000 +09:00
+categories:
+- iphone
+- android
+tags:
+- iphone
+- android
+- sensor
+comments:
+- id: 253
+  author: Tweets that mention smart phone向けwebアプリで加速度センサは使えない? | tjun memo -- Topsy.com
+  author_email: ''
+  author_url: http://topsy.com/tjun.jp/blog/2010/06/web_application_for_smartphone_withsensor/?utm_source=pingback&amp;utm_campaign=L2
+  date: '2011-02-06 14:15:19 +0900'
+  date_gmt: '2011-02-06 05:15:19 +0900'
+  content: ! '[...]  This post was mentioned on Twitter by Takahiro Kamada, hiro.
+    hiro said: smart phone向けwebアプリで加速度センサは使えない? | tjun memo http://t.co/glxKCxA     [...]'
 ---
 iPhoneやandroidでウェブアプリから加速度センサの情報を利用したいなと思っていろいろ調べてみた。
 

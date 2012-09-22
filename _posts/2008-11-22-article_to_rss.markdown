@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE8\xA8\x98\xE4\xBA\x8B\xE3\x81\xAE\xE5\x85\xA8\xE6\x96\x87\xE3\x82\x92RSS\xE3\x83\x95\xE3\x82\xA3\xE3\x83\xBC\xE3\x83\x89\xE3\x81\xB8"
+status: publish
+published: true
+title: 記事の全文をRSSフィードへ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 396
 wordpress_url: http://zzz.jeeet.net/?p=159
-date: 2008-11-22 02:36:11 +09:00
+date: 2008-11-22 02:36:11.000000000 +09:00
+categories:
+- tips
+tags:
+- webservice
+- rss
+comments: []
 ---
 <a href="http://mrss.dokoda.jp/">RSSフィードを全文配信で読むなら まるごとRSS</a>.
 

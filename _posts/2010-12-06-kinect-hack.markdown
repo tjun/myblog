@@ -1,9 +1,20 @@
---- 
+---
 layout: post
+status: publish
+published: true
 title: Kinect Hack
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 692
 wordpress_url: http://tjun.jp/blog/?p=692
-date: 2010-12-06 02:17:25 +09:00
+date: 2010-12-06 02:17:25.000000000 +09:00
+categories:
+- Diary
+tags:
+- kinect
+comments: []
 ---
 KinectっていうのはXbox用のコントローラーで、カメラで人の動きを判定してそれをゲームの動きに利用しようっていうやつ、だと思う。
 

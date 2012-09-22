@@ -1,0 +1,36 @@
+---
+layout: page
+status: publish
+published: true
+title: about me
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
+wordpress_id: 2
+wordpress_url: http://tjun.jp/blog/?page_id=2
+date: 2009-07-21 20:12:21.000000000 +09:00
+categories:
+- Diary
+tags: []
+comments: []
+---
+<ul>
+	<li>名前：高木潤一郎</li>
+	<li>mail：mail at tjun.jp</li>
+	<li>web: <a href="http://tjun.jp">http://tjun.jp</a></li>
+	<li> 東京の大学院で研究してます.</li>
+	<li><a href="http://www.ipa.go.jp/jinzai/mitou/2009/2009_2/hontai/k_koubokekka.html#fujii">2009下期の未踏本体でクリエーターやってます．</a></li>
+</ul>
+<br />
+<ul>
+        <li><a href="http://twitter.com/tjun"><img src="/images/twitter.png" >tjun@twitter</a></li>
+        <li><a href="http://tjun.tumblr.com/"><img src="/images/tumblr.png" />tumblr</a></li>
+	<li><a href="http://foursquare.com/user/tjun"><img src="/images/foursquare.jpg">tjun@foursquare</a></li>
+	<li><a href="http://www.flickr.com/photos/taka-jun/"><img src="/images/flickr.png" >taka-jun@flickr</a></li>
+	<li><a href="http://friendfeed.com/takajun"><img src="/images/friendfeed.png" >takajun@Friend Feed</a></li>
+	<li><a href="http://www.facebook.com/takajun" /><img src="/images/facebook.gif" >takajun@facebook</a></li>
+	<li><a href="http://www.linkedin.com/in/junichiro" /><img src="/images/linkedin.png" >Linkedin</a></li>
+	<li><a href="http://b.hatena.ne.jp/taka-jun/"><img src="/images/hatena_bookmark.gif" >hatena bookmarks</a></li>
+</ul>
+

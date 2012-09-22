@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "debian(ubuntu)\xE3\x81\xA7\xE5\xBC\xB1\xE3\x81\x84\xE3\x83\x91\xE3\x82\xB9\xE3\x83\xAF\xE3\x83\xBC\xE3\x83\x89\xE3\x81\xAE\xE4\xBA\xBA\xE3\x82\x92\xE8\xA6\x8B\xE3\x81\xA4\xE3\x81\x91\xE3\x82\x8B(LDAP\xE7\xB7\xA8)"
+status: publish
+published: true
+title: debian(ubuntu)で弱いパスワードの人を見つける(LDAP編)
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 212
 wordpress_url: http://tjun.jp/blog/?p=212
-date: 2010-02-09 19:21:08 +09:00
+date: 2010-02-09 19:21:08.000000000 +09:00
+categories:
+- linux
+tags:
+- linux
+- security
+comments: []
 ---
 とあるサーバでユーザアカウントが乗っ取られて攻撃の踏み台に使われるという被害にあったので、対策のためパスワードの強度のチェックを行いました。
 

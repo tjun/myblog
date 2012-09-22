@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS+ubuntu+wordpress\xE3\x81\xABnginx\xE5\x85\xA5\xE3\x82\x8C\xE3\x81\x9F\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: さくらVPS+ubuntu+wordpressにnginx入れたメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 930
 wordpress_url: http://tjun.jp/blog/?p=930
-date: 2011-09-19 22:41:49 +09:00
+date: 2011-09-19 22:41:49.000000000 +09:00
+categories:
+- server
+- wordpress
+tags:
+- ubuntu
+- wordpress
+- nginx
+comments: []
 ---
 最近nginx（とリバースプロキシ）さくらVPSでwordpressを高速化する、系のpostをたびたび見るので、自分もやってみました。
 アクセスあんまりないからapacheでも十分だけど、nginx触ってみるのが主な目的です。
@@ -167,7 +181,7 @@ location / {
 if ($http_cookie ~* "comment_author_|wordpress_(?!test_cookie)|wp-postpass_" ) {
 set $do_not_cache 1;
 }
-if ($http_user_agent ~* “2.0\ 2MMP|240×320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800″) {
+if ($http_user_agent ~* &ldquo;2.0\ 2MMP|240&times;320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800&Prime;) {
 set $do_not_cache 1;
 }
 proxy_no_cache $do_not_cache;

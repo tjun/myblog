@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "\xE4\xB8\x8B\xE5\x8C\x97\xE3\x81\xA7\xE3\x82\xAB\xE3\x83\xAC\xE3\x83\xBC"
+status: publish
+published: true
+title: 下北でカレー
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 147
 wordpress_url: http://tjun.jp/blog/2009/11/%e4%b8%8b%e5%8c%97%e3%81%a7%e3%82%ab%e3%83%ac%e3%83%bc/
-date: 2009-11-23 03:33:28 +09:00
+date: 2009-11-23 03:33:28.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+- Diary
+comments: []
 ---
 <a title="photo sharing" href="http://www.flickr.com/photos/taka-jun/4125542418/"><img style="border: solid 2px #000000;" src="http://farm3.static.flickr.com/2518/4125542418_8c5fc1970a_m.jpg" alt="" /></a>
 <span style="font-size: 0.9em; margin-top: 0px;"><a href="http://www.flickr.com/people/taka-jun/"></a>

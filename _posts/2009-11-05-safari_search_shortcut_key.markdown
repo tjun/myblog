@@ -1,9 +1,28 @@
---- 
+---
 layout: post
-title: "safari\xE3\x81\xA7\xE3\x82\x82cmd+k\xE3\x81\xA7\xE6\xA4\x9C\xE7\xB4\xA2\xE3\x81\x97\xE3\x81\x9F\xE3\x81\x84"
+status: publish
+published: true
+title: safariでもcmd+kで検索したい
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 118
 wordpress_url: http://tjun.jp/blog/?p=118
-date: 2009-11-05 02:16:34 +09:00
+date: 2009-11-05 02:16:34.000000000 +09:00
+categories:
+- Diary
+tags:
+- mac
+- safari
+comments:
+- id: 7
+  author: Firefoxからsafariに移行 | tjun blog
+  author_email: ''
+  author_url: http://tjun.jp/blog/2009/11/firefox_to_safari%e3%81%ab/
+  date: '2009-11-05 02:25:32 +0900'
+  date_gmt: '2009-11-04 17:25:32 +0900'
+  content: ! '[...] safariでもcmd+kで検索したい (0) [...]'
 ---
 Firefoxからsafariに移行する際に，気になったのがgoogle検索するためのショートカットキーの変化．
 
@@ -15,7 +34,7 @@ FirefoxではCmd+kで検索窓に行けたのだが，safariは違うらしい�
 
 
 そして「アプリケーション」に　「safari」
-「メニュータイトル」に　「Google 検索…」（これはスペースなども全く同じように入力する必要があるらしい）
+「メニュータイトル」に　「Google 検索&hellip;」（これはスペースなども全く同じように入力する必要があるらしい）
 「キーボードショートカット」で「Cmd+k」を押す
 
 <img src="http://tjun.jp/blog/wp-content/uploads/2009/11/5d4f4db84642adb9911054c965a4c9a7-300x148.jpg" alt="keyboard_setting2" title="keyboard_setting2" width="300" height="148" class="aligncenter size-medium wp-image-120" />

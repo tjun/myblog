@@ -1,9 +1,24 @@
---- 
+---
 layout: post
-title: "Ubuntu11.04\xE3\x81\xA7rails"
+status: publish
+published: true
+title: Ubuntu11.04でrails
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 810
 wordpress_url: http://tjun.jp/blog/?p=810
-date: 2011-05-28 10:11:17 +09:00
+date: 2011-05-28 10:11:17.000000000 +09:00
+categories:
+- programming
+- ubuntu
+- ruby
+tags:
+- ruby
+- ubuntu
+- rails
+comments: []
 ---
 今までrubyは使ってたけどrailsは使ったことなかったので、少し勉強を始めました。
 

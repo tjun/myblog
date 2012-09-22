@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "Ruby\xE3\x81\xA7twitter, facebook, instagram\xE3\x81\xAA\xE3\x81\xA9\xE3\x81\xAE\xE8\xAA\x8D\xE8\xA8\xBC"
+status: publish
+published: true
+title: Rubyでtwitter, facebook, instagramなどの認証
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 851
 wordpress_url: http://tjun.jp/blog/?p=851
-date: 2011-06-04 10:54:21 +09:00
+date: 2011-06-04 10:54:21.000000000 +09:00
+categories:
+- ruby
+- twitter
+tags:
+- twitter
+- ruby
+- oauth
+comments: []
 ---
 最近のソーシャルなサービスをアプリケーションと連携するには、Oauthで認証する必要があります。
 これを自分で全部やるのは結構大変なので、ライブラリを使います。

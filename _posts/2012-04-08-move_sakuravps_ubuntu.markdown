@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS\xE3\x82\x92512M\xE3\x81\x8B\xE3\x82\x891G\xE3\x81\xB8\xE7\xA7\xBB\xE8\xA1\x8C\xE3\x81\x97\xE3\x81\x9F\xE3\x83\xA1\xE3\x83\xA2(ubuntu)"
+status: publish
+published: true
+title: さくらVPSを512Mから1Gへ移行したメモ(ubuntu)
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1119
 wordpress_url: http://tjun.jp/blog/?p=1119
-date: 2012-04-08 21:36:22 +09:00
+date: 2012-04-08 21:36:22.000000000 +09:00
+categories:
+- server
+- linux
+- ubuntu
+tags:
+- ubuntu
+- さくらvps
+comments: []
 ---
 このブログはさくらVPSで動かしてます。
 同じ料金で、メモリ512Mのマシンからメモリ1Gのマシンに乗り換えられるということで、乗り換えました。

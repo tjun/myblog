@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "iPhoto\xE3\x81\x8B\xE3\x82\x89Flickr\xE3\x81\xAE\xE8\xA8\xAD\xE5\xAE\x9A\xE3\x82\x92\xE4\xBF\xAE\xE6\xAD\xA3\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: iPhotoからFlickrの設定を修正する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 56
 wordpress_url: http://tjun.jp/blog/2009/09/iphoto%e3%81%8b%e3%82%89flickr%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%82%92%e4%bf%ae%e6%ad%a3%e3%81%99%e3%82%8b/
-date: 2009-09-07 23:38:04 +09:00
+date: 2009-09-07 23:38:04.000000000 +09:00
+categories:
+- Diary
+tags:
+- mac
+comments: []
 ---
 <p>以前は普通にアップロードできていたのですが、最近iPhotoからFlickrへのアップロードをしたいのに</p>
 <p>「ログインエラー、認証トークンが無効です」</p>

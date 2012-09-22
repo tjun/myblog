@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "fluentd\xE4\xBD\xBF\xE3\x81\xA3\xE3\x81\xA6dstat\xE3\x81\xAE\xE7\xB5\x90\xE6\x9E\x9C\xE3\x82\x92growthforecast\xE3\x81\xA7\xE8\xA1\xA8\xE7\xA4\xBA\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: fluentd使ってdstatの結果をgrowthforecastで表示する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1144
 wordpress_url: http://tjun.jp/blog/?p=1144
-date: 2012-06-03 23:29:40 +09:00
+date: 2012-06-03 23:29:40.000000000 +09:00
+categories:
+- server
+- linux
+tags:
+- nginx
+- fluentd
+comments: []
 ---
 dstatでサーバの状態を取得して、fluentdで集めて、growthforecastでグラフにする、というのをやってみました。
 
@@ -22,11 +35,11 @@ dstatをfluentdにつなぐのに、<a href="https://github.com/shun0102/fluent-
 できれば元のものをうまい具合にparseして繋ぎたいのだけど、やり方がよく分からなかった。。
 
 設定はこんな感じ
-<pre>&lt;source&gt;
+<pre><source>
   type dstat
   tag dstat
   option -cmdn delay 5
-&lt;/source&gt;</pre>
+</source></pre>
 
 
 <h3>growthforecast</h3>
@@ -37,37 +50,37 @@ growthforecastは、APIに投げたデータをグラフィカルにしてくれ
 fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を使います。
 
 設定はこんな感じ。
-<pre>&lt;match dstat&gt;
+<pre><match dstat>
   type copy
-  &lt;store&gt;
+  <store>
     type growthforecast
     gfapi_url http://localhost:5000/api/
     service dstat
     section cpu
     name_key_pattern cpu-.*
-  &lt;/store&gt;
-  &lt;store&gt;
+  </store>
+  <store>
     type growthforecast
     gfapi_url http://localhost:5000/api/
     service dstat
     section mem
     name_key_pattern mem-.*
-  &lt;/store&gt;
-  &lt;store&gt;
+  </store>
+  <store>
     type growthforecast
     gfapi_url http://localhost:5000/api/
     service dstat
     section dsk
     name_key_pattern dsk-.*
-  &lt;/store&gt;
-  &lt;store&gt;
+  </store>
+  <store>
     type growthforecast
     gfapi_url http://localhost:5000/api/
     service dstat
     section net
     name_key_pattern net-.*
-  &lt;/store&gt;
-&lt;/match&gt;</pre>
+  </store>
+</match></pre>
 すると、以下のような感じでCPU使用率やメモリ使用量が表示できるようになりました。
 
 <a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-cpu/" rel="attachment wp-att-1150"><img src="http://tjun.jp/blog/wp-content/uploads/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full wp-image-1150" /></a>
@@ -86,22 +99,22 @@ fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を�
 データの集計には、<a href="https://github.com/tagomoris/fluent-plugin-datacounter">tagomoris/fluent-plugin-datacounter</a>を使いました。
 
 fluentdの設定は以下のような感じ。
-<pre>&lt;source&gt;
+<pre><source>
   type tail
-  format /^(?&lt;host&gt;[^ ]*) [^ ]* (?&lt;user&gt;[^ ]*) \[(?&lt;reqtime&gt;[^\]]*)\] "(?&lt;method&gt;[^ ]*) (?&lt;path&gt;[^ ]*) [^\"]*" (?&lt;code&gt;[^ ]*) (?&lt;size&gt;[^ ]*) "(?&lt;referer&gt;[^\"]*)" "(?&lt;agent&gt;[^\"]*)" (?&lt;response_time&gt;[^ ]*)$/
+  format /^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<reqtime>[^\]]*)\] "(?<method>[^ ]*) (?<path>[^ ]*) [^\"]*" (?<code>[^ ]*) (?<size>[^ ]*) "(?<referer>[^\"]*)" "(?<agent>[^\"]*)" (?<response_time>[^ ]*)$/
   path /var/log/nginx/access.log
   tag nginx.access
   pos_file /etc/fluent/nginx_pos
-&lt;/source&gt;
+</source>
 
 # counter
-&lt;match nginx.access&gt;
+<match nginx.access>
   type copy
-  &lt;store&gt;
+  <store>
     type file
     path /var/log/fluent/access
-  &lt;/store&gt;
-  &lt;store&gt;
+  </store>
+  <store>
     type datacounter
     #unit hour
     count_interval 10m
@@ -113,8 +126,8 @@ fluentdの設定は以下のような感じ。
     pattern2 3xx 3\d\d
     pattern3 4xx 4\d\d
     pattern4 5xx 5\d\d
-  &lt;/store&gt;
-  &lt;store&gt;
+  </store>
+  <store>
     type datacounter
     #unit hour
     count_interval 10m
@@ -130,18 +143,18 @@ fluentdの設定は以下のような感じ。
     pattern6 2_4.99s [2-4]\.\d+$
     pattern7 5_9.99s [5-9]\.\d+$
     pattern8 10s_over \d{2,}\.\d+$
-  &lt;/store&gt;
-&lt;/match&gt;
+  </store>
+</match>
 
 #growthforecast
-&lt;match nginx.datacount.**&gt;
+<match nginx.datacount.**>
   type growthforecast
   gfapi_url http://localhost:5000/api/
   service nginx
   tag_for section
   remove_prefix nginx.datacount
   name_key_pattern .*_(rate|count|percentage)$
-&lt;/match&gt;
+</match>
 </pre>
 
 リクエストタイムの割合の変化

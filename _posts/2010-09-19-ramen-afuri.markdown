@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "\xE3\x83\xA9\xE3\x83\xBC\xE3\x83\xA1\xE3\x83\xB3AFURI"
+status: publish
+published: true
+title: ラーメンAFURI
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 611
 wordpress_url: http://tjun.jp/blog/?p=611
-date: 2010-09-19 00:51:54 +09:00
+date: 2010-09-19 00:51:54.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+- ラーメン
+comments: []
 ---
 夜中にラーメンが食べたくなったので、家から研究室への自転車ルートの近くにあるおいしそうなラーメン屋を調べて、原宿にあるラーメンAFURIに行きました。
 

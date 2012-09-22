@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Vista\xE3\x81\xABCygwin\xE3\x82\x92\xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xB9\xE3\x83\x88\xE3\x83\xBC\xE3\x83\xAB\xE3\x81\x97\xE3\x81\xA6\xE8\xA8\xAD\xE5\xAE\x9A"
+status: publish
+published: true
+title: VistaにCygwinをインストールして設定
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 379
 wordpress_url: http://zzz.jeeet.net/2008/07/vista%e3%81%abcygwin%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%a6%e8%a8%ad%e5%ae%9a/
-date: 2008-07-13 13:33:59 +09:00
+date: 2008-07-13 13:33:59.000000000 +09:00
+categories:
+- Windows
+tags:
+- cygwin
+- vista
+- Windows
+comments: []
 ---
 vistaと相性の悪いと言われているcygwinですが，やっぱり必要なので入れました．
 そのときのメモです．
@@ -43,7 +56,7 @@ vistaと相性の悪いと言われているcygwinですが，やっぱり必要
 <strong>homeディレクトリの変更</strong>をしたいときは
 
 
-「<strong>コントロールパネル</strong>」-&gt;「<strong>システム</strong>」-「<strong>詳細設定</strong>」-&gt;「<strong>環境変数</strong>」から「<strong>新規</strong>」で
+「<strong>コントロールパネル</strong>」->「<strong>システム</strong>」-「<strong>詳細設定</strong>」->「<strong>環境変数</strong>」から「<strong>新規</strong>」で
 
 例えば，
 <pre>変数名：HOME

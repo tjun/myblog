@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE3\x82\xB9\xE3\x82\xA6\xE3\x82\xA7\xE3\x83\xBC\xE3\x83\x87\xE3\x83\xB3\xE5\xBC\x8F\xE3\x82\xA2\xE3\x82\xA4\xE3\x83\x87\xE3\x82\xA2\xE3\x83\xBB\xE3\x83\x96\xE3\x83\x83\xE3\x82\xAF"
+status: publish
+published: true
+title: スウェーデン式アイデア・ブック
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 261
 wordpress_url: http://tjun.jp/blog/?p=261
-date: 2010-06-13 15:40:12 +09:00
+date: 2010-06-13 15:40:12.000000000 +09:00
+categories:
+- book
+tags:
+- book
+comments: []
 ---
 昨日読んだ本。<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4478760969/tjun-22/ref=nosim/" name="amazletlink" target="_blank">スウェーデン式 アイデア・ブック</a>。
 

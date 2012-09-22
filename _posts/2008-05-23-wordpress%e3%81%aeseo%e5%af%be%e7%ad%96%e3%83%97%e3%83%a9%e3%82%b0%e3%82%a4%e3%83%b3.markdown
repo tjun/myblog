@@ -1,18 +1,31 @@
---- 
+---
 layout: post
-title: "Wordpress\xE3\x81\xAESEO\xE5\xAF\xBE\xE7\xAD\x96\xE3\x83\x97\xE3\x83\xA9\xE3\x82\xB0\xE3\x82\xA4\xE3\x83\xB3"
+status: publish
+published: true
+title: WordpressのSEO対策プラグイン
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 358
 wordpress_url: http://zzz.jeeet.net/?p=14
-date: 2008-05-23 00:26:00 +09:00
+date: 2008-05-23 00:26:00.000000000 +09:00
+categories:
+- tips
+- wordpress
+tags:
+- plugin
+- wordpress
+comments: []
 ---
 WordpressのSEO対策。wordpress2.5での動作を確認しています．
 
 <a href="http://wordpress.org/extend/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>というプラグインをインストールすれば，記事ごとにキーワードを決めたり，タイトルの表示を記事名とブログ名両方にしたりと，さまざまなSEO対策ができるようになります．
 
-ダウンロードはこちらから→ <a href="http://wordpress.org/extend/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>
+ダウンロードはこちらから&rarr; <a href="http://wordpress.org/extend/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>
 
 インストールは，上記のページの右上の「<strong>Download</strong>」からダウンロードして解凍した「<strong>all-in-one-seo-pack</strong>」というフォルダをそのままwordpressの<strong>/wp-content/plugins/</strong>におくだけ．
 
-あとは，管理画面でプラグインを有効にすれば，設定画面にオールインワン…というタブが現れるのでタイトルの表示方法を変えたり，また記事を書く際にもキーワードなどが設定できるようになります．
+あとは，管理画面でプラグインを有効にすれば，設定画面にオールインワン&hellip;というタブが現れるのでタイトルの表示方法を変えたり，また記事を書く際にもキーワードなどが設定できるようになります．
 
 とても簡単なので試してみては．

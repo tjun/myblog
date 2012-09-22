@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "Cygwin in Windows Vista\xE3\x81\xA7\xE3\x81\xAE\xE3\x83\x88\xE3\x83\xA9\xE3\x83\x96\xE3\x83\xAB\xE8\xA7\xA3\xE6\xB1\xBA"
+status: publish
+published: true
+title: Cygwin in Windows Vistaでのトラブル解決
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 380
 wordpress_url: http://zzz.jeeet.net/?p=83
-date: 2008-07-16 02:58:49 +09:00
+date: 2008-07-16 02:58:49.000000000 +09:00
+categories:
+- tips
+- Windows
+tags:
+- cygwin
+- vista
+- Windows
+comments: []
 ---
 zshを使っているせいか、シェルの起動時やコマンド入力時にparameter.dllがどうのこうのっていうエラーが頻繁に出てしまうことがあった.
 

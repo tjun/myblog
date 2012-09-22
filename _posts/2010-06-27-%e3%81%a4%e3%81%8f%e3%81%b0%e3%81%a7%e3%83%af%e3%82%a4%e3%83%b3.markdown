@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE3\x81\xA4\xE3\x81\x8F\xE3\x81\xB0\xE3\x81\xA7\xE3\x83\xAF\xE3\x82\xA4\xE3\x83\xB3"
+status: publish
+published: true
+title: つくばでワイン
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 266
 wordpress_url: http://tjun.jp/blog/2010/06/%e3%81%a4%e3%81%8f%e3%81%b0%e3%81%a7%e3%83%af%e3%82%a4%e3%83%b3/
-date: 2010-06-27 17:09:14 +09:00
+date: 2010-06-27 17:09:14.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+comments: []
 ---
 筑波大の川島先生のもとに、データベースの研究と実装の相談に行ってきました。
 

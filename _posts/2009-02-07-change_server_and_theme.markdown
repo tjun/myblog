@@ -1,13 +1,26 @@
---- 
+---
 layout: post
-title: "wordpress\xE3\x81\xAE\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x90\xE7\xA7\xBB\xE8\xA1\x8C\xEF\xBC\x86\xE3\x83\x86\xE3\x83\xBC\xE3\x83\x9E\xE5\xA4\x89\xE3\x81\x88"
+status: publish
+published: true
+title: wordpressのサーバ移行＆テーマ変え
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 306
 wordpress_url: http://zzz.jeeet.net/?p=306
-date: 2009-02-07 12:12:11 +09:00
+date: 2009-02-07 12:12:11.000000000 +09:00
+categories:
+- Diary
+- wordpress
+tags:
+- Diary
+- wordpress
+comments: []
 ---
 なんか動きがもっさりしていたので，サーバー変えたりしました．
 
-wordpressを移す場合，ウィジェットなどを引き継がなくてよいなら，新しいサーバーにwordpresssをインストールして，古いwordpressから<strong>エクスポート</strong>→新しいwordpressで<strong>インポート</strong>すると，記事の移動じたいはすぐ終わります．
+wordpressを移す場合，ウィジェットなどを引き継がなくてよいなら，新しいサーバーにwordpresssをインストールして，古いwordpressから<strong>エクスポート</strong>&rarr;新しいwordpressで<strong>インポート</strong>すると，記事の移動じたいはすぐ終わります．
 
 サーバーを移してドメインを引き継ぐ場合，ネームサーバー移したりするのがちょっと面倒かも．
 

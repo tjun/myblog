@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "[mac]ReSpaceApp\xE3\x81\xA7\xE4\xBB\xA5\xE5\x89\x8D\xE3\x81\xAE\xE4\xB8\x8A\xE4\xB8\x8B\xE5\xB7\xA6\xE5\x8F\xB3\xE3\x81\xAEspaces\xE3\x82\x92\xE5\x8F\x96\xE3\x82\x8A\xE6\x88\xBB\xE3\x81\x99"
+status: publish
+published: true
+title: ! '[mac]ReSpaceAppで以前の上下左右のspacesを取り戻す'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1111
 wordpress_url: http://tjun.jp/blog/?p=1111
-date: 2012-03-10 01:14:13 +09:00
+date: 2012-03-10 01:14:13.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+comments: []
 ---
 Mac OS Lionから、spacesがMissionControlに統合されて?、左右に連続するspacesしか作れなくなってしまいました。
 snow leopardの頃のように、上下左右にspacesを作りたい、というときは、ReSpaceAppというアプリを入れると、以前のようなspacesが作れます。

@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "[mac]opendirectoryd\xE3\x81\xAE\xE6\x9A\xB4\xE8\xB5\xB0\xE3\x82\x92\xE8\xA7\xA3\xE6\xB1\xBA"
+status: publish
+published: true
+title: ! '[mac]opendirectorydの暴走を解決'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1078
 wordpress_url: http://tjun.jp/blog/?p=1078
-date: 2012-01-07 01:02:43 +09:00
+date: 2012-01-07 01:02:43.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+comments: []
 ---
 環境はMacBookAir2010?, Mac OSX 10.7.2 Lionでした。
 CPU使用率が突然高くなることがあって調べてみると、opendirectorydというプロセスが50%くらい消費してた。

@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "Android\xE7\xAB\xAF\xE6\x9C\xAB\xE3\x81\xAE\xE7\x94\xBB\xE9\x9D\xA2\xE3\x82\x92PC\xE3\x81\xAE\xE7\x94\xBB\xE9\x9D\xA2\xE4\xB8\x8A\xE3\x81\xAB\xE8\xA1\xA8\xE7\xA4\xBA"
+status: publish
+published: true
+title: Android端末の画面をPCの画面上に表示
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 645
 wordpress_url: http://tjun.jp/blog/?p=645
-date: 2010-10-30 21:43:02 +09:00
+date: 2010-10-30 21:43:02.000000000 +09:00
+categories:
+- android
+tags:
+- android
+comments: []
 ---
 前回書くつもりで忘れてた。
 Android端末の画面をPC上に表示できるソフトがあります。

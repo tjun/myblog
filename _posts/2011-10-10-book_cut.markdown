@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "\xE6\x9C\xAC\xE3\x81\xAE\xE8\xA3\x81\xE6\x96\xAD\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x93\xE3\x82\xB9\xE3\x82\x92\xE5\x88\xA9\xE7\x94\xA8\xE3\x81\x97\xE3\x81\xA6\xE3\x81\xBF\xE3\x81\x9F"
+status: publish
+published: true
+title: 本の裁断サービスを利用してみた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1004
 wordpress_url: http://tjun.jp/blog/?p=1004
-date: 2011-10-10 23:00:34 +09:00
+date: 2011-10-10 23:00:34.000000000 +09:00
+categories:
+- Diary
+- book
+tags:
+- Diary
+- book
+comments: []
 ---
 
 家に本が溜まってきたので、電子化しよう、と思いましたが、裁断機は場所を取るので裁断機を買わずに本の電子化することを考えました。

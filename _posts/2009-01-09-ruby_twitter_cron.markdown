@@ -1,9 +1,30 @@
---- 
+---
 layout: post
-title: "15\xE6\x99\x82\xE3\x81\xABtwitter\xE3\x81\xAB\xE3\x82\xAE\xE3\x83\xA3\xE3\x82\xB0\xE3\x82\x92\xE6\x8A\x95\xE3\x81\x92\xE3\x82\x8B\xE3\x83\x97\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\xA9\xE3\x83\xA0\xE3\x82\x92Ruby\xE3\x81\xA7"
+status: publish
+published: true
+title: 15時にtwitterにギャグを投げるプログラムをRubyで
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 405
 wordpress_url: http://zzz.jeeet.net/?p=248
-date: 2009-01-09 03:28:31 +09:00
+date: 2009-01-09 03:28:31.000000000 +09:00
+categories:
+- ubuntu
+- ruby
+- twitter
+tags:
+- twitter
+- ruby
+comments:
+- id: 90
+  author: twitterのダイレクトメッセージを受信するプログラムをrubyで | ふじゅんブログ
+  author_email: ''
+  author_url: http://tjun.jp/blog/2009/01/twitter_receive_dm_by_ruby/
+  date: '2009-01-15 03:13:21 +0900'
+  date_gmt: '2009-01-14 18:13:21 +0900'
+  content: ! '[...] 15時にtwitterにギャグを投げるプログラムをRubyで  [...]'
 ---
 <div class="zemanta-img" style="margin: 1em; float: right; display: block;">
 <div><dl class="wp-caption"> <dt class="wp-caption-dt"><img src="http://www.crunchbase.com/assets/images/resized/0000/2755/2755v2-max-450x450.png" alt="Image representing Twitter as depicted in Crun..." title="Image representing Twitter as depicted in Crun..." width="210" height="49" /></dt> <dd class="wp-caption-dd zemanta-img-attribution" style="font-size: 0.8em;">Image via CrunchBase</dd> </dl></div>

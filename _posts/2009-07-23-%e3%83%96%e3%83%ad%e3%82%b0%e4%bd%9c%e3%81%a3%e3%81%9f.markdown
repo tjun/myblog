@@ -1,8 +1,18 @@
---- 
+---
 layout: post
-title: "\xE3\x83\x96\xE3\x83\xAD\xE3\x82\xB0\xE4\xBD\x9C\xE3\x81\xA3\xE3\x81\x9F"
+status: publish
+published: true
+title: ブログ作った
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 3
 wordpress_url: http://tjun.jp/blog/?p=3
-date: 2009-07-23 20:04:58 +09:00
+date: 2009-07-23 20:04:58.000000000 +09:00
+categories:
+- Diary
+tags: []
+comments: []
 ---
 新しくドメイン取ったのに合わせてブログを始めます

@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "mysql\xE3\x81\xAE\xE3\x83\x86\xE3\x83\xBC\xE3\x83\x96\xE3\x83\xAB\xE3\x81\xAE\xE4\xBF\x9D\xE5\xAD\x98\xE3\x81\xA8\xE3\x82\xB3\xE3\x83\x94\xE3\x83\xBC"
+status: publish
+published: true
+title: mysqlのテーブルの保存とコピー
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 308
 wordpress_url: http://zzz.jeeet.net/?p=308
-date: 2009-04-21 11:35:08 +09:00
+date: 2009-04-21 11:35:08.000000000 +09:00
+categories:
+- db
+tags:
+- db
+- mysql
+comments: []
 ---
 たまにやるのにやり方いつも忘れるから自分用にメモ．
 
@@ -11,7 +23,7 @@ date: 2009-04-21 11:35:08 +09:00
 別のやり方もあると思うけど，個人的にはテーブルの作成からやってくれるこの方法が好き．
 
 <pre>mysqldump --u [user_name] --p --database [db_name] --tables [table_name]
-&gt; output.sql
+> output.sql
 </pre>
 
 これでテーブルの内容を，output.sqlというファイルに出力することができます。
@@ -19,7 +31,7 @@ date: 2009-04-21 11:35:08 +09:00
 ファイルをlessなどで見れば，内容がわかると思います。
 
 これを他のデータベースに挿入するには，
-<pre>mysql -u [user_name] -p [db_name] &lt; output.sql</pre>
+<pre>mysql -u [user_name] -p [db_name] < output.sql</pre>
 
 でOK。
 

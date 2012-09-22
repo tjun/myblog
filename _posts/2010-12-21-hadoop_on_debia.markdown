@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "debian\xE3\x81\xA7Hadoop(\xE5\xAE\x8C\xE5\x85\xA8\xE5\x88\x86\xE6\x95\xA3)\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: debianでHadoop(完全分散)メモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 678
 wordpress_url: http://tjun.jp/blog/?p=678
-date: 2010-12-21 02:59:25 +09:00
+date: 2010-12-21 02:59:25.000000000 +09:00
+categories:
+- linux
+tags:
+- linux
+- hadoop
+- debian
+comments: []
 ---
 debianでhadoopを動かしてみたときのメモ。
 正直まだ全然分かってないので、間違ってるかもしれません。
@@ -36,7 +49,7 @@ sources.listを編集。(for jdk)
 
 変更
 deb http://ftp.jp.debian.org/debian/ lenny main
-　→   deb http://ftp.jp.debian.org/debian/ lenny main non-free
+　&rarr;   deb http://ftp.jp.debian.org/debian/ lenny main non-free
 </pre>
 
 
@@ -104,68 +117,68 @@ slaveのIPを1行に1つ書く。
 <strong>core-site.xml</strong>
 masterのIPを入れる。
 [xml]
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;configuration.xsl&quot;?&gt;
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
-&lt;!-- Put site-specific property overrides in this file. --&gt;
+<!-- Put site-specific property overrides in this file. -->
 
-&lt;configuration&gt;
-  &lt;property&gt;
-    &lt;name&gt;fs.default.name&lt;/name&gt;
-    &lt;value&gt;hdfs://[master IP]:9000&lt;/value&gt;  
-  &lt;/property&gt;
+<configuration>
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://[master IP]:9000</value>  
+  </property>
 
-  &lt;property&gt;
-     &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
-     &lt;value&gt;/var/lib/hadoop/cache/${user.name}&lt;/value&gt;
-  &lt;/property&gt;
+  <property>
+     <name>hadoop.tmp.dir</name>
+     <value>/var/lib/hadoop/cache/${user.name}</value>
+  </property>
 
-&lt;/configuration&gt;
+</configuration>
 [/xml]
 
 <strong>hdfs-site.xml</strong>
 [xml]
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;configuration.xsl&quot;?&gt;
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
-&lt;!-- Put site-specific property overrides in this file. --&gt;
+<!-- Put site-specific property overrides in this file. -->
 
-&lt;configuration&gt;
+<configuration>
 
-  &lt;property&gt;
-     &lt;!-- specify this so that running 'hadoop namenode -format' formats the right dir --&gt;
-     &lt;name&gt;dfs.name.dir&lt;/name&gt;
-     &lt;value&gt;${hadoop.tmp.dir}/dfs/name&lt;/value&gt;
-  &lt;/property&gt;
+  <property>
+     <!-- specify this so that running 'hadoop namenode -format' formats the right dir -->
+     <name>dfs.name.dir</name>
+     <value>${hadoop.tmp.dir}/dfs/name</value>
+  </property>
 
-  &lt;property&gt;
-    &lt;name&gt;dfs.data.dir&lt;/name&gt;
-    &lt;value&gt;${hadoop.tmp.dir}/dfs/data&lt;/value&gt;
-  &lt;/property&gt;
+  <property>
+    <name>dfs.data.dir</name>
+    <value>${hadoop.tmp.dir}/dfs/data</value>
+  </property>
 
-  &lt;property&gt;
-    &lt;name&gt;dfs.replication&lt;/name&gt;
-    &lt;value&gt;4&lt;/value&gt;
-  &lt;/property&gt;
+  <property>
+    <name>dfs.replication</name>
+    <value>4</value>
+  </property>
 
-&lt;/configuration&gt;
+</configuration>
 [/xml]
 
 
 <strong>mapred-site.xml</strong>
 [xml]
-&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;configuration.xsl&quot;?&gt;
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
-&lt;!-- Put site-specific property overrides in this file. --&gt;
+<!-- Put site-specific property overrides in this file. -->
 
-&lt;configuration&gt;
-  &lt;property&gt;
-    &lt;name&gt;mapred.job.tracker&lt;/name&gt;
-    &lt;value&gt;[master IP]:9001&lt;/value&gt;
-  &lt;/property&gt;
+<configuration>
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>[master IP]:9001</value>
+  </property>
 
-&lt;/configuration&gt;
+</configuration>
 [/xml]
 
 

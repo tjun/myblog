@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "PC\xE3\x81\xAE\xE7\x94\xBB\xE9\x9D\xA2\xE3\x82\x92\xE3\x82\xAD\xE3\x83\xA3\xE3\x83\x97\xE3\x83\x81\xE3\x83\xA3\xE3\x81\x97\xE3\x81\xA6youtube\xE3\x81\xB8"
+status: publish
+published: true
+title: PCの画面をキャプチャしてyoutubeへ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 333
 wordpress_url: http://zzz.jeeet.net/?p=333
-date: 2009-05-17 23:32:06 +09:00
+date: 2009-05-17 23:32:06.000000000 +09:00
+categories:
+- Diary
+- News
+tags:
+- app
+- youtube
+comments: []
 ---
 PCの画面をキャプチャーするフリーソフトが紹介されていたので、それを使ってみた。
 

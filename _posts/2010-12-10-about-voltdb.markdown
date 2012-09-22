@@ -1,9 +1,27 @@
---- 
+---
 layout: post
-title: "VoltDB\xE3\x81\xAB\xE3\x81\xA4\xE3\x81\x84\xE3\x81\xA6\xE8\xAA\xBF\xE3\x81\xB9\xE3\x81\xA6\xE3\x82\x8B\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: VoltDBについて調べてるメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 698
 wordpress_url: http://tjun.jp/blog/?p=698
-date: 2010-12-10 03:40:59 +09:00
+date: 2010-12-10 03:40:59.000000000 +09:00
+categories:
+- db
+tags:
+- db
+comments:
+- id: 214
+  author: river24
+  author_email: river2470@gmail.com
+  author_url: ''
+  date: '2010-12-10 04:34:37 +0900'
+  date_gmt: '2010-12-09 19:34:37 +0900'
+  content: 勉強になります．
 ---
 VoltDBは、オープンソースの高速なSQLデータベースです。
 

@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Magic Mouse\xE3\x82\xB2\xE3\x83\x83\xE3\x83\x88\xE3\x81\x97\xE3\x81\x9F"
+status: publish
+published: true
+title: Magic Mouseゲットした
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 113
 wordpress_url: http://tjun.jp/blog/?p=113
-date: 2009-11-05 01:54:48 +09:00
+date: 2009-11-05 01:54:48.000000000 +09:00
+categories:
+- Diary
+- mac
+tags:
+- mac
+comments: []
 ---
 Appleの新しいマウスが気になるので，ちょうどデスクトップ用のワイアレスマウスも欲しかったし買ってしまった．
 

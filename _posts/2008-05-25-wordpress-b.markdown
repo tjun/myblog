@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Wordpress\xE3\x81\xA7\xE6\x94\xB9\xE8\xA1\x8C\xE3\x82\x92\xE6\x80\x9D\xE3\x81\x84\xE9\x80\x9A\xE3\x82\x8A\xE3\x81\xAB\xE8\xA1\x8C\xE3\x81\x86\xE3\x83\x97\xE3\x83\xA9\xE3\x82\xB0\xE3\x82\xA4\xE3\x83\xB3"
+status: publish
+published: true
+title: Wordpressで改行を思い通りに行うプラグイン
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 364
 wordpress_url: http://zzz.jeeet.net/?p=35
-date: 2008-05-25 12:04:53 +09:00
+date: 2008-05-25 12:04:53.000000000 +09:00
+categories:
+- tips
+- wordpress
+tags:
+- plugin
+- wordpress
+comments: []
 ---
 <div class="zemanta-img" style="margin: 1em; float: right;"><a href="http://commons.wikipedia.org/wiki/Image:Enter.png" target="_blank"><img style="border: medium none; display: block;" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Enter.png/202px-Enter.png" alt="Return/Enter buttons on a keyboard." /></a>
 <p class="zemanta-img-attribution">Image via <a href="http://commons.wikipedia.org/wiki/Image:Enter.png" target="_blank">Wikipedia</a></p>

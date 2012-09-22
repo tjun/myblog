@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "du\xE3\x81\xA8df\xE3\x81\xAF\xE9\x81\x95\xE3\x81\x86"
+status: publish
+published: true
+title: duとdfは違う
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 150
 wordpress_url: http://tjun.jp/blog/?p=150
-date: 2009-11-29 00:59:58 +09:00
+date: 2009-11-29 00:59:58.000000000 +09:00
+categories:
+- linux
+tags:
+- linux
+comments: []
 ---
 管理してるサーバのログのディレクトリが一杯で、
 

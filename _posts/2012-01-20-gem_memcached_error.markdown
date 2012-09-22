@@ -1,42 +1,55 @@
---- 
+---
 layout: post
-title: "gem install memcached \xE3\x81\xA7\xE3\x81\xAF\xE3\x81\xBE\xE3\x81\xA3\xE3\x81\x9F\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: gem install memcached ではまったメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1085
 wordpress_url: http://tjun.jp/blog/?p=1085
-date: 2012-01-20 23:22:07 +09:00
+date: 2012-01-20 23:22:07.000000000 +09:00
+categories:
+- linux
+- ruby
+tags:
+- ruby
+- memcached
+comments: []
 ---
 Error:
 <pre>
 $gem install memcached
 ...
-rlibmemcached_wrap.c: In function ‘_wrap_MemcachedSt_sasl_callbacks_set’:
-rlibmemcached_wrap.c:6669: error: ‘sasl_callback_t’ undeclared (first use in this function)
+rlibmemcached_wrap.c: In function &lsquo;_wrap_MemcachedSt_sasl_callbacks_set&rsquo;:
+rlibmemcached_wrap.c:6669: error: &lsquo;sasl_callback_t&rsquo; undeclared (first use in this function)
 rlibmemcached_wrap.c:6669: error: (Each undeclared identifier is reported only once
 rlibmemcached_wrap.c:6669: error: for each function it appears in.)
-rlibmemcached_wrap.c:6669: error: ‘arg2’ undeclared (first use in this function)
-rlibmemcached_wrap.c:6669: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c:6687: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c:6688: error: ‘struct memcached_st’ has no member named ‘sasl_callbacks’
-rlibmemcached_wrap.c:6688: error: expected ‘)’ before ‘const’
-rlibmemcached_wrap.c:6688: error: expected ‘;’ before ‘arg2’
-rlibmemcached_wrap.c: In function ‘_wrap_MemcachedSt_sasl_callbacks_get’:
-rlibmemcached_wrap.c:6700: error: ‘sasl_callback_t’ undeclared (first use in this function)
-rlibmemcached_wrap.c:6700: error: ‘result’ undeclared (first use in this function)
-rlibmemcached_wrap.c:6711: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c:6711: error: ‘struct memcached_st’ has no member named ‘sasl_callbacks’
-rlibmemcached_wrap.c: In function ‘_wrap_memcached_set_sasl_callbacks’:
-rlibmemcached_wrap.c:12021: error: ‘sasl_callback_t’ undeclared (first use in this function)
-rlibmemcached_wrap.c:12021: error: ‘arg2’ undeclared (first use in this function)
-rlibmemcached_wrap.c:12021: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c:12039: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c:12040: error: expected ‘)’ before ‘const’
-rlibmemcached_wrap.c:12040: error: expected ‘)’ before ‘arg2’
-rlibmemcached_wrap.c: In function ‘_wrap_memcached_get_sasl_callbacks’:
-rlibmemcached_wrap.c:12122: error: ‘sasl_callback_t’ undeclared (first use in this function)
-rlibmemcached_wrap.c:12122: error: ‘result’ undeclared (first use in this function)
-rlibmemcached_wrap.c:12133: error: expected expression before ‘)’ token
-rlibmemcached_wrap.c: In function ‘Init_rlibmemcached’:
-rlibmemcached_wrap.c:13285: error: ‘SASL_OK’ undeclared (first use in this function)
+rlibmemcached_wrap.c:6669: error: &lsquo;arg2&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:6669: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c:6687: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c:6688: error: &lsquo;struct memcached_st&rsquo; has no member named &lsquo;sasl_callbacks&rsquo;
+rlibmemcached_wrap.c:6688: error: expected &lsquo;)&rsquo; before &lsquo;const&rsquo;
+rlibmemcached_wrap.c:6688: error: expected &lsquo;;&rsquo; before &lsquo;arg2&rsquo;
+rlibmemcached_wrap.c: In function &lsquo;_wrap_MemcachedSt_sasl_callbacks_get&rsquo;:
+rlibmemcached_wrap.c:6700: error: &lsquo;sasl_callback_t&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:6700: error: &lsquo;result&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:6711: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c:6711: error: &lsquo;struct memcached_st&rsquo; has no member named &lsquo;sasl_callbacks&rsquo;
+rlibmemcached_wrap.c: In function &lsquo;_wrap_memcached_set_sasl_callbacks&rsquo;:
+rlibmemcached_wrap.c:12021: error: &lsquo;sasl_callback_t&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:12021: error: &lsquo;arg2&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:12021: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c:12039: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c:12040: error: expected &lsquo;)&rsquo; before &lsquo;const&rsquo;
+rlibmemcached_wrap.c:12040: error: expected &lsquo;)&rsquo; before &lsquo;arg2&rsquo;
+rlibmemcached_wrap.c: In function &lsquo;_wrap_memcached_get_sasl_callbacks&rsquo;:
+rlibmemcached_wrap.c:12122: error: &lsquo;sasl_callback_t&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:12122: error: &lsquo;result&rsquo; undeclared (first use in this function)
+rlibmemcached_wrap.c:12133: error: expected expression before &lsquo;)&rsquo; token
+rlibmemcached_wrap.c: In function &lsquo;Init_rlibmemcached&rsquo;:
+rlibmemcached_wrap.c:13285: error: &lsquo;SASL_OK&rsquo; undeclared (first use in this function)
 make: *** [rlibmemcached_wrap.o] Error 1
 </pre>
 

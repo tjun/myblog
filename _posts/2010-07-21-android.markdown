@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Android\xE9\x9B\x91\xE6\x84\x9F"
+status: publish
+published: true
+title: Android雑感
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 571
 wordpress_url: http://tjun.jp/blog/?p=571
-date: 2010-07-21 03:00:41 +09:00
+date: 2010-07-21 03:00:41.000000000 +09:00
+categories:
+- Diary
+- android
+tags:
+- Diary
+- android
+comments: []
 ---
 なんか最近、Androidがこれから流行るんじゃないか、と今さら考えています。
 

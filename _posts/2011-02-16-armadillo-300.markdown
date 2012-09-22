@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "armadillo-300\xE3\x81\xAB\xE3\x81\xA4\xE3\x81\x84\xE3\x81\xA6\xE3\x81\xAE\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: armadillo-300についてのメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 775
 wordpress_url: http://tjun.jp/blog/?p=775
-date: 2011-02-16 21:25:50 +09:00
+date: 2011-02-16 21:25:50.000000000 +09:00
+categories:
+- linux
+tags:
+- debian
+- armadillo
+comments: []
 ---
 別のところに作っていたメモを消すので、こっちに転記します。
 armadillo-300にdebianをインストールして無線Lanにつないだりする設定のメモです。

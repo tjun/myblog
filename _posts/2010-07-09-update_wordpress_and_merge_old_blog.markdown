@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "Wordpress\xE3\x81\xAE\xE3\x82\xA2\xE3\x83\x83\xE3\x83\x97\xE3\x83\x87\xE3\x83\xBC\xE3\x83\x88\xE3\x81\xA8\xE5\x8F\xA4\xE3\x81\x84blog\xE3\x81\xAE\xE8\xA8\x98\xE4\xBA\x8B\xE7\xA7\xBB\xE8\xBB\xA2"
+status: publish
+published: true
+title: Wordpressのアップデートと古いblogの記事移転
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 500
 wordpress_url: http://tjun.jp/blog/?p=500
-date: 2010-07-09 18:09:19 +09:00
+date: 2010-07-09 18:09:19.000000000 +09:00
+categories:
+- Diary
+- wordpress
+tags:
+- mysql
+- Diary
+- wordpress
+comments: []
 ---
 Wordpress3.0導入　と　古いブログのマージ。
 古いブログのRSSをsubscribeしている人もこれからのfeedが届くのかもしれない。

@@ -1,9 +1,71 @@
---- 
+---
 layout: post
-title: "Thunderbird\xE3\x81\xAE\xE8\xBF\x94\xE4\xBF\xA1\xE5\xBC\x95\xE7\x94\xA8\xE6\x96\x87\xE3\x80\x8C?\xE3\x81\x95\xE3\x82\x93\xE3\x81\xAF\xE6\x9B\xB8\xE3\x81\x8D\xE3\x81\xBE\xE3\x81\x97\xE3\x81\x9F\xE3\x80\x8D\xE3\x82\x92\xE8\x8B\xB1\xE8\xAA\x9E\xE3\x81\xAB"
+status: publish
+published: true
+title: Thunderbirdの返信引用文「?さんは書きました」を英語に
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 374
 wordpress_url: http://zzz.jeeet.net/?p=73
-date: 2008-06-26 20:37:14 +09:00
+date: 2008-06-26 20:37:14.000000000 +09:00
+categories:
+- tips
+- Firefox/Thunderbird
+- Windows
+tags:
+- Thunderbird
+- Tips
+comments:
+- id: 58
+  author: KOR
+  author_email: ''
+  author_url: ''
+  date: '2009-07-09 21:34:25 +0900'
+  date_gmt: '2009-07-09 12:34:25 +0900'
+  content: ! 'とっても参考になりました！
+
+    ありがとうございます！'
+- id: 59
+  author: NICK
+  author_email: ''
+  author_url: ''
+  date: '2009-07-27 10:34:18 +0900'
+  date_gmt: '2009-07-27 01:34:18 +0900'
+  content: これを探してました！ありがとうございます。
+- id: 60
+  author: ''
+  author_email: ''
+  author_url: ''
+  date: '2009-09-09 14:00:53 +0900'
+  date_gmt: '2009-09-09 05:00:53 +0900'
+  content: ! 'とても参考になりました。
+
+    ありがとうございます。'
+- id: 62
+  author: っつちさんさん
+  author_email: ''
+  author_url: ''
+  date: '2009-09-22 04:16:16 +0900'
+  date_gmt: '2009-09-21 19:16:16 +0900'
+  content: ! 'とてもシンプルでわかりやすく、すぐに実践できる方法として非常に参考になりました。ありがとうございました。
+
+
+    名前だけでなく、アドレスも載せることはできるのでしょうか？　
+
+
+    よろしければご教示ください。よろしくお願いいたします。'
+- id: 63
+  author: っつちさんさん
+  author_email: ''
+  author_url: ''
+  date: '2009-09-22 04:17:21 +0900'
+  date_gmt: '2009-09-21 19:17:21 +0900'
+  content: ! 'すみません、繰り返しになってしまいました。
+
+
+    消し方がわからないので申し訳ありません。'
 ---
 <div class="zemanta-img" style="margin: 1em; float: right; display: block;">
 </div>

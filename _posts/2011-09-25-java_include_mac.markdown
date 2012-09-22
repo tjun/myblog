@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "[Mac]JAVA_HOME/include\xE4\xBB\xA5\xE4\xB8\x8B\xE3\x81\xABjni.h\xE3\x81\x8C\xE3\x81\xAA\xE3\x81\x84\xE3\x81\xA8\xE3\x81\x84\xE3\x81\x86\xE3\x82\xA8\xE3\x83\xA9\xE3\x83\xBC\xE3\x82\x92\xE8\xA7\xA3\xE6\xB1\xBA"
+status: publish
+published: true
+title: ! '[Mac]JAVA_HOME/include以下にjni.hがないというエラーを解決'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 941
 wordpress_url: http://tjun.jp/blog/?p=941
-date: 2011-09-25 18:07:00 +09:00
+date: 2011-09-25 18:07:00.000000000 +09:00
+categories:
+- programming
+- mac
+tags:
+- mac
+- java
+comments: []
 ---
 Mac OSX (lion)で、とあるconfigureスクリプトを実行中に
 <pre>cannot find jni.h in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/include.</pre>

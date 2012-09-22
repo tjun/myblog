@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "Windows\xE3\x81\xA7\xE3\x82\xAF\xE3\x83\xBC\xE3\x83\xAB\xE3\x81\xAA\xE3\x83\x87\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\x88\xE3\x83\x83\xE3\x83\x97\xE3\x82\x92vol3:Mac\xE3\x81\xAEexpose"
+status: publish
+published: true
+title: Windowsでクールなデスクトップをvol3:Macのexpose
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 384
 wordpress_url: http://zzz.jeeet.net/?p=87
-date: 2008-08-07 03:46:11 +09:00
+date: 2008-08-07 03:46:11.000000000 +09:00
+categories:
+- tips
+- Windows
+tags:
+- mac
+- 3DDesktop
+- Windows
+comments: []
 ---
 Macや一部のLinuxで使えるexpose機能をWindowsでも使えるようになるソフトを紹介．vistaで使っていますが，XPでも使えるようです．
 

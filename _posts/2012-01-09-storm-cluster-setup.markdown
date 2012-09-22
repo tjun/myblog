@@ -1,9 +1,36 @@
---- 
+---
 layout: post
-title: "storm\xE3\x81\xAEcluster\xE7\x92\xB0\xE5\xA2\x83\xE3\x81\xAE\xE3\x82\xBB\xE3\x83\x83\xE3\x83\x88\xE3\x82\xA2\xE3\x83\x83\xE3\x83\x97(\xE5\x89\x8D\xE7\xB7\xA8)"
+status: publish
+published: true
+title: stormのcluster環境のセットアップ(前編)
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1072
 wordpress_url: http://tjun.jp/blog/?p=1072
-date: 2012-01-09 13:55:44 +09:00
+date: 2012-01-09 13:55:44.000000000 +09:00
+categories:
+- centos
+- storm
+tags:
+- storm
+comments:
+- id: 412
+  author: ! 'stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て動かす) | tjun memo'
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/04/storm-cluster-setup2-one/
+  date: '2012-04-03 21:01:42 +0900'
+  date_gmt: '2012-04-03 12:01:42 +0900'
+  content: ! '[...] stormのcluster環境のセットアップ(centos) | tjun memo   Stormと、その開発環境の設定やローカルモードでの実行は下記の記事を参照してください。   [...]'
+- id: 477
+  author: rubyでstormが書ける、Redstormを試す | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/06/redstorm/
+  date: '2012-06-17 21:34:05 +0900'
+  date_gmt: '2012-06-17 12:34:05 +0900'
+  content: ! '[...] 環境で動かす場合の、stormのセットアップは以下を参照してください。 stormのcluster環境のセットアップ(centos)
+    | tjun memo stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て [...]'
 ---
 Stormと、その開発環境の設定やローカルモードでの実行は下記の記事を参照してください。
 
@@ -162,7 +189,7 @@ $ export PATH=$PATH:$STORM_HOME/bin
 今回はここまで。
 次回は、１台のマシンでnimbusもsupervisorも動かして、クラスタモードでサンプルプログラムを動かすところまでを書きます。
 
-続き↓
+続き&darr;
 <ul>
  <li><a href="http://tjun.jp/blog/2012/04/storm-cluster-setup2-one/">stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て動かす) | tjun memo</a></li>
 </ul>

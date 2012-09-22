@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "follow me\xE3\x83\x90\xE3\x83\x83\xE3\x82\xB8\xE3\x82\x92\xE3\x83\x96\xE3\x83\xAD\xE3\x82\xB0\xE3\x81\xAB\xE3\x81\xA4\xE3\x81\x91\xE3\x81\x9F"
+status: publish
+published: true
+title: follow meバッジをブログにつけた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 74
 wordpress_url: http://tjun.jp/blog/2009/10/follow-me%e3%83%90%e3%83%83%e3%82%b8%e3%82%92%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ab%e3%81%a4%e3%81%91%e3%81%9f/
-date: 2009-10-01 12:34:57 +09:00
+date: 2009-10-01 12:34:57.000000000 +09:00
+categories:
+- web
+- twitter
+tags:
+- twitter
+comments: []
 ---
 右についてるやつね．
 

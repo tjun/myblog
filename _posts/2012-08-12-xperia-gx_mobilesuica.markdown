@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Xperia GX\xE3\x81\xA7\xE3\x83\xA2\xE3\x83\x90\xE3\x82\xA4\xE3\x83\xABSuica\xE3\x83\xAD\xE3\x82\xB0\xE3\x82\xA4\xE3\x83\xB3\xE3\x81\xA7\xE3\x81\x8D\xE3\x81\xAA\xE3\x81\x84\xE6\x99\x82\xE3\x81\xAF"
+status: publish
+published: true
+title: Xperia GXでモバイルSuicaログインできない時は
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1241
 wordpress_url: http://tjun.jp/blog/?p=1241
-date: 2012-08-12 01:31:14 +09:00
+date: 2012-08-12 01:31:14.000000000 +09:00
+categories:
+- Diary
+- android
+tags:
+- xperia
+comments: []
 ---
 Xperia GXちょっと前に買いました。
 
@@ -11,7 +23,7 @@ SuicaからモバイルSuicaへの移行をしたあと、モバイルSuicaを�
 
 
 それを直すには、
-<strong>設定 → 開発者向けオプション → GPUレンダリングを使用 のチェックを外す
+<strong>設定 &rarr; 開発者向けオプション &rarr; GPUレンダリングを使用 のチェックを外す
 </strong>をすると直りました。
 
 これよく起きる問題なんでしょうか。

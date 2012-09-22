@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "CEATEC\xE3\x81\xAB\xE8\xA1\x8C\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x8D\xE3\x81\x9F"
+status: publish
+published: true
+title: CEATECに行ってきた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 94
 wordpress_url: http://tjun.jp/blog/?p=94
-date: 2009-10-09 01:35:20 +09:00
+date: 2009-10-09 01:35:20.000000000 +09:00
+categories:
+- Diary
+tags:
+- blog
+comments: []
 ---
 2009/10/6＠幕張メッセ
 

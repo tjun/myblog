@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "[\xE6\x9B\xB8\xE8\xA9\x95]\xE5\xB0\xB1\xE6\xB4\xBB\xE3\x81\xAB\xE5\x90\x91\xE3\x81\x91\xE3\x81\xA6\xE8\xAA\xAD\xE3\x82\x93\xE3\x81\xA0\xE6\x9C\xAC\xEF\xBC\x91"
+status: publish
+published: true
+title: ! '[書評]就活に向けて読んだ本１'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 403
 wordpress_url: http://zzz.jeeet.net/?p=234
-date: 2009-01-05 20:07:55 +09:00
+date: 2009-01-05 20:07:55.000000000 +09:00
+categories:
+- book
+tags:
+- book
+comments: []
 ---
 今年は読書しよう．
 

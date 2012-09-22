@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Delicious\xE3\x81\x8B\xE3\x82\x89\xE3\x81\xAF\xE3\x81\xA6\xE3\x81\xAA\xE3\x83\x96\xE3\x83\x83\xE3\x82\xAF\xE3\x83\x9E\xE3\x83\xBC\xE3\x82\xAF\xE3\x81\xB8\xE3\x83\x87\xE3\x83\xBC\xE3\x82\xBF\xE3\x82\x92\xE7\xA7\xBB\xE3\x81\x99"
+status: publish
+published: true
+title: Deliciousからはてなブックマークへデータを移す
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 5
 wordpress_url: http://tjun.jp/blog/?p=5
-date: 2009-07-23 20:45:46 +09:00
+date: 2009-07-23 20:45:46.000000000 +09:00
+categories:
+- web
+tags:
+- webservice
+- はてな
+comments: []
 ---
 Firefoxアドオンの使いやすさからこれまでは<a href="http://delicious.com/">delicious</a>を使っていたけど、はてなもfirefoxアドオンを出してなかなか評判がよいみたいなので、移行することにした。
 
@@ -20,10 +32,10 @@ Firefoxアドオンの使いやすさからこれまでは<a href="http://delici
 先に解決法から。
 deliciousからインポートしたファイルを文字列検索/置換が行えるエディタで開き、
 <ol>
-	<li>"&lt;DD&gt;" を全て削除</li>
-	<li>"&lt;/A&gt;" を "&lt;/A&gt;&lt;/DT&gt;&lt;DD&gt;"で全て置換</li>
-	<li>"&lt;DT&gt;" を "&lt;/DD&gt;&lt;DT&gt;"で全て置換</li>
-	<li>一番最初と一番最後のhtmlタグがおかしくなるのでそこを修正(一番上エントリの&lt;/DD&gt;を削除し，一番下のエントリの最後に&lt;/DD&gt;をつける</li>
+	<li>"<DD>" を全て削除</li>
+	<li>"</A>" を "</A></DT><DD>"で全て置換</li>
+	<li>"<DT>" を "</DD><DT>"で全て置換</li>
+	<li>一番最初と一番最後のhtmlタグがおかしくなるのでそこを修正(一番上エントリの</DD>を削除し，一番下のエントリの最後に</DD>をつける</li>
 </ol>
 
 
@@ -35,16 +47,16 @@ deliciousからexportしたhtmファイルのソースと、正しくimportさ�
 つまり、
 
 [xml]
-&lt;DL&gt;&lt;DT&gt;&lt;A HREF=&quot;http://example.com&quot; LAST_VISIT=&quot;1248093454&quot; ADD_DATE=&quot;1248093454&quot; TAGS=&quot;tag1,tokyo,example&quot;&gt;ブックマークその１&lt;/A&gt;
-&lt;DD&gt;コメント１
-&lt;DT&gt;&lt;A HREF=&quot;http://www.example01.com/a.html&quot; LAST_VISIT=&quot;1248071261&quot; ADD_DATE=&quot;1248071261&quot; TAGS=&quot;iphone, aaaa, tag2&quot;&gt;ブックマークその２&lt;/A&gt;
-&lt;DT&gt;&lt;A HREF=&quot;http://bookmark.com/&quot; LAST_VISIT=&quot;1247826901&quot; ADD_DATE=&quot;1247826901&quot; TAGS=&quot;tag3, blog&quot;&gt;ブックマークその３&lt;/A&gt;
-&lt;DD&gt;コメント３
-&lt;DT&gt;&lt;A HREF=&quot;http://example.net/2009/aaa.html&quot; LAST_VISIT=&quot;1247763108&quot; ADD_DATE=&quot;1247763108&quot; TAGS=&quot;tag4,database&quot;&gt;bookmark4&lt;/A&gt;
+<DL><DT><A HREF="http://example.com" LAST_VISIT="1248093454" ADD_DATE="1248093454" TAGS="tag1,tokyo,example">ブックマークその１</A>
+<DD>コメント１
+<DT><A HREF="http://www.example01.com/a.html" LAST_VISIT="1248071261" ADD_DATE="1248071261" TAGS="iphone, aaaa, tag2">ブックマークその２</A>
+<DT><A HREF="http://bookmark.com/" LAST_VISIT="1247826901" ADD_DATE="1247826901" TAGS="tag3, blog">ブックマークその３</A>
+<DD>コメント３
+<DT><A HREF="http://example.net/2009/aaa.html" LAST_VISIT="1247763108" ADD_DATE="1247763108" TAGS="tag4,database">bookmark4</A>
 [/xml]
 のようなコードがあった場合、ブックマーク１と３にはコメントがあることを意味していて、この場合インポートされるのは
-ブックマーク１とコメント１　→　正しい
-ブックマーク２とコメント３　→　ずれてる
+ブックマーク１とコメント１　&rarr;　正しい
+ブックマーク２とコメント３　&rarr;　ずれてる
 の２つだけで、コメントもずれてしまう。
 
 上の解決法で、正しくタグを閉じてやるようにすると、正しくインポートされる。

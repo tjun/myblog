@@ -1,9 +1,21 @@
---- 
+---
 layout: post
+status: publish
+published: true
 title: Magic Spice
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 229
 wordpress_url: http://tjun.jp/blog/?p=229
-date: 2010-04-20 12:32:38 +09:00
+date: 2010-04-20 12:32:38.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+comments: []
 ---
 最近食べ物の話しか書いてないけど、今日もカレーの話です。
 

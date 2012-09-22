@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE3\x81\x95\xE3\x81\xA3\xE3\x81\x9D\xE3\x81\x8FiPhone\xE3\x82\xA2\xE3\x83\x97\xE3\x83\xAA\xE3\x82\x92\xE4\xBD\x9C\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\xBF\xE3\x81\x9F"
+status: publish
+published: true
+title: さっそくiPhoneアプリを作ってみた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 37
 wordpress_url: http://tjun.jp/blog/?p=37
-date: 2009-08-26 16:27:38 +09:00
+date: 2009-08-26 16:27:38.000000000 +09:00
+categories:
+- iphone
+tags:
+- iphone
+comments: []
 ---
 最初に作ったのはブラウザアプリ。
 

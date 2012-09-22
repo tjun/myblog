@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "Things\xE3\x81\xAE\xE3\x83\x87\xE3\x83\xBC\xE3\x82\xBF\xE3\x82\x92Dropbox\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\xA3\xE3\x81\xA6\xE5\x85\xB1\xE6\x9C\x89\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: ThingsのデータをDropboxを使って共有する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 135
 wordpress_url: http://tjun.jp/blog/?p=135
-date: 2009-11-17 21:38:44 +09:00
+date: 2009-11-17 21:38:44.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+comments: []
 ---
 ThingsっていうTo Doアプリを使い始めました．
 
@@ -24,16 +35,16 @@ iPhoneとの同期はできるけど，２台のMac間での同期はしてく�
 
 [code]
 
-cp &lt;code&gt;~/Library/Application\ Support/Cultured\ Code/Things/* ~/Dropbox/conf/things/&lt;/code&gt;
+cp <code>~/Library/Application\ Support/Cultured\ Code/Things/* ~/Dropbox/conf/things/</code>
 
 [/code]
 次に</pre>
 <h3>元のデータを消してリンクを貼る</h3>
 [code]
 
-rm -r?&lt;code&gt;~/Library/Application\ Support/Cultured\ Code/Things&lt;/code&gt;
+rm -r?<code>~/Library/Application\ Support/Cultured\ Code/Things</code>
 
-ln -s &lt;code&gt;ln -s ~/Dropbox/conf/things ~/Library/Application\ Support/Cultured\ Code/Things&lt;/code&gt;
+ln -s <code>ln -s ~/Dropbox/conf/things ~/Library/Application\ Support/Cultured\ Code/Things</code>
 
 [/code]
 
@@ -43,9 +54,9 @@ ln -s &lt;code&gt;ln -s ~/Dropbox/conf/things ~/Library/Application\ Support/Cul
 
 [code]
 
-rm -r?&lt;code&gt;~/Library/Application\ Support/Cultured\ Code/Things&lt;/code&gt;
+rm -r?<code>~/Library/Application\ Support/Cultured\ Code/Things</code>
 
-ln -s?&lt;code&gt;ln -s ~/Dropbox/conf/things ~/Library/Application\ Support/Cultured\ Code/Things&lt;/code&gt;
+ln -s?<code>ln -s ~/Dropbox/conf/things ~/Library/Application\ Support/Cultured\ Code/Things</code>
 
 [/code]
 

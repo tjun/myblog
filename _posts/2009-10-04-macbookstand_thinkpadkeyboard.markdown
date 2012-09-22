@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "mac book\xE3\x81\xAE\xE3\x82\xB9\xE3\x82\xBF\xE3\x83\xB3\xE3\x83\x89\xE3\x81\xA8\xEF\xBC\x8Cthinkpad\xE3\x82\xAD\xE3\x83\xBC\xE3\x83\x9C\xE3\x83\xBC\xE3\x83\x89\xE3\x82\x92\xE5\xB0\x8E\xE5\x85\xA5"
+status: publish
+published: true
+title: mac bookのスタンドと，thinkpadキーボードを導入
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 86
 wordpress_url: http://tjun.jp/blog/?p=86
-date: 2009-10-04 01:50:14 +09:00
+date: 2009-10-04 01:50:14.000000000 +09:00
+categories:
+- Diary
+- mac
+tags:
+- mac
+comments: []
 ---
 最初は
 <a href="http://japanese.engadget.com/2009/09/07/trackpoint-trackpad-and-59/">レノボのTrackPoint付きキーボードに新モデル、TrackPadなしで6300円</a>

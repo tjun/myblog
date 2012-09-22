@@ -1,9 +1,37 @@
---- 
+---
 layout: post
-title: "Gmail\xE3\x81\xA8Thunderbird\xE3\x81\xAE\xE3\x82\xA2\xE3\x83\x89\xE3\x83\xAC\xE3\x82\xB9\xE5\xB8\xB3\xE3\x82\x92\xE5\x90\x8C\xE6\x9C\x9F"
+status: publish
+published: true
+title: GmailとThunderbirdのアドレス帳を同期
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 356
 wordpress_url: http://zzz.jeeet.net/?p=11
-date: 2008-05-20 00:48:09 +09:00
+date: 2008-05-20 00:48:09.000000000 +09:00
+categories:
+- tips
+- Firefox/Thunderbird
+tags:
+- Gmail
+- Thunderbird
+comments:
+- id: 51
+  author: ThunderbirdでGmailを使う | ふじゅんブログ
+  author_email: ''
+  author_url: ''
+  date: '2008-06-13 00:47:39 +0900'
+  date_gmt: '2008-06-12 15:47:39 +0900'
+  content: ! '[...] GmailとThunderbirdのアドレス帳を同期 とあわせて使うことによってGmailとThunderbirdを同期して使うことができます．すばらしい．
+    [...]'
+- id: 52
+  author: Dot
+  author_email: dot889@yahoo.com
+  author_url: http://hallinsurance.blogspot.com
+  date: '2008-10-29 01:35:53 +0900'
+  date_gmt: '2008-10-28 16:35:53 +0900'
+  content: Good for people to know.
 ---
 参考にしたサイト：<a title="Mozilla-Remix" href="http://mozilla-remix.seesaa.net/article/97065836.html">Mozilla-Remix</a>
 
@@ -11,9 +39,9 @@ Thunderbirdの<a href="http://www.zindus.com/blog/2008/04/30/release-075-and-thu
 <h3>手順</h3>
 まず，<a href="http://www.zindus.com/download-extension/">zindusのサイト</a>のInstall 1,のDownloadというところをクリックして，拡張子が.xpiとなっているファイルをダウンロードします．
 
-次にThunderbirdを起動して，「ツール」-&gt;「アドオン」から別窓を開き，左下の「インストール」をクリックして先ほどダウンロードしたzindus-... .xpiを選択するとインストールされます．
+次にThunderbirdを起動して，「ツール」->「アドオン」から別窓を開き，左下の「インストール」をクリックして先ほどダウンロードしたzindus-... .xpiを選択するとインストールされます．
 
-そして，Thunderbirdを再起動した後，もう一度「ツール」-&gt;「アドオン」で別窓を開いてzindusを選択し「設定」をクリック．まず「Server Settings」の「select server type」で「google」を選択．下の「Email address」には自分のgmailのメールアドレス，パスワードにGmailのパスワードを入力します．
+そして，Thunderbirdを再起動した後，もう一度「ツール」->「アドオン」で別窓を開いてzindusを選択し「設定」をクリック．まず「Server Settings」の「select server type」で「google」を選択．下の「Email address」には自分のgmailのメールアドレス，パスワードにGmailのパスワードを入力します．
 
 次に「Preferance」の「action」から「sync now」を選択．これで同期されて設定は完了です．
 <h3>最後の同期がうまくいかない場合</h3>

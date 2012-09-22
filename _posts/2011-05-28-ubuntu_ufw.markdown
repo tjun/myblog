@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Ubuntu\xE3\x81\xAEufw\xE3\x81\xA7\xE3\x83\x95\xE3\x82\xA1\xE3\x82\xA4\xE3\x82\xA2\xE3\x82\xA6\xE3\x82\xA9\xE3\x83\xBC\xE3\x83\xAB\xE8\xA8\xAD\xE5\xAE\x9A"
+status: publish
+published: true
+title: Ubuntuのufwでファイアウォール設定
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 814
 wordpress_url: http://tjun.jp/blog/?p=814
-date: 2011-05-28 12:08:26 +09:00
+date: 2011-05-28 12:08:26.000000000 +09:00
+categories:
+- server
+- ubuntu
+tags:
+- ubuntu
+- security
+comments: []
 ---
 vpsなど自分で管理するサーバーは、ちゃんと自分で守らなくては、ということでファイアウォールを設定していたのを思い出したのでメモ。
 最近のubuntuはufwで設定するらしい。iptablesのフロントエンドらしい。
@@ -45,5 +58,5 @@ To                         Action      From
 以上です。
 
 参考：<ul>
-	<li><a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0077">Ubuntu Weekly Recipe：第77回　Ubuntuのソフトウェアファイアウォール：ufwの利用（2）｜gihyo.jp … 技術評論社</a></li>
+	<li><a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0077">Ubuntu Weekly Recipe：第77回　Ubuntuのソフトウェアファイアウォール：ufwの利用（2）｜gihyo.jp &hellip; 技術評論社</a></li>
 </ul>

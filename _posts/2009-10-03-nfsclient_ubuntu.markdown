@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "ubuntu\xE3\x81\xA7nfs\xE3\x82\xAF\xE3\x83\xA9\xE3\x82\xA4\xE3\x82\xA2\xE3\x83\xB3\xE3\x83\x88\xE3\x81\xAE\xE8\xA8\xAD\xE5\xAE\x9A"
+status: publish
+published: true
+title: ubuntuでnfsクライアントの設定
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 77
 wordpress_url: http://tjun.jp/blog/2009/10/ubuntu%e3%81%a7nfs%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%81%ae%e8%a8%ad%e5%ae%9a/
-date: 2009-10-03 19:51:39 +09:00
+date: 2009-10-03 19:51:39.000000000 +09:00
+categories:
+- server
+- ubuntu
+tags:
+- ubuntu
+- server
+comments: []
 ---
 nfsというのは、ネットワーク越しに他のサーバのディレクトリなどをマウントして、ファイルを共有する仕組みです。
 マウントされる側のホストと、マウントする側のクライアントがいます。クライアントは複数いても大丈夫です。

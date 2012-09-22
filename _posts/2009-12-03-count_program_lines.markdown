@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x83\x97\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\xA9\xE3\x83\xA0\xE3\x81\xAE\xE8\xA1\x8C\xE6\x95\xB0\xE3\x82\x92\xE3\x81\x8B\xE3\x81\x9E\xE3\x81\x88\xE3\x82\x8B"
+status: publish
+published: true
+title: プログラムの行数をかぞえる
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 176
 wordpress_url: http://tjun.jp/blog/?p=176
-date: 2009-12-03 02:10:24 +09:00
+date: 2009-12-03 02:10:24.000000000 +09:00
+categories:
+- programming
+- linux
+- mac
+tags:
+- programming
+- linux
+comments: []
 ---
 忘れていたのでメモ。
 

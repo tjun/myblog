@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "twitter\xE3\x81\xAE\xE3\x83\x80\xE3\x82\xA4\xE3\x83\xAC\xE3\x82\xAF\xE3\x83\x88\xE3\x83\xA1\xE3\x83\x83\xE3\x82\xBB\xE3\x83\xBC\xE3\x82\xB8\xE3\x82\x92\xE5\x8F\x97\xE4\xBF\xA1\xE3\x81\x99\xE3\x82\x8B\xE3\x83\x97\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\xA9\xE3\x83\xA0\xE3\x82\x92ruby\xE3\x81\xA7"
+status: publish
+published: true
+title: twitterのダイレクトメッセージを受信するプログラムをrubyで
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 407
 wordpress_url: http://zzz.jeeet.net/?p=272
-date: 2009-01-15 03:13:14 +09:00
+date: 2009-01-15 03:13:14.000000000 +09:00
+categories:
+- ruby
+- twitter
+tags:
+- twitter
+- ruby
+comments: []
 ---
 <strong><span style="color: #ff0000;">この記事は古いので、プログラムが使えない可能性が高いです。
 今ならrubygemのtwitterライブラリを使うのがよいと思います。Oauthも必要です。</span>

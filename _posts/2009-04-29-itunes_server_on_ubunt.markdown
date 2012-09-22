@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "ubuntu\xE3\x81\xA7iTunes\xE3\x82\xB5\xE3\x83\xBC\xE3\x83\x90\xE3\x83\xBC\xE3\x82\x92\xE5\xAE\x9F\xE7\x8F\xBE"
+status: publish
+published: true
+title: ubuntuでiTunesサーバーを実現
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 311
 wordpress_url: http://zzz.jeeet.net/?p=311
-date: 2009-04-29 02:38:41 +09:00
+date: 2009-04-29 02:38:41.000000000 +09:00
+categories:
+- linux
+- ubuntu
+tags:
+- ubuntu
+- iPod
+comments: []
 ---
 <div class="zemanta-img" style="margin: 1em; display: block;">
 <div><dl class="wp-caption alignright" style="width: 250px;"> <dt class="wp-caption-dt"><a href="http://www.flickr.com/photos/84018923@N00/41431385"><img title="Apple iTunes 5.0" src="http://farm1.static.flickr.com/27/41431385_045abf7b4b_m.jpg" alt="Apple iTunes 5.0" width="240" height="173"></a></dt> <dd class="wp-caption-dd zemanta-img-attribution" style="font-size: 0.8em;">Image by <a href="http://www.flickr.com/photos/84018923@N00/41431385">cd.harrison</a> via Flickr</dd> </dl></div>

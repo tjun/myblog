@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "debian\xE3\x81\xA7Ganglia"
+status: publish
+published: true
+title: debianでGanglia
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 706
 wordpress_url: http://tjun.jp/blog/?p=706
-date: 2010-12-21 03:03:55 +09:00
+date: 2010-12-21 03:03:55.000000000 +09:00
+categories:
+- linux
+tags:
+- linux
+- hadoop
+- debian
+comments: []
 ---
 hadoopなどを使っていて複数ノードの状態をまとめてモニタリングしたい、みたいな時に使えるのがganglia　らしい。
 <ul>

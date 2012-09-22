@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "Database Management Systems 9\xE7\xAB\xA0: Disks and Files"
+status: publish
+published: true
+title: ! 'Database Management Systems 9章: Disks and Files'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 127
 wordpress_url: http://tjun.jp/blog/?p=127
-date: 2009-11-10 23:32:49 +09:00
+date: 2009-11-10 23:32:49.000000000 +09:00
+categories:
+- db
+tags:
+- db
+comments: []
 ---
 データベースの本を読んでまとめる作業のついでにブログに書いちゃいます。
 読んでるのはこの本
@@ -18,9 +29,9 @@ date: 2009-11-10 23:32:49 +09:00
 DBMSではデータをどうやって蓄えるか。ディスクマネージメント，バッファマネージメントなどの話．
 <h2>■メモリー階層</h2>
 （CPU ）- キャッシュ - メインメモリ - 磁気ディスク - （テープ）
-アクセス：　　速い→遅い
-容量当たりの値段：　高い→安い
-電源切ったら：　データ消える→消えない（不揮発性）
+アクセス：　　速い&rarr;遅い
+容量当たりの値段：　高い&rarr;安い
+電源切ったら：　データ消える&rarr;消えない（不揮発性）
 
 DBMSを使うことで，データがメモリにあるのかディスクにあるのか，などを意識しなくてよくなる．
 メモリだけでは全てのデータを格納しきれないから，ディスクが必要．

@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x83\x93\xE3\x82\xAE\xE3\x83\x8A\xE3\x83\xBC\xE7\xB7\xA8 AWS User Group - Japan \xE6\x9D\xB1\xE4\xBA\xAC\xE5\x8B\x89\xE5\xBC\xB7\xE4\xBC\x9A\xE3\x81\xAB\xE5\x8F\x82\xE5\x8A\xA0\xE3\x81\x97\xE3\x81\xA6\xE3\x81\x8D\xE3\x81\x9F\xE3\x82\x88"
+status: publish
+published: true
+title: ビギナー編 AWS User Group - Japan 東京勉強会に参加してきたよ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1099
 wordpress_url: http://tjun.jp/blog/?p=1099
-date: 2012-02-04 02:40:44 +09:00
+date: 2012-02-04 02:40:44.000000000 +09:00
+categories:
+- Diary
+- cloud
+tags:
+- Diary
+- cloud
+- aws
+comments: []
 ---
 <a href="http://atnd.org/events/24493">第2回 ビギナー編 AWS User Group - Japan 東京勉強会 : ATND</a>
 

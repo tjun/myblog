@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "\xE4\xBA\x94\xE5\x8F\x8D\xE7\x94\xB0\xE3\x81\xAE\xE3\x83\x99\xE3\x83\xB3\xE3\x83\x81\xE3\x83\xA3\xE3\x83\xBC\xE4\xBC\x81\xE6\xA5\xAD\xE3\x83\x93\xE3\x83\xAB\xE3\x81\xBF\xE3\x81\x9F\xE3\x81\x84\xE3\x81\xAA\xE3\x81\xAE\xE3\x81\xAB\xE3\x81\x8A\xE9\x82\xAA\xE9\xAD\x94\xE3\x81\x97\xE3\x81\xA6\xE3\x81\x8D\xE3\x81\x9F\xE8\xA9\xB1"
+status: publish
+published: true
+title: 五反田のベンチャー企業ビルみたいなのにお邪魔してきた話
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1105
 wordpress_url: http://tjun.jp/blog/?p=1105
-date: 2012-02-18 15:29:28 +09:00
+date: 2012-02-18 15:29:28.000000000 +09:00
+categories:
+- Diary
+tags:
+- Diary
+comments: []
 ---
 会社関係の知り合いのお誘いで、仕事後に、五反田にある<a href="http://machihara.net/index.html">町原ビル</a>っていうところにお邪魔して、いろいろ話を聞いたりしてきました。
 
@@ -16,7 +27,7 @@ WHILLは、東京モーターショーにも出て話題になったので、知
 <ul>
 <li><a href="http://whill.jp/news/?p=102">WHILLの紹介 | WHILL_NEWS</a></li>
 
-<li><a href="http://wired.jp/2011/12/20/%E8%BB%8A%E3%81%84%E3%81%99%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%82%92%E5%89%B5%E9%80%A0%E3%81%99%E3%82%8B%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%83%A2%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3whill/">車いすの未来を切り拓くパーソナルモビリティ「WHILL」 « WIRED.jp 世界最強の「テクノ」ジャーナリズム</a></li>
+<li><a href="http://wired.jp/2011/12/20/%E8%BB%8A%E3%81%84%E3%81%99%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%82%92%E5%89%B5%E9%80%A0%E3%81%99%E3%82%8B%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%83%A2%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3whill/">車いすの未来を切り拓くパーソナルモビリティ「WHILL」 &laquo; WIRED.jp 世界最強の「テクノ」ジャーナリズム</a></li>
 
 </ul>
 

@@ -1,9 +1,21 @@
---- 
+---
 layout: post
+status: publish
+published: true
 title: Android App Inventor
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 640
 wordpress_url: http://tjun.jp/blog/2010/10/android-app-inventor/
-date: 2010-10-25 01:09:24 +09:00
+date: 2010-10-25 01:09:24.000000000 +09:00
+categories:
+- programming
+- android
+tags:
+- android
+comments: []
 ---
 <h2><a href="http://appinventor.mit.edu/">App Inventor for Android</a></h2>
 AndroidのプログラムをGUIで書けるApp Inventorを試してみた．<br />

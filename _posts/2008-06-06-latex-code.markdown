@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "Latex\xE3\x81\xAB\xE3\x83\x97\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\xA9\xE3\x83\xA0\xE3\x81\xAE\xE3\x82\xBD\xE3\x83\xBC\xE3\x82\xB9\xE3\x82\xB3\xE3\x83\xBC\xE3\x83\x89\xE3\x82\x92\xE8\xBC\x89\xE3\x81\x9B\xE3\x82\x8B\xE6\x96\xB9\xE6\xB3\x95"
+status: publish
+published: true
+title: Latexにプログラムのソースコードを載せる方法
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 369
 wordpress_url: http://zzz.jeeet.net/?p=49
-date: 2008-06-06 00:19:46 +09:00
+date: 2008-06-06 00:19:46.000000000 +09:00
+categories:
+- tips
+tags:
+- latex
+- Tips
+comments: []
 ---
 Latexにプログラムのソースコードを載せたいとき，そのまま書いたらインデントなどが消えてしまいます．
 
@@ -15,7 +27,7 @@ Latexにプログラムのソースコードを載せたいとき，そのまま
 以下のサイトで詳しく説明されています。
 <ul>
 	<li><a href="http://d.hatena.ne.jp/mallowlabs/20061226/1167137637">jlistingでソースコードを綺麗に表示する - mallowlabsの備忘録</a></li>
-	<li><a href="http://blog.santalinux.net/?p=135">Logwatch for santa » TeXでソースコードを貼り付ける</a></li>
+	<li><a href="http://blog.santalinux.net/?p=135">Logwatch for santa &raquo; TeXでソースコードを貼り付ける</a></li>
 	<li><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/listings.html">listings.sty: TeX パッケージ</a></li>
 	<li><a href="http://mytexpert.sourceforge.jp/index.php?Listings">Listings - MyTeXpert</a></li>
 </ul>

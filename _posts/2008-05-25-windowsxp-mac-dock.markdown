@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "WindowsXP\xE3\x81\xA7\xE3\x82\xAF\xE3\x83\xBC\xE3\x83\xAB\xE3\x81\xAA\xE3\x83\x87\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\x88\xE3\x83\x83\xE3\x83\x97\xE3\x82\x92vol.2\xEF\xBC\x9AMac\xE9\xA2\xA8\xE3\x81\xAEDock"
+status: publish
+published: true
+title: WindowsXPでクールなデスクトップをvol.2：Mac風のDock
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 363
 wordpress_url: http://zzz.jeeet.net/?p=31
-date: 2008-05-25 04:38:38 +09:00
+date: 2008-05-25 04:38:38.000000000 +09:00
+categories:
+- tips
+- Windows
+tags:
+- mac
+- 3DDesktop
+- Windows
+comments: []
 ---
 今回紹介するのは，<span style="color: #ff6600;"><strong>RocketDock</strong><span style="color: #000000;">というMacのDockのように使えるアプリケーションランチャー．</span></span>
 

@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "iPod touch\xE3\x81\xA7\xE5\xAE\xB6\xE8\xA8\x88\xE7\xB0\xBF"
+status: publish
+published: true
+title: iPod touchで家計簿
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 146
 wordpress_url: http://zzz.jeeet.net/?p=146
-date: 2008-11-09 13:51:28 +09:00
+date: 2008-11-09 13:51:28.000000000 +09:00
+categories:
+- iphone
+tags:
+- iphone
+comments: []
 ---
 <span style="color: #ff0000;"><strong>---2010/07/10追記---</strong></span>
 <strong>この記事は古いです。

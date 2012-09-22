@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "\xE8\x87\xAA\xE5\x88\x86\xE3\x81\xAE\xE3\x82\xA6\xE3\x82\xA7\xE3\x83\x96\xE3\x83\x9A\xE3\x83\xBC\xE3\x82\xB8\xE4\xBD\x9C\xE3\x81\xA3\xE3\x81\x9F"
+status: publish
+published: true
+title: 自分のウェブページ作った
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 15
 wordpress_url: http://tjun.jp/blog/2009/08/%e8%87%aa%e5%88%86%e3%81%ae%e3%82%a6%e3%82%a7%e3%83%96%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e3%81%a3%e3%81%9f/
-date: 2009-08-09 01:33:57 +09:00
+date: 2009-08-09 01:33:57.000000000 +09:00
+categories:
+- Diary
+- web
+tags:
+- google
+- blog
+comments: []
 ---
 <h4></h4>
 <h4><a href="http://tjun.jp/">tjun logs</a></h4>

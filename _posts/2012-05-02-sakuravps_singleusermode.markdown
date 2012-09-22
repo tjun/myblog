@@ -1,9 +1,23 @@
---- 
+---
 layout: post
-title: "\xE3\x81\x95\xE3\x81\x8F\xE3\x82\x89VPS\xE3\x81\xA7\xE3\x82\xB7\xE3\x83\xB3\xE3\x82\xB0\xE3\x83\xAB\xE3\x83\xA6\xE3\x83\xBC\xE3\x82\xB6\xE3\x83\xA2\xE3\x83\xBC\xE3\x83\x89\xE3\x81\xAB\xE5\x85\xA5\xE3\x82\x8B"
+status: publish
+published: true
+title: さくらVPSでシングルユーザモードに入る
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1131
 wordpress_url: http://tjun.jp/blog/?p=1131
-date: 2012-05-02 22:19:43 +09:00
+date: 2012-05-02 22:19:43.000000000 +09:00
+categories:
+- ubuntu
+- centos
+tags:
+- ubuntu
+- centos
+- さくらvps
+comments: []
 ---
 さくらVPSを利用していて、少し前に障害に伴ってOSの再起動がありました。
 そしたら起動できなくなっちゃって、さくらVPSのサポートに問い合わせたところ、シングルユーザモードで起動する方法を教えてもらいました。

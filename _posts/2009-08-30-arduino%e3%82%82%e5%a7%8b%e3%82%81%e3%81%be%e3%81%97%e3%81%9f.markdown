@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "arduino\xE3\x82\x82\xE5\xA7\x8B\xE3\x82\x81\xE3\x81\xBE\xE3\x81\x97\xE3\x81\x9F"
+status: publish
+published: true
+title: arduinoも始めました
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 41
 wordpress_url: http://tjun.jp/blog/?p=41
-date: 2009-08-30 04:37:34 +09:00
+date: 2009-08-30 04:37:34.000000000 +09:00
+categories:
+- arduino
+tags:
+- arduino
+comments: []
 ---
 いろいろと手を出しています。
 

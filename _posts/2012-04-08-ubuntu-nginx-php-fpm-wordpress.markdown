@@ -1,9 +1,31 @@
---- 
+---
 layout: post
-title: "ubuntu10.04\xE3\x81\xABnginx\xE3\x81\xA8php-fpm\xE3\x82\x92\xE5\x85\xA5\xE3\x82\x8C\xE3\x81\xA6wordpress\xE5\x8B\x95\xE3\x81\x8B\xE3\x81\x99"
+status: publish
+published: true
+title: ubuntu10.04にnginxとphp-fpmを入れてwordpress動かす
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1118
 wordpress_url: http://tjun.jp/blog/?p=1118
-date: 2012-04-08 21:33:04 +09:00
+date: 2012-04-08 21:33:04.000000000 +09:00
+categories:
+- ubuntu
+tags:
+- php
+- wordpress
+- nginx
+- さくらvps
+comments:
+- id: 425
+  author: さくらVPSを512Mから1Gへ移行したメモ(ubuntu) | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/04/move_sakuravps_ubuntu/
+  date: '2012-04-08 21:36:27 +0900'
+  date_gmt: '2012-04-08 12:36:27 +0900'
+  content: ! '[...] nginxとphp-fpmを入れてwordpressを動かした &#8211; ubuntu10.04にnginxとphp-fpmを入れてwordpress動かす
+    | tjun memo [...]'
 ---
 前の構成ではspawn-cgiを使っていたけど、php-fpmを使ったほうがいい、らしいのでそうします。
 nginxやphp5が予め入っている場合は、一度uninstall してからの方がよいかもです。

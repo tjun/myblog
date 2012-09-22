@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE8\xB1\x8A\xE6\xB4\xB2\xE3\x81\xAE\xE3\x81\xA4\xE3\x81\x91\xE9\xBA\xBA\xE3\x81\x95\xE3\x81\xA8\xE3\x81\x86"
+status: publish
+published: true
+title: 豊洲のつけ麺さとう
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 30
 wordpress_url: http://tjun.jp/blog/2009/08/%e8%b1%8a%e6%b4%b2%e3%81%ae%e3%81%a4%e3%81%91%e9%ba%ba%e4%bd%90%e8%97%a4/
-date: 2009-08-20 01:33:49 +09:00
+date: 2009-08-20 01:33:49.000000000 +09:00
+categories:
+- Diary
+- food
+tags:
+- food
+comments: []
 ---
 <p>豊洲で時々行くつけ麺屋です。</p>
 

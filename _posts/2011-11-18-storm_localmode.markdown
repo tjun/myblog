@@ -1,9 +1,37 @@
---- 
+---
 layout: post
-title: "Storm\xE3\x82\x92localmode\xE3\x81\xA7\xE5\xAE\x9F\xE8\xA1\x8C\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: Stormをlocalmodeで実行する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1040
 wordpress_url: http://tjun.jp/blog/?p=1040
-date: 2011-11-18 01:25:00 +09:00
+date: 2011-11-18 01:25:00.000000000 +09:00
+categories:
+- cloud
+- storm
+tags:
+- twitter
+- storm
+comments:
+- id: 374
+  author: EclipseでStormの開発環境を作る | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/11/storm_eclipse/
+  date: '2012-02-04 18:55:18 +0900'
+  date_gmt: '2012-02-04 09:55:18 +0900'
+  content: ! '[...] Stormをlocalmodeで実行する | tjun memo   [...]'
+- id: 378
+  author: stormのcluster環境のセットアップ(centos) | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/01/storm-cluster-setup/
+  date: '2012-02-06 23:18:08 +0900'
+  date_gmt: '2012-02-06 14:18:08 +0900'
+  content: ! '[...] Stormをlocalmodeで実行する | tjun memo   今回は、stormのnimbusやsupervisorを利用する、クラスタ環境をセットアップするときのメモです。
+    centosで試していますが、linux環境であれば同じような感 [...]'
 ---
 stormについては
 <ul>
@@ -75,7 +103,7 @@ $ storm jar StormStarter.jar storm.starter.PrintSampleStream [username] [passwor
 のようなものがあります。
 
 今回使ったstormコマンドは、
-<pre>storm jar [jarファイル] [メインクラス] (引数…)</pre>
+<pre>storm jar [jarファイル] [メインクラス] (引数&hellip;)</pre>
 のようにjarを指定してTopologyの実行を行いました。
 
 他のTopologyも同様に動くと思いますが、wordcountは環境によってはうまく動作しないかもしれません。

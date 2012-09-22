@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "spaces\xE3\x81\x8C\xE5\x9B\xBA\xE3\x81\xBE\xE3\x82\x8B"
+status: publish
+published: true
+title: spacesが固まる
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 166
 wordpress_url: http://tjun.jp/blog/2009/12/spaces%e3%81%8c%e5%9b%ba%e3%81%be%e3%82%8b/
-date: 2009-12-08 02:27:04 +09:00
+date: 2009-12-08 02:27:04.000000000 +09:00
+categories:
+- mac
+tags:
+- mac
+comments: []
 ---
 Snow Leopardでたまーにspacesが固まって，spaceの移動以外のキーボード入力を受け付けなくなる。
 

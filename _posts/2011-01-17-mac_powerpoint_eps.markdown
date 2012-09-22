@@ -1,11 +1,24 @@
---- 
+---
 layout: post
-title: "Mac\xE3\x81\xA7PowerPoint \xE3\x81\xAE\xE5\x9B\xB3\xE3\x82\x92eps\xE3\x81\xAB"
+status: publish
+published: true
+title: MacでPowerPoint の図をepsに
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 731
 wordpress_url: http://tjun.jp/blog/?p=731
-date: 2011-01-17 03:31:23 +09:00
+date: 2011-01-17 03:31:23.000000000 +09:00
+categories:
+- mac
+- tips
+tags:
+- mac
+- research
+comments: []
 ---
-PowerPointで作成した図をtexに入れたいとき，今まではPowerPointで図をpdfで保存→そのままtexに取り込み
+PowerPointで作成した図をtexに入れたいとき，今まではPowerPointで図をpdfで保存&rarr;そのままtexに取り込み
 としていたんだけど、それだと最終的にできるpdfのサイズが大きいとかいろいろ問題が発生したので、PowerPointの図をどうにかしてepsにする方法を調べました．
 
 参考:

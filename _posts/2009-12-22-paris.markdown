@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE3\x83\x95\xE3\x83\xA9\xE3\x83\xB3\xE3\x82\xB9\xE3\x81\xAB\xE8\xA1\x8C\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\x8D\xE3\x81\xBE\xE3\x81\x97\xE3\x81\x9F"
+status: publish
+published: true
+title: フランスに行ってきました
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 182
 wordpress_url: http://tjun.jp/blog/?p=182
-date: 2009-12-22 02:39:31 +09:00
+date: 2009-12-22 02:39:31.000000000 +09:00
+categories:
+- Diary
+tags:
+- travel
+- Diary
+comments: []
 ---
 出張でフランスへ．４泊．
 

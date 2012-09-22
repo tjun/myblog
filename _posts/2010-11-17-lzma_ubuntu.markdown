@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "ubuntu\xE3\x81\xA7lzma.h(\xE5\x9C\xA7\xE7\xB8\xAE)\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\x86"
+status: publish
+published: true
+title: ubuntuでlzma.h(圧縮)を使う
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 674
 wordpress_url: http://tjun.jp/blog/?p=674
-date: 2010-11-17 12:54:17 +09:00
+date: 2010-11-17 12:54:17.000000000 +09:00
+categories:
+- programming
+- ubuntu
+tags:
+- ubuntu
+comments: []
 ---
 <p>lzma (xz) っていうのは、圧縮アルゴリズムの中でも、圧縮にかかる時間は長いけど、圧縮率がbzip2より高くて伸長にかかる時間が比較的短いっていう特徴があります。tarのバージョン1.22からは対応しているらしい。
 

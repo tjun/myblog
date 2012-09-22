@@ -1,9 +1,24 @@
---- 
+---
 layout: post
-title: "Kyoto Tycoon\xE3\x82\x92Java\xE3\x81\x8B\xE3\x82\x89\xE5\x88\xA9\xE7\x94\xA8\xE3\x81\x99\xE3\x82\x8B"
+status: publish
+published: true
+title: Kyoto TycoonをJavaから利用する
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1065
 wordpress_url: http://tjun.jp/blog/?p=1065
-date: 2011-12-23 21:51:42 +09:00
+date: 2011-12-23 21:51:42.000000000 +09:00
+categories:
+- db
+- java
+tags:
+- db
+- server
+- kyoto_tycoon
+- centos
+comments: []
 ---
 Kyoto tycoonのセットアップは、以前のエントリを参照
 <ul>
@@ -29,22 +44,22 @@ http://code.google.com/p/xmemcached/downloads/list　からxmemcached-1.3.5-bin-
 
 利用プログラム例
 [java]
-String hostname = &quot;localhost&quot;;
-String port = &quot;22222&quot;;
+String hostname = "localhost";
+String port = "22222";
 int expiration_time = 0;
 
 XMemcachedClientBuilder builder = new XMemcachedClientBuilder(
-        AddrUtil.getAddresses(hostname + &quot;:&quot; + port));
+        AddrUtil.getAddresses(hostname + ":" + port));
 builder.setTranscoder(new TokyoTyrantTranscoder());
 MemcachedClient client = builder.build();
 
-ArrayList&lt;String&gt; keylist = new ArrayList&lt;String&gt;();
+ArrayList<String> keylist = new ArrayList<String>();
 
 try{
     // set data
-    System.out.println(&quot;set data&quot;);
+    System.out.println("set data");
 　　　    for(Integer i = 0; i != 5; i++){
-　　　　    String value = &quot;value&quot; + i;
+　　　　    String value = "value" + i;
         client.set(i.toString() , expiration_time, value);
         keylist.add(i.toString());
     }    
@@ -52,21 +67,21 @@ try{
     // get data
 
     // bulk get
-    System.out.println(&quot;bulk get&quot;);
-    Map&lt;String, Object&gt; valuemap = client.get(keylist);
+    System.out.println("bulk get");
+    Map<String, Object> valuemap = client.get(keylist);
     for(Integer i =0; i != 5; i++){
         System.out.println(valuemap.get(keylist.get(i)));            
     }
 
     // single get
-    System.out.println(&quot;single get&quot;);
+    System.out.println("single get");
     for(Integer i=0; i != 5; i++){
         String value = client.get(i.toString());
         System.out.println(value);
     }
 
 　　　　// delete data
-        System.out.println(&quot;delete data from db&quot;);
+        System.out.println("delete data from db");
 
     for(Integer i=0; i != 5; i++){
         client.delete(i.toString());

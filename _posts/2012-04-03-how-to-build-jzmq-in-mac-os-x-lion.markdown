@@ -1,9 +1,22 @@
---- 
+---
 layout: post
+status: publish
+published: true
 title: How to build jzmq in Mac OS X Lion
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1120
 wordpress_url: http://tjun.jp/blog/?p=1120
-date: 2012-04-03 18:48:04 +09:00
+date: 2012-04-03 18:48:04.000000000 +09:00
+categories:
+- java
+- storm
+tags:
+- java
+- storm
+comments: []
 ---
 I tried to build jzmq, but failed with the following error message:
 <pre>

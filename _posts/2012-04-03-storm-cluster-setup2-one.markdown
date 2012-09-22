@@ -1,9 +1,27 @@
---- 
+---
 layout: post
-title: "storm\xE3\x81\xAEcluster\xE7\x92\xB0\xE5\xA2\x83\xE3\x81\xAE\xE3\x82\xBB\xE3\x83\x83\xE3\x83\x88\xE3\x82\xA2\xE3\x83\x83\xE3\x83\x97& storm UI\xE3\x82\x92\xE8\xA9\xA6\xE3\x81\x99 (\xE5\xBE\x8C\xE7\xB7\xA81: \xEF\xBC\x91\xE5\x8F\xB0\xE3\x81\xA7\xE5\x85\xA8\xE3\x81\xA6\xE5\x8B\x95\xE3\x81\x8B\xE3\x81\x99)"
+status: publish
+published: true
+title: ! 'stormのcluster環境のセットアップ& storm UIを試す (後編1: １台で全て動かす)'
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 1115
 wordpress_url: http://tjun.jp/blog/?p=1115
-date: 2012-04-03 21:01:34 +09:00
+date: 2012-04-03 21:01:34.000000000 +09:00
+categories:
+- storm
+tags:
+- storm
+comments:
+- id: 472
+  author: stormのcluster環境のセットアップ(centos) | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/01/storm-cluster-setup/
+  date: '2012-06-05 00:16:03 +0900'
+  date_gmt: '2012-06-04 15:16:03 +0900'
+  content: ! '[...] stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て動かす) [...]'
 ---
 前回からだいぶ時間がたってしまいましたが・・・
 
@@ -139,7 +157,7 @@ storm-starterの中のExclamationTopologyを実行します。
 ということで、storm jar [jarの名前] [mainクラスの名前] [引数1]のようにすればtopologyをsubmitできます。
 <pre>
 $ storm jar StormStarter.jar storm.starter.ExclamationTopology test
-…..
+&hellip;..
 [main] INFO  backtype.storm.StormSubmitter  - Jar not uploaded to master yet. Submitting jar...
 37   [main] INFO  backtype.storm.StormSubmitter  - Uploading topology jar StormStarter.jar to assigned location: /tmp/storm/nimbus/inbox/stormjar-ea8d5f50-287e-4fcf-a371-81c84f465109.jar
 53   [main] INFO  backtype.storm.StormSubmitter  - Successfully uploaded topology jar to assigned location: /tmp/storm/nimbus/inbox/stormjar-ea8d5f50-287e-4fcf-a371-81c84f465109.jar

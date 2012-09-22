@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "apt-get \xE3\x81\xA7\xE4\xBF\x9D\xE7\x95\x99\xE3\x81\x95\xE3\x82\x8C\xE3\x82\x8B\xE3\x83\x91\xE3\x83\x83\xE3\x82\xB1\xE3\x83\xBC\xE3\x82\xB8\xE3\x81\xAE\xE3\x82\xA2\xE3\x83\x83\xE3\x83\x97\xE3\x82\xB0\xE3\x83\xAC\xE3\x83\xBC\xE3\x83\x89"
+status: publish
+published: true
+title: apt-get で保留されるパッケージのアップグレード
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 186
 wordpress_url: http://tjun.jp/blog/?p=186
-date: 2009-12-11 13:43:41 +09:00
+date: 2009-12-11 13:43:41.000000000 +09:00
+categories:
+- ubuntu
+tags:
+- ubuntu
+- server
+- linux
+comments: []
 ---
 ubuntuサーバを使っていて
 <pre>$ sudo apt-get update

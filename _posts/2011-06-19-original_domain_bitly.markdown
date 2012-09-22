@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "\xE7\x8B\xAC\xE8\x87\xAA\xE3\x83\x89\xE3\x83\xA1\xE3\x82\xA4\xE3\x83\xB3\xE3\x81\xAE\xE7\x9F\xAD\xE7\xB8\xAEURL\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\x86"
+status: publish
+published: true
+title: 独自ドメインの短縮URLを使う
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 900
 wordpress_url: http://tjun.jp/blog/?p=900
-date: 2011-06-19 15:07:13 +09:00
+date: 2011-06-19 15:07:13.000000000 +09:00
+categories:
+- web
+tags:
+- webservice
+- twitter
+comments: []
 ---
 最近<a href="http://bitly.com/">bitly</a>のPRO機能が無料になりました。
 <a href="http://jp.techcrunch.com/archives/20110615bitly-makes-its-bitly-pro-features-free-to-all-users/">Bitly Pro機能が無料に―独自ドメイン名で短縮ができる</a>

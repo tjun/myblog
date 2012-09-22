@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "wordpress\xE3\x81\xAB\xE3\x82\xBD\xE3\x83\xBC\xE3\x82\xB9\xE3\x82\xB3\xE3\x83\xBC\xE3\x83\x89\xE3\x82\x92\xE6\x9B\xB8\xE3\x81\x8D\xE3\x81\x9F\xE3\x81\x84"
+status: publish
+published: true
+title: wordpressにソースコードを書きたい
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 352
 wordpress_url: http://zzz.jeeet.net/?p=7
-date: 2008-05-15 03:44:19 +09:00
+date: 2008-05-15 03:44:19.000000000 +09:00
+categories:
+- programming
+- wordpress
+tags:
+- plugin
+- wordpress
+comments: []
 ---
 wordpressにソースコードを書きたいとき，それを見やすくしてくれるプラグインを紹介．
 <h3><a title="syntaxhighlighter" href="http://wordpress.org/extend/plugins/syntaxhighlighter/">SyntaxHighlighter</a></h3>

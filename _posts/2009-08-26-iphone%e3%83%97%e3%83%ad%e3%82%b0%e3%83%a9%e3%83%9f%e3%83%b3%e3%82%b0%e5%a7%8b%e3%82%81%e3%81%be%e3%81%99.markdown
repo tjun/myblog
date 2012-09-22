@@ -1,9 +1,20 @@
---- 
+---
 layout: post
-title: "iPhone\xE3\x83\x97\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\xA9\xE3\x83\x9F\xE3\x83\xB3\xE3\x82\xB0\xE5\xA7\x8B\xE3\x82\x81\xE3\x81\xBE\xE3\x81\x99"
+status: publish
+published: true
+title: iPhoneプログラミング始めます
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 34
 wordpress_url: http://tjun.jp/blog/2009/08/iphone%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e5%a7%8b%e3%82%81%e3%81%be%e3%81%99/
-date: 2009-08-26 14:19:54 +09:00
+date: 2009-08-26 14:19:54.000000000 +09:00
+categories:
+- iphone
+tags:
+- iphone
+comments: []
 ---
 ついに開発者登録できた！（お金払った！）
 

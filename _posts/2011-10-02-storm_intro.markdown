@@ -1,9 +1,56 @@
---- 
+---
 layout: post
-title: "twitter\xE3\x81\x8C\xE7\x99\xBA\xE8\xA1\xA8\xE3\x81\x97\xE3\x81\x9F\xE3\x83\xAA\xE3\x82\xA2\xE3\x83\xAB\xE3\x82\xBF\xE3\x82\xA4\xE3\x83\xA0\xE5\x88\x86\xE6\x95\xA3\xE5\x87\xA6\xE7\x90\x86\xE3\x83\x95\xE3\x83\xAC\xE3\x83\xBC\xE3\x83\xA0\xE3\x83\xAF\xE3\x83\xBC\xE3\x82\xAFStorm"
+status: publish
+published: true
+title: twitterが発表したリアルタイム分散処理フレームワークStorm
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 967
 wordpress_url: http://tjun.jp/blog/?p=967
-date: 2011-10-02 23:20:58 +09:00
+date: 2011-10-02 23:20:58.000000000 +09:00
+categories:
+- cloud
+- storm
+tags:
+- storm
+comments:
+- id: 348
+  author: Stormをlocalmodeで実行する | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/11/storm_localmode/
+  date: '2011-11-18 01:25:04 +0900'
+  date_gmt: '2011-11-17 16:25:04 +0900'
+  content: ! '[...] twitterが発表したリアルタイム分散処理フレームワークStorm | tjun memo  を参照してください。  今回は  [...]'
+- id: 354
+  author: EclipseでStormの開発環境を作る | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2011/11/storm_eclipse/
+  date: '2011-12-27 00:27:07 +0900'
+  date_gmt: '2011-12-26 15:27:07 +0900'
+  content: ! '[...] 。  twitterが発表したリアルタイム分散処理フレームワークStorm | tjun memo   今回は、その開発環境を作るメモ。  [...]'
+- id: 361
+  author: stormのcluster環境のセットアップ(centos) | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/01/storm-cluster-setup/
+  date: '2012-01-09 13:55:49 +0900'
+  date_gmt: '2012-01-09 04:55:49 +0900'
+  content: ! '[...] twitterが発表したリアルタイム分散処理フレームワークStorm | tjun memo [...]'
+- id: 372
+  author: なぜStormを使うのか | tjun memo
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/02/storm_rationale/
+  date: '2012-02-02 00:01:56 +0900'
+  date_gmt: '2012-02-01 15:01:56 +0900'
+  content: ! '[...] twitterが発表したリアルタイム分散処理フレームワークStorm [...]'
+- id: 414
+  author: ! 'stormのcluster環境のセットアップ&amp; storm UIを試す (後編1: １台で全て動かす) | tjun memo'
+  author_email: ''
+  author_url: http://tjun.jp/blog/2012/04/storm-cluster-setup2-one/
+  date: '2012-04-04 00:11:41 +0900'
+  date_gmt: '2012-04-03 15:11:41 +0900'
+  content: ! '[...] twitterが発表したリアルタイム分散処理フレームワークStorm | tjun memo [...]'
 ---
 <a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="" target="_blank"><img src="http://farm7.static.flickr.com/6161/6203090442_56094700ae_m.jpg" alt="" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by/2.0/" title="Attribution License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="CoreBurn" target="_blank">CoreBurn</a></small>
 
@@ -24,7 +71,7 @@ twitterでは、例えば連続的発生するtweetをstream APIから読み込�
 
 関連する日本語の記事：
 <ul>
-	<li><a href="http://gihyo.jp/dev/clip/01/orangenews/vol65/0001">濃縮還元オレンジニュース：Twitter，分散リアルタイム処理システム「Storm」公開｜gihyo.jp … 技術評論社</a></li>
+	<li><a href="http://gihyo.jp/dev/clip/01/orangenews/vol65/0001">濃縮還元オレンジニュース：Twitter，分散リアルタイム処理システム「Storm」公開｜gihyo.jp &hellip; 技術評論社</a></li>
 	<li><a href="http://www.infoq.com/jp/news/2011/09/twitter-storm-real-time-hadoop">InfoQ: ツイッターStorm:オープンソースのリアルタイムHadoop</a></li>
 </ul>
 
@@ -128,16 +175,16 @@ Wordcountを行うtopologyに対する入力は、複数の単語からなる文
 <strong>Topologyの定義</strong>
 [java]
 TopologyBuilder builder = new TopologyBuilder();
-builder.setSpout(&quot;MySpout&quot;, new KestrelSpout(&quot;kestrel.backtype.com&quot;,
+builder.setSpout("MySpout", new KestrelSpout("kestrel.backtype.com",
                                       22133,
-                                      &quot;sentence_queue&quot;,
+                                      "sentence_queue",
                                       new StringScheme()));
 
-builder.setBolt(&quot;SplitBolt&quot;, new SplitSentence(), 10)
-  .shuffleGrouping(&quot;MySpout&quot;);
+builder.setBolt("SplitBolt", new SplitSentence(), 10)
+  .shuffleGrouping("MySpout");
 
-builder.setBolt(&quot;WordCountBolt&quot;, new WordCount(), 20)
-  .fieldsGrouping(&quot;SplitBolt&quot;, new Fields(&quot;word&quot;));
+builder.setBolt("WordCountBolt", new WordCount(), 20)
+  .fieldsGrouping("SplitBolt", new Fields("word"));
 [/java] 
 
 spoutはtopologyにsetSpoutメソッドからユニークなID（上の例では"MySpout"）を割り当てられて追加されます。
@@ -157,7 +204,7 @@ public class SplitSentence implements IBasicBolt {
 
   public void execute(Tuple tuple, BasicOutputCollector collector) {
     String sentence = tuple.getString(0);
-    for(String word: sentence.split(&quot; &quot;)) {
+    for(String word: sentence.split(" ")) {
       collector.emit(new Values(word));
     }
   }
@@ -166,7 +213,7 @@ public class SplitSentence implements IBasicBolt {
   }
 
   public void declareOutputFields(OutputFieldsDeclarer declarer) {
-    declarer.declare(new Fields(&quot;word&quot;));
+    declarer.declare(new Fields("word"));
   }
 }
 [/java]
@@ -181,7 +228,7 @@ import storm
 
 class SplitSentenceBolt(storm.BasicBolt):
     def process(self, tup):
-        words = tup.values[0].split(&quot; &quot;)
+        words = tup.values[0].split(" ")
         for word in words:
           storm.emit([word])
 [/python]
@@ -201,7 +248,7 @@ boltは複数のinput streamをsubscribeできるので、下のようにすれ�
 builder.setBolt(4, new MyBolt(), 12)
     .shuffleGrouping(1)
     .shuffleGrouping(2)
-    .fieldsGrouping(3, new Fields(&quot;id1&quot;, &quot;id2&quot;));
+    .fieldsGrouping(3, new Fields("id1", "id2"));
 [/java]
 
 
@@ -228,7 +275,7 @@ builder.setBolt(4, new MyBolt(), 12)
 
 
 <h3>Stormに似たその他の技術</h3>
-StormはCEP("Complex Event Processing” systems)です。
+StormはCEP("Complex Event Processing&rdquo; systems)です。
 そのようなシステムは、他にもEsperやS4(yahooが作ったやつ)があります。
 S4と似ているが、S4より優れているところとして、Stormでは故障があってもメッセージの処理が保証されるとのこと。
 

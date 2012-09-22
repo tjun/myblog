@@ -1,9 +1,22 @@
---- 
+---
 layout: post
-title: "Thinkpad X31\xE3\x81\xABUbuntu8.10\xE3\x82\xA4\xE3\x83\xB3\xE3\x82\xB9\xE3\x83\x88\xE3\x83\xBC\xE3\x83\xAB\xE3\x83\xA1\xE3\x83\xA2"
+status: publish
+published: true
+title: Thinkpad X31にUbuntu8.10インストールメモ
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 404
 wordpress_url: http://zzz.jeeet.net/?p=237
-date: 2009-01-07 23:44:42 +09:00
+date: 2009-01-07 23:44:42.000000000 +09:00
+categories:
+- linux
+- tips
+- ubuntu
+tags:
+- ubuntu
+comments: []
 ---
 新たにLinuxマシンを使う必要があったので，古いthinkpadにUbuntu8.10を入れて使うことにした．
 
@@ -11,7 +24,7 @@ date: 2009-01-07 23:44:42 +09:00
 
 ・<strong>Ubuntuのisoイメージを焼いたDVD（またはCD）ブートの際認識されない</strong>
 
-→これはたいていディスクにちゃんとイメージとして焼けてないことが原因です．
+&rarr;これはたいていディスクにちゃんとイメージとして焼けてないことが原因です．
 isoを焼けるソフトを探してきて焼きましょう．
 ちなみに自分はDVDDecrypterというソフトを使ってDVD-Rに焼きました．
 
@@ -34,8 +47,8 @@ googleでちょっと検索して、
 
 を参考にして、インストールのときに使ったLiveDVDを入れます．
 
-メニューバー?の「システム」→「システム管理」→「Synaptic パッケージマネージャ」を開いて
-「設定」→「リポジトリ」のに下の方の「CD-ROM/DVDからインストール」の「Ubuntu8.10 'Intrepid Ibex'のCD-ROM」チェックを入れ、OKを押してから、一度Synpaticパッケージマネージャを終了させます。
+メニューバー?の「システム」&rarr;「システム管理」&rarr;「Synaptic パッケージマネージャ」を開いて
+「設定」&rarr;「リポジトリ」のに下の方の「CD-ROM/DVDからインストール」の「Ubuntu8.10 'Intrepid Ibex'のCD-ROM」チェックを入れ、OKを押してから、一度Synpaticパッケージマネージャを終了させます。
 
 そして、再びSynpaticパッケージマネージャを起動し，「未インストール」の中から
 「linux-backports-modules-intrepid-generic」をダブルクリックとかして、選択します．
@@ -48,18 +61,18 @@ googleでちょっと検索して、
 
 
 ・<strong>無線がWPAだとパスワードが通らない</strong>
-→なぜか入力したパスワードがバグっちゃうみたい。
+&rarr;なぜか入力したパスワードがバグっちゃうみたい。
 とりあえず別の無線LAN(WEP)で妥協した。
-→結局，メニューバー?のネットワークのアイコン右クリックして「接続の編集」から対象となるネットワークを選んで「無線セキュリティ」からパスワード入力したら接続できた。
+&rarr;結局，メニューバー?のネットワークのアイコン右クリックして「接続の編集」から対象となるネットワークを選んで「無線セキュリティ」からパスワード入力したら接続できた。
 謎。
 Fonの場合は，ちょっと違うらしい．
 
 ・<strong>音量の調節ができない</strong>
-→未解決。スクロールするたびに変な音がなるのは消した。
-「システム設定」→「サウンド」から。
+&rarr;未解決。スクロールするたびに変な音がなるのは消した。
+「システム設定」&rarr;「サウンド」から。
 
 ・<strong>トラックポイントとセンターボタンによるスクロールができない</strong>
-→<a href="http://d.hatena.ne.jp/sun-basix/20081029/1225287044">Ubuntu Intrepid (8.10)でThinkPadのトラックポイントを有効にする</a>を参考に，
+&rarr;<a href="http://d.hatena.ne.jp/sun-basix/20081029/1225287044">Ubuntu Intrepid (8.10)でThinkPadのトラックポイントを有効にする</a>を参考に，
 /etc/hal/fdi/policy/mouse-wheel.fdi
 を作成する．
 昔と設定方法が変わったので要注意。

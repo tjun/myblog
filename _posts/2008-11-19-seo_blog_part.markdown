@@ -1,9 +1,21 @@
---- 
+---
 layout: post
-title: "SEO\xE3\x83\x96\xE3\x83\xAD\xE3\x82\xB0\xE3\x83\x91\xE3\x83\xBC\xE3\x83\x84\xE3\x80\x8C\xE6\xA4\x9C\xE7\xB4\xA2\xE3\x81\x8F\xE3\x82\x93\xE3\x80\x8D\xE3\x82\x92\xE4\xBD\xBF\xE3\x81\xA3\xE3\x81\xA6\xE3\x81\xBF\xE3\x81\x9F"
+status: publish
+published: true
+title: SEOブログパーツ「検索くん」を使ってみた
+author: tjun
+author_login: tjun
+author_email: t.junichiro@gmail.com
+author_url: http://tjun.jp/blog/
 wordpress_id: 394
 wordpress_url: http://zzz.jeeet.net/2008/11/seo%e3%83%96%e3%83%ad%e3%82%b0%e3%83%91%e3%83%bc%e3%83%84%e3%80%8c%e6%a4%9c%e7%b4%a2%e3%81%8f%e3%82%93%e3%80%8d%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f/
-date: 2008-11-19 20:27:54 +09:00
+date: 2008-11-19 20:27:54.000000000 +09:00
+categories:
+- wordpress
+tags:
+- iPodtouch
+- wordpress
+comments: []
 ---
 <a href="http://ksk.pha22.net/">SEOブログパーツ「検索くん」</a>.
 
@@ -23,6 +35,6 @@ google analysis使ってるので、来た人がどのような検索ワード�
 
 なお、設置方法ですが、wordpressの場合は、
 
-ダッシュボードで「<strong>デザイン</strong>」→「<strong>ウィジェット</strong>」の「<strong>テキスト</strong>」としてjavascriptを貼り付けてやるだけでOKです．
+ダッシュボードで「<strong>デザイン</strong>」&rarr;「<strong>ウィジェット</strong>」の「<strong>テキスト</strong>」としてjavascriptを貼り付けてやるだけでOKです．
 
 初めて設置したときは，表示されるまで少し時間がかかるかもです．

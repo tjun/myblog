@@ -2,3 +2,6 @@ permalink: /:year/:month/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
+name: "tjun memo"
+description: "tjunのメモ"
+url: http://tjun.jp/blog

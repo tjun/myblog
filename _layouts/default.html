@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{page.lang}}">
+<head>
+  <title>{{ page.title }} | tjun memo</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
+  <link rel="canonical" href="{{page.url}}" >
+
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:site_name" content="tjun memo" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:image" content="http://tjun.jp/apple-touch-icon.png" />
+  <meta property="fb:admins" content="1261372973" />
+  <meta property="fb:app_id" content="146534425377418" />
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header id="header">
+      <h1>tjun memo</h1>
+    </header>
+
+    <div id="main">
+      {{ content }}
+    </div>
+  </div>
+
+  <footer id="footer">&copy; Junichiro Takagi. 2008-2012</footer>
+</body>
+</html>

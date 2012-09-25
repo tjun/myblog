@@ -48,5 +48,16 @@
 	  
     </div><!-- class:wrapper -->
   </div><!-- id:outer -->
+
+<script>
+
+(function() {
+var form = document.getElementById('search');
+form.addEventListener('submit', function() {
+var query = document.getElementById('query');
+query.value += (' ' + 'site:tjun.jp/blog/');
+}, false);
+})();
+</script>
 </body>
 </html>

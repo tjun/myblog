@@ -82,5 +82,12 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
+<script>(function() {
+var form = document.getElementById('search');
+form.addEventListener('submit', function() {
+var query = document.getElementById('query');
+query.value += (' ' + 'site:tjun.jp/blog/');
+}, false);
+})();</script>
 </body>
 </html>

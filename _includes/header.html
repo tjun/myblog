@@ -1,11 +1,19 @@
 <header id="header" class="group">
 
   <h1>{{ site.name }}</h1>
+
   <nav>
 	<ul>
 	  <li><a href="/" alt="Top">Top</a></li>
 	  <li><a href="#" alt="About">About</a></li>
-	</ul>
+	  <li><a href="http://twitter.com/tjun" alt="tjun in twitter">@tjun</a></li>
+	  <li>
+		<form action="http://google.com/search" class="btn-group" id="search">
+		  <input type="text" name="q" class="input-search" id="query">
+		  <input type="button" class="btn btn-round" value="search" onclick="this.form.submit();">
+		</form>
+	  </li>
+	</ul>	
   </nav>	
     
 </header>

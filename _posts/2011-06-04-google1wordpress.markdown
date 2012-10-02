@@ -30,18 +30,20 @@ comments: []
 普通のサイズ
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 <g:plusone href="http://tjun.jp/blog/2011/06/google1wordpress/"></g:plusone>
-<pre>[code lang="JavaScrpt"]
+{% highlight javascript %}
 <!-- google+1 -->
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-<g:plusone href="<?php the_permalink() ?>"></g:plusone>[/code]</pre>
+<g:plusone href="<?php the_permalink() ?>"></g:plusone>
+{% endhighlight %}
 
 小さいサイズ
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 <g:plusone size="small" href="http://tjun.jp/blog/2011/06/google1wordpress/"></g:plusone>
-<pre>[code lang="JavaSript"]
+{% highlight javascript %}
 <!-- google+1 -->
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-<g:plusone size="small" href="<?php the_permalink() ?>"></g:plusone>[/code]</pre>
+<g:plusone size="small" href="<?php the_permalink() ?>"></g:plusone>
+{% endhighlight %}
 
 
 以上です。

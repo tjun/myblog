@@ -44,7 +44,7 @@ http://code.google.com/p/xmemcached/downloads/list　からxmemcached-1.3.5-bin-
 <h2>プログラム例</h2>
 こんな感じで使えます。
 
-[code lang="java"]
+{% highlight java linenos %}
 import net.rubyeye.xmemcached.MemcachedClient;
 import net.rubyeye.xmemcached.XMemcachedClientBuilder;
 import net.rubyeye.xmemcached.command.KestrelCommandFactory;
@@ -69,7 +69,7 @@ import net.rubyeye.xmemcached.utils.AddrUtil;
     String res = client.get(queueName);
     System.out.println(res);
 }
-[/code]
+{% endhighlight %}
 
 参考：
 <ul>

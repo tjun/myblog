@@ -173,7 +173,7 @@ Wordcountを行うtopologyに対する入力は、複数の単語からなる文
 
 
 <strong>Topologyの定義</strong>
-[java]
+{% highlight java linenos %}
 TopologyBuilder builder = new TopologyBuilder();
 builder.setSpout("MySpout", new KestrelSpout("kestrel.backtype.com",
                                       22133,
@@ -185,7 +185,7 @@ builder.setBolt("SplitBolt", new SplitSentence(), 10)
 
 builder.setBolt("WordCountBolt", new WordCount(), 20)
   .fieldsGrouping("SplitBolt", new Fields("word"));
-[/java] 
+{% endhighlight %}
 
 spoutはtopologyにsetSpoutメソッドからユニークなID（上の例では"MySpout"）を割り当てられて追加されます。
 topologyの全てのノード（spoutやbolt）は必ずIDが割り当てられ、そのIDを用いてboltからoutput streamがsubscribeされます。
@@ -196,7 +196,7 @@ Topologyにおける個々のboltは以下のように書けます。
 <strong>Boltの例</strong>（SplitSentencceBolt）
 文章を単語に分割するboltです。
 
-[java]
+{% highlight java linenos %}
 public class SplitSentence implements IBasicBolt {
   
   public void prepare(Map conf, TopologyContext context) {
@@ -216,14 +216,14 @@ public class SplitSentence implements IBasicBolt {
     declarer.declare(new Fields("word"));
   }
 }
-[/java]
+{% endhighlight %}
 これは、文章を入力として、それぞれの単語をtupleとして出力していくBoltの例になります。
 executeメソッドで、タプルを受け取って、タプルを生成する処理を行なっています。
 
 
 また、boltは他の言語でも書くこともできます。
 pythonの例
-[python]
+{% highlight python linenos %}
 import storm
 
 class SplitSentenceBolt(storm.BasicBolt):
@@ -231,7 +231,7 @@ class SplitSentenceBolt(storm.BasicBolt):
         words = tup.values[0].split(" ")
         for word in words:
           storm.emit([word])
-[/python]
+{% endhighlight %}
 
 
 ToplogyにおけるsetBoltメソッドのの最後の引数は、boltの処理をどれだけ並列するかを示します。
@@ -244,12 +244,12 @@ setBoltメソッドは、宣言したinputのオブジェクトを返します�
 ポイントは、KestrelSpoutから出力される全てのtupleを、splitsentenctBoltが消費する、ということです。
 
 boltは複数のinput streamをsubscribeできるので、下のようにすれば複数のstreamを合わせるような処理ができます。
-[java]
+{% highlight java linenos %}
 builder.setBolt(4, new MyBolt(), 12)
     .shuffleGrouping(1)
     .shuffleGrouping(2)
     .fieldsGrouping(3, new Fields("id1", "id2"));
-[/java]
+{% endhighlight %}
 
 
 この後にもWordCountの説明や複数のstream処理などの説明もありますが省略します。

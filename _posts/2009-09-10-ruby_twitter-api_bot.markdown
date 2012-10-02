@@ -40,7 +40,7 @@ rubyからtwitter APIをたたくbotを作ります。
 
 で、ソースコード。
 
-[ruby]
+{% highlight ruby linenos %}
 require 'rubygems'
 require 'twitter'
 
@@ -55,7 +55,7 @@ client.direct_messages.each{ |msg|
   client.update(post_msg)
   client.direct_message_destroy(msg.id)
 }
-[/ruby]
+{% endhighlight %}
 
 これをcronで毎分動かしてやります．
 以上です。今のところ正しく動いています。

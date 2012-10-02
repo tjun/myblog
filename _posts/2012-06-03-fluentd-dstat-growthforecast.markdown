@@ -35,11 +35,11 @@ dstatをfluentdにつなぐのに、<a href="https://github.com/shun0102/fluent-
 できれば元のものをうまい具合にparseして繋ぎたいのだけど、やり方がよく分からなかった。。
 
 設定はこんな感じ
-<pre><source>
+<pre>
   type dstat
   tag dstat
   option -cmdn delay 5
-</source></pre>
+</pre>
 
 
 <h3>growthforecast</h3>
@@ -99,13 +99,13 @@ fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を�
 データの集計には、<a href="https://github.com/tagomoris/fluent-plugin-datacounter">tagomoris/fluent-plugin-datacounter</a>を使いました。
 
 fluentdの設定は以下のような感じ。
-<pre><source>
+<pre>
   type tail
   format /^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<reqtime>[^\]]*)\] "(?<method>[^ ]*) (?<path>[^ ]*) [^\"]*" (?<code>[^ ]*) (?<size>[^ ]*) "(?<referer>[^\"]*)" "(?<agent>[^\"]*)" (?<response_time>[^ ]*)$/
   path /var/log/nginx/access.log
   tag nginx.access
   pos_file /etc/fluent/nginx_pos
-</source>
+
 
 # counter
 <match nginx.access>

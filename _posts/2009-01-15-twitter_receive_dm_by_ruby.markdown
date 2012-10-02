@@ -24,8 +24,6 @@ comments: []
 
 こないだ，<a href="http://tjun.jp/blog/2009/01/ruby_twitter_cron/">twitterにくだらないギャグをpostするプログラム</a>を書いたので，今度は他の人からの投稿を受け付けて，ギャグリストに追加するプログラムを書きました．
 
-[ad]
-
 これで誰でも思いついたくだらないギャグをsubetterに言わせることができます．
 <h3><a href="http://twitter.com/subetter">進化したsubetter</a></h3>
 ついでに，ギャグをテキストファイルに保存するのはなんかかっこ悪いので，MySQLにも入れることにしました．いずれMySQLに完全に移行したいですが，まだ両方やってます．
@@ -34,7 +32,7 @@ comments: []
 
 プログラムはこんな感じ．
 
-[ruby]
+{% highlight ruby linenos %}
 require('rubygems')
 gem('twitter4r','0.3.0')
 require('twitter')
@@ -76,4 +74,4 @@ end
 end
 
 exit
-[/ruby]
+{% endhighlight %}

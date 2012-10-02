@@ -31,7 +31,7 @@ Macの新しいマウス（Magic Mouse ）を導入してから，emacsを使う
 
 .emacs.elに以下を追加します．
 
-[code]
+<pre>]
 (defun scroll-down-with-lines ()
   "" (interactive) (scroll-down 3))
 (defun scroll-up-with-lines ()
@@ -42,6 +42,6 @@ Macの新しいマウス（Magic Mouse ）を導入してから，emacsを使う
 (global-set-key [double-wheel-down] 'scroll-up-with-lines)
 (global-set-key [triple-wheel-up] 'scroll-down-with-lines)
 (global-set-key [triple-wheel-down] 'scroll-up-with-lines)
-[/code]
+</pre>
 
 これで快適になりました．

@@ -21,8 +21,6 @@ comments: []
 vistaと相性の悪いと言われているcygwinですが，やっぱり必要なので入れました．
 そのときのメモです．
 
-[ad]
-
 <strong>インストール</strong>は
 <a href="http://www.cis.twcu.ac.jp/%7Eosada/comp2a/cygwin-vista.html">Cygwinのインストール(Windows Vista)</a>で、基本的な流れがわかります．
 

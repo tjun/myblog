@@ -75,8 +75,6 @@ comments:
 
 自分はこれが嫌で，変えたいと思いました．
 
-[ad]
-
 googleで調べてみたところ，
 
 <a href="http://www.mozilla-japan.org/support/thunderbird/tips#beh_replyheader">http://www.mozilla-japan.org/support/thunderbird/tips#beh_replyheader</a>

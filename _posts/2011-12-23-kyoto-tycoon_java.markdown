@@ -43,7 +43,7 @@ http://code.google.com/p/xmemcached/downloads/list　からxmemcached-1.3.5-bin-
 
 
 利用プログラム例
-[java]
+{% highlight java %}
 String hostname = "localhost";
 String port = "22222";
 int expiration_time = 0;
@@ -97,4 +97,4 @@ try{
     // memcached operation fail
     e.printStackTrace();
 }
-[/java]
+{% endhighlight %}

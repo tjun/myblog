@@ -27,14 +27,14 @@ testtest
 
 で、preタグを使うとき１行が長いとそのまま枠からはみ出してしまう、という問題があったのでcssを修正しました。
 
-[css]
+{% highlight css %}
 pre {
     /*これまでの設定に以下を追加*/
     overflow: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-[/css]
+{% endhighlight %}
 （&uarr;これがsyntaxhighlighterです。このCSSでは全然highlightされていません。）
 
 これで一応折り返されるようになりましたが、IE等は未確認です。

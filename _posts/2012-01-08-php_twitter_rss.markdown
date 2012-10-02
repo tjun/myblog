@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: ! '[PHP] twitterのRSSからreplyを取り除く'
+title: ! '[php] twitterのRSSからreplyを取り除く'
 author: tjun
 author_login: tjun
 author_email: t.junichiro@gmail.com
@@ -23,7 +23,7 @@ twitterのRSSを<a href="http://tjun.jp">自分のウェブページ</a>に表�
 なので、正規表現でリプライだけ取り除いて表示するようにしました。
 RTはそのまま表示してます。
 
-[php]
+{% highlight PHP linenos %}
 require_once 'lib/rss_fetch.inc';
 
 $twit_feed = 'http://twitter.com/statuses/user_timeline/********.rss';
@@ -42,12 +42,12 @@ foreach($twit_rss->items as $item){
   echo "  <li><a href=\"$url\">$title</a></li>\n";
 }
 echo "</ul>";
-[/php]
+{% endhighlight %}
 
 リプライを取り除くのは以下の部分です。
-[php]
+{% highlight php %}
   if(preg_match("/^tjun: @/", $title))continue;
-[/php]
+{% endhighlight %}
 tjunは、自分のtwitterのユーザ名です。先頭が "ユーザ名: @" であれば、リプライと判定してます。
 
 

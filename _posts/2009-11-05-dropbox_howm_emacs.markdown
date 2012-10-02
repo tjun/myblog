@@ -18,9 +18,9 @@ comments: []
 ---
 howmで作られるメモをDropboxで共有するには，.emacs.elに
 
-[code]
+<pre>
 (setq howm-directory "~/Dropbox/memo/howm/")
-[/code]
+</pre>
 を書きます．
 
 ディレクトリは適宜書き換えてください．

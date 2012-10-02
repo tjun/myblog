@@ -29,7 +29,7 @@ safariで実現する方法は、いくつかあると思うんだけど、前�
 
 というわけで少し修正してみました。
 自分ではうまく使えているけど、ブログに載せる際に正しく反映されるかな。
-[code]
+<pre>
 javascript:var url = location.href;var title = document.title;var linkTag = ' <a href="' + url + '" title="' + title + '">' + title +'</a>';var x = prompt('',linkTag);
-[/code]
+</pre>
 どうでしょう。

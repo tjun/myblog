@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <title>{{ page.title }} | {{site.name}}</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" value="{{ page.description }}" />
+  <meta name="Robots" content="index,follow" />
+  <meta name="author" content="Junichiro Takagi" />
+  <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <link rel="canonical" href="{{site.url}}{{ page.url }}" />
+  <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.jp/blog/feed.xml" />
+
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:image" content="http://tjun.jp/apple-touch-icon.png" />
+  <meta property="fb:admins" content="1261372973" />
+  <meta property="fb:app_id" content="146534425377418" />
+  <meta name="msvalidate.01" content="B810A86B781E0ADE74E7DB82A9DCC016" />
+  <meta name="y_key" content="d1f4b50cd2c2039a" />
+  <script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-4498443-4']);
+	_gaq.push(['_trackPageview']);	
+	(function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();	
+  </script>
+  
+</head>
+
+<body>
+
+  <div id="outer">
+    <div class="wrapper">
+
+{% include header.html %}
+
+      <div id="main" class="row">
+        {{ content }}
+      </div><!-- id:main -->
+
+{% include footer.html %}
+	
+    </div><!-- class:wrapper -->
+  </div><!-- id:outer -->
+
+<script>
+
+(function() {
+var form = document.getElementById('search');
+form.addEventListener('submit', function() {
+var query = document.getElementById('query');
+query.value += (' ' + 'site:tjun.jp/blog/');
+}, false);
+})();
+</script>
+</body>
+</html>

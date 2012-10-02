@@ -1,8 +1,8 @@
-permalink: /:year/:month/:title
+permalink: /blog/:year/:month/:title
 exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md"]
 auto: true
 pygments: true
 markdown: kramdown
 name: "tjun memo"
 description: "tjunのメモ"
-url: http://tjun.jp/blog
+url: http://tjun.jp

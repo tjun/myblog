@@ -8,7 +8,9 @@
   <meta name="author" content="Junichiro Takagi" />
   <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
-  <link rel="canonical" href="{{site.url}}" >
+  <link rel="canonical" href="{{site.url}}" />
+  <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.jp/blog/feed.xml" />
 
   <meta property="og:title" content="{{ site.name }}" />
   <meta property="og:site_name" content="{{ site.name }}" />
@@ -40,8 +42,20 @@
 
 {% include header.html %}	  
 
-      <div id="main">
+      <div id="main" class="row">
+		
+		<div id="left" class="quarter">
+		  <ul class="top-list">
+			<li><a href="/about.html" alt="about">about</a></li>
+			<li><a href="/archive.html" alt="archive">archive</a></li>
+		  </ul>
+		</div><!-- id:left -->
+		
+		<div id="right" class="threequarter">
+		  <h2>Recent Entries</h2>
         {{ content }}
+		</div><!-- id:right -->
+		
       </div><!-- id:main -->
 
 {% include footer.html %}
@@ -55,7 +69,7 @@
 var form = document.getElementById('search');
 form.addEventListener('submit', function() {
 var query = document.getElementById('query');
-query.value += (' ' + 'site:tjun.jp/blog/');
+query.value += (' ' + 'site:tjun.jp');
 }, false);
 })();
 </script>

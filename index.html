@@ -3,8 +3,8 @@ layout: top
 title: tjun memo
 ---
 
-  <ul>
+  <ul class="article-list">
     {% for post in site.posts limit:10 %}
-    <li><span>{{ post.date | date_to_string }}</span>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>

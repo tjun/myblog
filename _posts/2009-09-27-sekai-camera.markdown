@@ -28,7 +28,7 @@ comments: []
 
 自分のいる駒場で少し使ってみました
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2009/09/sekaicamera.png" alt="sekaicamera" width="480" height="320" />
+<img src="http://tjun.jp/blog/img/2009/09/sekaicamera.png" alt="sekaicamera" width="480" height="320" />
 
 使い方は
 <ul>

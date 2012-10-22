@@ -18,7 +18,7 @@ comments: []
 ---
 デスクトップのMacにはワイアレスのキーボードとマウスがつながっていて，となりにMac Book Proがあって，ワイアレスキーボードで両方を操作できたら便利だなと思うわけです．
 
-<img class="aligncenter size-medium wp-image-140" title="desk" src="http://tjun.jp/blog/wp-content/uploads/2009/11/1-300x225.jpg" alt="desk" width="300" height="225" />
+<img class="aligncenter size-medium wp-image-140" title="desk" src="http://tjun.jp/blog/img/2009/11/1-300x225.jpg" alt="desk" width="300" height="225" />
 
 そこで，synergyというやつを使ってみました．
 
@@ -35,7 +35,7 @@ comments: []
 	<li>上のEnable bonjourにもチェック</li>
 	<li>"Server configuration"で２つのscreenを追加して，コンピュータ名を正しく入れる．ウィンドウの左右を正しく配置する</li>
 </ul>
-<img class="aligncenter size-medium wp-image-141" title="SynergyKM" src="http://tjun.jp/blog/wp-content/uploads/2009/11/SynergyKM-1-300x244.jpg" alt="SynergyKM" width="300" height="244" />
+<img class="aligncenter size-medium wp-image-141" title="SynergyKM" src="http://tjun.jp/blog/img/2009/11/SynergyKM-1-300x244.jpg" alt="SynergyKM" width="300" height="244" />
 <h3>クライアント側の設定</h3>
 <ul>
 	<li>generalでConnect to a shared keyboard and mouse　にチェック</li>

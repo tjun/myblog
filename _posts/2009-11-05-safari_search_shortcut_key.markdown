@@ -30,13 +30,13 @@ FirefoxではCmd+kで検索窓に行けたのだが，safariは違うらしい�
 
 システム環境設定の「キーボードとマウス」の中の「キーボードショートカット」で，下の方の「+」を押す．
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2009/11/4f850705f9b023e6edf2baba567cc7c5-300x272.jpg" alt="keybord_setting1" title="keybord_setting1" width="300" height="272" class="aligncenter size-medium wp-image-119" />
+<img src="http://tjun.jp/blog/img/2009/11/4f850705f9b023e6edf2baba567cc7c5-300x272.jpg" alt="keybord_setting1" title="keybord_setting1" width="300" height="272" class="aligncenter size-medium wp-image-119" />
 
 
 そして「アプリケーション」に　「safari」
 「メニュータイトル」に　「Google 検索&hellip;」（これはスペースなども全く同じように入力する必要があるらしい）
 「キーボードショートカット」で「Cmd+k」を押す
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2009/11/5d4f4db84642adb9911054c965a4c9a7-300x148.jpg" alt="keyboard_setting2" title="keyboard_setting2" width="300" height="148" class="aligncenter size-medium wp-image-120" />
+<img src="http://tjun.jp/blog/img/2009/11/5d4f4db84642adb9911054c965a4c9a7-300x148.jpg" alt="keyboard_setting2" title="keyboard_setting2" width="300" height="148" class="aligncenter size-medium wp-image-120" />
 
 これでOK．あとはF5でリロードしなかった気がするので，そこも今度直す．

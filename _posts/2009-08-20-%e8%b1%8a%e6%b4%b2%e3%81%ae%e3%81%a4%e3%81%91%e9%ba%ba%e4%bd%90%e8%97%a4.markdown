@@ -31,4 +31,4 @@ comments: []
 <p>今日はスープがぬるくていまいちでしたが。</p>
 <p>おすすめは写真の野菜つけ麺</p>
 <p><br />
-<img src="http://tjun.jp/blog/wp-content/uploads/2009/08/IMG_0086.jpg" width="480" height="360" alt="つけ麺" /></p>
+<img src="http://tjun.jp/blog/img/2009/08/IMG_0086.jpg" width="480" height="360" alt="つけ麺" /></p>

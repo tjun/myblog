@@ -30,6 +30,6 @@ amazonで本と入門キットを買って、初心者から始めました。
 
 入門セットにはこの写真に映ってるものとかがついてきます。
 
-<img class="aligncenter size-medium wp-image-42" title="arduino" src="http://tjun.jp/blog/wp-content/uploads/2009/08/IMG_0116-300x225.jpg" alt="arduino" width="300" height="225" />
+<img class="aligncenter size-medium wp-image-42" title="arduino" src="http://tjun.jp/blog/img/2009/08/IMG_0116-300x225.jpg" alt="arduino" width="300" height="225" />
 
 こんど秋葉いって他のセンサとか買ってつなげてみようと思う。

@@ -83,8 +83,8 @@ fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を�
 </match></pre>
 すると、以下のような感じでCPU使用率やメモリ使用量が表示できるようになりました。
 
-<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-cpu/" rel="attachment wp-att-1150"><img src="http://tjun.jp/blog/wp-content/uploads/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full wp-image-1150" /></a>
-<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-mem/" rel="attachment wp-att-1151"><img src="http://tjun.jp/blog/wp-content/uploads/2012/06/GrowthForecast-mem.jpg" alt="" title="GrowthForecast-mem" width="473" height="224" class="aligncenter size-full wp-image-1151" /></a>
+<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-cpu/" rel="attachment wp-att-1150"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full wp-image-1150" /></a>
+<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-mem/" rel="attachment wp-att-1151"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-mem.jpg" alt="" title="GrowthForecast-mem" width="473" height="224" class="aligncenter size-full wp-image-1151" /></a>
 
 同時に、nginxのアクセスログの集計もやって、アクセス数のグラフやリクエストタイムの割合のグラフも出してみました。
 
@@ -158,7 +158,7 @@ fluentdの設定は以下のような感じ。
 </pre>
 
 リクエストタイムの割合の変化
-<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-request/" rel="attachment wp-att-1152"><img src="http://tjun.jp/blog/wp-content/uploads/2012/06/GrowthForecast-request.jpg" alt="" title="GrowthForecast-request" width="467" height="281" class="aligncenter size-full wp-image-1152" /></a>
+<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-request/" rel="attachment wp-att-1152"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-request.jpg" alt="" title="GrowthForecast-request" width="467" height="281" class="aligncenter size-full wp-image-1152" /></a>
 
 これを見ると、結構時間かかってる事がわかる。
 

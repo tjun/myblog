@@ -49,13 +49,13 @@ Xperiaのサポートなぜか見ても出てこないけど、Macユーザの�
 インストールしたBridge for Macを起動して、XperiaをMacに接続します。
 するとこんな感じの画面になる。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/09/SonyBridgeforMac.jpg" alt="SonyBridgeforMac" title="SonyBridgeforMac.jpg" border="0" width="420" height="329" />
+<img src="http://tjun.jp/blog/img/2012/09/SonyBridgeforMac.jpg" alt="SonyBridgeforMac" title="SonyBridgeforMac.jpg" border="0" width="420" height="329" />
 
 <h3>3. 曲を同期する</h3>
 ここで左のメニューからiTunesライブラリのなかのプレイリストを開いて、チェックボックスを選択して、右下の同期ボタンを押すと同期がはじまります。
 一度に膨大な曲を選択したらうまく同期が進まなかったことがありましたが、それ以外は快適に音楽の同期ができるようになりました。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/09/SonyBridgeforMac2.jpg" alt="SonyBridgeforMac2" title="SonyBridgeforMac2.jpg" border="0" width="420" height="329" />
+<img src="http://tjun.jp/blog/img/2012/09/SonyBridgeforMac2.jpg" alt="SonyBridgeforMac2" title="SonyBridgeforMac2.jpg" border="0" width="420" height="329" />
 
 
 Macユーザ用のソフトあるんだからちゃんと案内すればいいのに、かなり探さないと見つからないところにあるのが残念。

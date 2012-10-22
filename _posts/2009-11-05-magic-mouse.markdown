@@ -19,7 +19,7 @@ comments: []
 ---
 Appleの新しいマウスが気になるので，ちょうどデスクトップ用のワイアレスマウスも欲しかったし買ってしまった．
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2009/11/IMG_0310-225x300.jpg" alt="magic mouse" title="magic mouse" width="225" height="300" class="aligncenter size-medium wp-image-114" />
+<img src="http://tjun.jp/blog/img/2009/11/IMG_0310-225x300.jpg" alt="magic mouse" title="magic mouse" width="225" height="300" class="aligncenter size-medium wp-image-114" />
 
 薄くて軽くてなかなかいいです．
 スクロールできるのもいいです．

@@ -93,7 +93,7 @@ twitter関連のサンプルを実行する場合、同じくJARをlibraryに追
 </li>
 </ul>
 
-<a href="http://tjun.jp/blog/2011/11/storm_eclipse/newjavaproject/" rel="attachment wp-att-1022"><img src="http://tjun.jp/blog/wp-content/uploads/2011/11/NewJavaProject-258x300.jpg" alt="" title="ProjectLibrary" width="434" height="504" class="aligncenter size-medium wp-image-1022" /></a>
+<a href="http://tjun.jp/blog/2011/11/storm_eclipse/newjavaproject/" rel="attachment wp-att-1022"><img src="http://tjun.jp/blog/img/2011/11/NewJavaProject-258x300.jpg" alt="" title="ProjectLibrary" width="434" height="504" class="aligncenter size-medium wp-image-1022" /></a>
 
 準備は以上です。
 

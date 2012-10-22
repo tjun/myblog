@@ -40,11 +40,11 @@ http://z.tjun.jp/cdomain
 <h2>さくらインターネットの設定</h2>
 次に<a href="https://secure.sakura.ad.jp/menu/top/index.php">さくらインターネットの会員メニュー</a>から「契約情報」のタブを選んで、「ドメインメニュー」を選択します。
 
-<a rel="attachment wp-att-902" href="http://tjun.jp/blog/2011/06/original_domain_bitly/keiyaku/"><img src="http://tjun.jp/blog/wp-content/uploads/2011/06/keiyaku-300x206.jpg" title="keiyaku" width="300" height="206" class="aligncenter size-medium wp-image-902" /></a>
+<a rel="attachment wp-att-902" href="http://tjun.jp/blog/2011/06/original_domain_bitly/keiyaku/"><img src="http://tjun.jp/blog/img/2011/06/keiyaku-300x206.jpg" title="keiyaku" width="300" height="206" class="aligncenter size-medium wp-image-902" /></a>
 
 そこから、設定したいドメインの「ゾーン設定」の変更を選択して、サブドメインとそのCNAME、そして値を入力します。値には、<span style="color: #ff0000;">cname.bitly.com.</span>を入れます。<span style="color: #ff0000;"><strong>最後のcomの後ろにもドットがつくので注意。</strong></span>
 
-<a rel="attachment wp-att-903" href="http://tjun.jp/blog/2011/06/original_domain_bitly/zone-setting/"><img src="http://tjun.jp/blog/wp-content/uploads/2011/06/zone-setting-300x182.jpg" title="zone-setting" width="300" height="182" class="aligncenter size-medium wp-image-903" /></a>
+<a rel="attachment wp-att-903" href="http://tjun.jp/blog/2011/06/original_domain_bitly/zone-setting/"><img src="http://tjun.jp/blog/img/2011/06/zone-setting-300x182.jpg" title="zone-setting" width="300" height="182" class="aligncenter size-medium wp-image-903" /></a>
 
 これで、左のほうのメニューにある「データ送信」をクリックして、設定が反映されるのを待ちます。
 （結構時間がかかると思います。）

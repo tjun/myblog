@@ -32,14 +32,14 @@ comments: []
 自分は、mac版を入れて、Applicationsに入れました。他にもLinux版とWindows版のクライアントもあります。
 
 それを起動すると、以下のような画面でユーザ名とメールアドレスを入力します。
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/SparkleShare.jpg" alt="SparkleShare1" title="SparkleShare.jpg" border="0" width="540" height="364" />
+<img src="http://tjun.jp/blog/img/2012/04/SparkleShare.jpg" alt="SparkleShare1" title="SparkleShare.jpg" border="0" width="540" height="364" />
 
 で、最後まで進めます。
 
 すると、SparkleShare というディレクトリがホームフォルダにできています。
 その中に、keyが書かれたファイルが作られています。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/SparkleShare-key.jpg" alt="SparkleShare key" title="SparkleShare-key.jpg" border="0" width="399" height="234" />
+<img src="http://tjun.jp/blog/img/2012/04/SparkleShare-key.jpg" alt="SparkleShare key" title="SparkleShare-key.jpg" border="0" width="399" height="234" />
 
 このファイルに書かれたkeyを後で使います。
 
@@ -73,11 +73,11 @@ sudo chown -R git:git /home/git
 サーバの設定が終わったら、そのサーバの情報をクライアントに追加します。
 まず、メニューバーにあるSparkleshareのアイコンをクリックして、 "Add Hosted Project" を選択します。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/Skitch.jpg" alt="sparkleIcon" title="Skitch.jpg" border="0" width="144" height="46" />
+<img src="http://tjun.jp/blog/img/2012/04/Skitch.jpg" alt="sparkleIcon" title="Skitch.jpg" border="0" width="144" height="46" />
 
 で、そこに今のサーバのアドレスと、先程サーバ側で作ったプロジェクトへのpathを入力します。
 sshでデフォルトの22以外を使う場合は、以下のようにアドレスに続いてportを指定します。
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/SparkleShare3.jpg" alt="SparkleShare3" title="SparkleShare3.jpg" border="0" width="464" height="77" />
+<img src="http://tjun.jp/blog/img/2012/04/SparkleShare3.jpg" alt="SparkleShare3" title="SparkleShare3.jpg" border="0" width="464" height="77" />
 
 これで、今までの設定があっていれば、うまく設定が完了します。
 

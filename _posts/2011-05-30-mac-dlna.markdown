@@ -36,7 +36,7 @@ comments: []
 でいいと思います。
 設定を変えたら上のボタンからサーバを再起動します。
 
-<a href="http://tjun.jp/blog/2011/05/mac-dlna/ps3mediaserver/" rel="attachment wp-att-848"><img src="http://tjun.jp/blog/wp-content/uploads/2011/05/PS3MediaServer-300x224.jpg" alt="" title="PS3MediaServer" width="300" height="224" class="aligncenter size-medium wp-image-848" /></a>
+<a href="http://tjun.jp/blog/2011/05/mac-dlna/ps3mediaserver/" rel="attachment wp-att-848"><img src="http://tjun.jp/blog/img/2011/05/PS3MediaServer-300x224.jpg" alt="" title="PS3MediaServer" width="300" height="224" class="aligncenter size-medium wp-image-848" /></a>
 
 これでネットワークの設定がうまくできていればPS3を起動すると、「ステータス」のタブにPS3の絵が出るんだけど、ダメな場合は&times;マークが出ます。「基本設定」のネットワークの設定を確認しましょう。
 基本的には、システム環境設定などからMac端末自身のIPを調べて、ネットワーク設定のIP設定に書きこめばOKだと思います。

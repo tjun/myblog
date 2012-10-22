@@ -113,7 +113,7 @@ stormでの処理はどのようなものか、どのように書けるのか、
 
 <h3>Stormでは何ができるか？</h3>
 
-<a href="http://tjun.jp/blog/2011/10/storm_intro/storm-proccessing/" rel="attachment wp-att-1114"><img src="http://tjun.jp/blog/wp-content/uploads/2011/10/storm-proccessing-512x204.png" alt="" title="storm-proccessing" width="512" height="204" class="aligncenter size-large wp-image-1114" /></a>
+<a href="http://tjun.jp/blog/2011/10/storm_intro/storm-proccessing/" rel="attachment wp-att-1114"><img src="http://tjun.jp/blog/img/2011/10/storm-proccessing-512x204.png" alt="" title="storm-proccessing" width="512" height="204" class="aligncenter size-large wp-image-1114" /></a>
 <ul>
 <li><strong>１，stream processing</strong></li>
 データストリームを処理して、データベースを更新するような処理。
@@ -133,7 +133,7 @@ Stormはクエリメッセージを待ち受け、クライアントにその結
 Stormの構成はHadoopに似ています。HadoopにおけるMapreduce jobに対応するのが、Stormでは Topology になります。TopologiesはMapReduce job と大きく異なるが、一番の違いは、topologiesには終わりがないということ（ユーザが止めるまで動き続ける）。
 
 Stormのノードにはmasterノードとworkerノードがあり、masterノードは Nimbus　と呼ばれます（hadoopにおけるjob tracker）。
-<a href="http://tjun.jp/blog/2011/10/storm_intro/storm-cluster/" rel="attachment wp-att-972"><img src="http://tjun.jp/blog/wp-content/uploads/2011/10/storm-cluster-300x243.png" alt="" title="storm-cluster" width="400" height="324" class="aligncenter size-medium wp-image-972" /></a>
+<a href="http://tjun.jp/blog/2011/10/storm_intro/storm-cluster/" rel="attachment wp-att-972"><img src="http://tjun.jp/blog/img/2011/10/storm-cluster-300x243.png" alt="" title="storm-cluster" width="400" height="324" class="aligncenter size-medium wp-image-972" /></a>
 Nimbusはworkerへタスクを割り振り、workerのモニタリングを行います。
 それぞれのworkerノードでは、Supervisorというデーモンを動いています。SupervisorはNimbusからworkがアサインされるのを待ち受け、workerプロセスのスタート、ストップを行います。それぞれのworkerプロセスはTopologyのサブセットを実行する。
 
@@ -147,7 +147,7 @@ Streamとは途切れずに連続するタプルのことで、例えば連続�
 Stormはstreamを、新たなストリームへ、分散して信頼できる方法で変換します。例えばtweetのstreamを、トレンドトピックのストリームへ変換します。
 
 streamの変換のために、stormはSpoutとBoltという２つの機能を提供します。
-<a href="http://tjun.jp/blog/2011/10/storm_intro/topology/" rel="attachment wp-att-973"><img src="http://tjun.jp/blog/wp-content/uploads/2011/10/topology-300x231.png" alt="" title="topology" width="300" height="231" class="aligncenter size-medium wp-image-973" /></a>
+<a href="http://tjun.jp/blog/2011/10/storm_intro/topology/" rel="attachment wp-att-973"><img src="http://tjun.jp/blog/img/2011/10/topology-300x231.png" alt="" title="topology" width="300" height="231" class="aligncenter size-medium wp-image-973" /></a>
 spoutはストリームの源であり、spoutからStormの処理が開始されます。
 spoutの役割は、例えばキューからタプルを読み込んでstreamを生成したり、twitterAPI からtweetのstreamを作成したりする処理になります。
 
@@ -162,7 +162,7 @@ tupleは、中間的な状態にはならず、tupleを生成したthreadから�
 次は、wordcountの例を用いて説明します。
 
 <h3>Wordcountの例</h3>
-<a href="http://tjun.jp/blog/2011/10/storm_intro/word-count-pic/" rel="attachment wp-att-974"><img src="http://tjun.jp/blog/wp-content/uploads/2011/10/word-count-pic.png" alt="" title="word-count-pic" width="486" height="63" class="aligncenter size-full wp-image-974" /></a>
+<a href="http://tjun.jp/blog/2011/10/storm_intro/word-count-pic/" rel="attachment wp-att-974"><img src="http://tjun.jp/blog/img/2011/10/word-count-pic.png" alt="" title="word-count-pic" width="486" height="63" class="aligncenter size-full wp-image-974" /></a>
 
 Wordcountを行うtopologyに対する入力は、複数の単語からなる文章です。stormは、その文章に含まれる単語をそれぞれカウントして、出力します。
 上の図でいうと、KestrelSpoutが、Kestrelというキューから、データを取得して、文章を次のboltへ出力します。

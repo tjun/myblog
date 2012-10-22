@@ -104,7 +104,7 @@ kernel /vmlinuz-2.*.**-***.**.*.** ro root=LABEL=/ console=tty0 cons>
 </pre>
 3, うまくいくと以下のような画面になります。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/QEMU1.jpg" alt="QEMU" title="QEMU.jpg" border="0" width="400" height="281" />
+<img src="http://tjun.jp/blog/img/2012/04/QEMU1.jpg" alt="QEMU" title="QEMU.jpg" border="0" width="400" height="281" />
 
 
 4, あとはrootでログインして、起動失敗している原因を調査します。

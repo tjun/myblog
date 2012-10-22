@@ -26,7 +26,7 @@ AndroidのプログラムをGUIで書けるApp Inventorを試してみた．<br 
 <p>今回は，チュートリアルのゲームを作ってみたけど，2時間くらいで作れた．<br />
 こんな感じでGUIのブロックで制御します．<br />
 <br />
-<img src="http://tjun.jp/blog/wp-content/uploads/2010/10/Android_Blocks_Editor.png" width="480" height="362" alt="Android_Blocks_Editor.png" /></p>
+<img src="http://tjun.jp/blog/img/2010/10/Android_Blocks_Editor.png" width="480" height="362" alt="Android_Blocks_Editor.png" /></p>
 
 
 直感的でなかなかいいです。

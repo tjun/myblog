@@ -23,5 +23,5 @@ comments: []
 <p><a href="http://www.laloopa.com/20090214/flickr-uploading-problem-on-iphoto-solved?wscr=1280x800">iPhoto から Flickr へのアップロード拒否されてた問題が解決 : ☆ La Loopa ★☆☆</a><br /></p>
 <p>に解決法が載っていました。</p>
 <p>Flickrのマークをoptionキーを押しながらクリックすると、アカウントの再設定ができます。</p>
-<p><img src="http://tjun.jp/blog/wp-content/uploads/2009/09/iPhoto.jpg" width="480" height="265" alt="iPhoto.jpg" /></p>
+<p><img src="http://tjun.jp/blog/img/2009/09/iPhoto.jpg" width="480" height="265" alt="iPhoto.jpg" /></p>
 <p>これで無事にiPhotoからFlickrへアップロードできるようになりました。</p>

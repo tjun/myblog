@@ -24,7 +24,7 @@ tags:
 comments: []
 ---
 先日VISAのカードを作ったので、ついに<a href="https://www.getdropbox.com/">Dropbox</a>をアップグレードしました。
-[caption id="attachment_327" align="alignright" width="256" caption=""]<a href="https://www.getdropbox.com/"><img src="http://tjun.jp/blog/wp-content/uploads/2009/05/new_logo.png" alt="Dropbox_logo" title="new_logo" width="256" height="67" class="size-full wp-image-327" /></a>[/caption]
+[caption id="attachment_327" align="alignright" width="256" caption=""]<a href="https://www.getdropbox.com/"><img src="http://tjun.jp/blog/img/2009/05/new_logo.png" alt="Dropbox_logo" title="new_logo" width="256" height="67" class="size-full wp-image-327" /></a>[/caption]
 <a href="https://www.getdropbox.com/">Dropbox</a>は異なるPC間とwebでフォルダを同期するサービス。
 普通のフォルダとして使っていると勝手にファイルが同期されるのでとても便利。
 Dropboxを使い始めてからはUSBメモリをほとんど使わなくなった。

@@ -145,7 +145,7 @@ $ storm ui &
 
 これでちょっと待ってから、ブラウザで接続して状態を見てみます。
 以下のように表示されて、supervisor summaryのところに１台あれば、OKです。
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/Storm-UI.jpg" alt="Storm UI" title="Storm UI.jpg" border="0" width="540" height="316" />
+<img src="http://tjun.jp/blog/img/2012/04/Storm-UI.jpg" alt="Storm UI" title="Storm UI.jpg" border="0" width="540" height="316" />
 （storm uiにはtwitter bootstrapが使われてます。）
 
 これで、無事にsupervisorが動いてることが確認できたので、実際にtopologyをsubmitしてみます。
@@ -168,11 +168,11 @@ $ storm jar StormStarter.jar storm.starter.ExclamationTopology test
 
 
 またブラウザでstorm UIを見てみると、Topology Summaryのところにtestという名前のtopologyが出てきます。
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/Storm-UI-2.jpg" alt="Storm UI 2" title="Storm UI-2.jpg" border="0" width="540" height="324" />
+<img src="http://tjun.jp/blog/img/2012/04/Storm-UI-2.jpg" alt="Storm UI 2" title="Storm UI-2.jpg" border="0" width="540" height="324" />
 
 
 このtest をクリックすると、以下のような感じでtopologyの処理がどのくらい進んでるのか、各spoutやboltに対して見ることができます。
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/04/Storm-UI3.jpg" alt="Storm UI3" title="Storm UI3.jpg" border="0" width="540" height="414" />
+<img src="http://tjun.jp/blog/img/2012/04/Storm-UI3.jpg" alt="Storm UI3" title="Storm UI3.jpg" border="0" width="540" height="414" />
 
 
 topologyの処理を止めるには、storm kill [topology名]です。

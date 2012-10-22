@@ -23,6 +23,6 @@ comments: []
 
 で，アカウント名いれて，「follow me」にして，色決めて，上からの位置決めて，update　codeすると，javascriptのコードが出るので，それをコピーしてブログやサイトのbodyタグ内にいれるとできると思います．
 
-<img style="border:1px #000000 solid;" src="http://tjun.jp/blog/wp-content/uploads/2009/10/Twitter-_Follow_-Badge-for-your-site-_-blog.jpg" alt="follow me" width="480" height="282" />
+<img style="border:1px #000000 solid;" src="http://tjun.jp/blog/img/2009/10/Twitter-_Follow_-Badge-for-your-site-_-blog.jpg" alt="follow me" width="480" height="282" />
 
 IE6じゃ見られないらしい．

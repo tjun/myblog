@@ -58,14 +58,14 @@ localmodeで実行ということは、stormのnimbusやsupervisorといった�
 前回作成途中だったJava projectにサンプルのプログラムをimportします。
 
 projectの src に import > general > FileSystem で先ほどダウンロードした storm-starterのしたの <strong>storm-starter/src/jvm/storm</strong> を"From Directory"に指定して、"Create Top-level folder"にチェックを入れます。
-<a href="http://tjun.jp/blog/2011/11/storm_localmode/import/" rel="attachment wp-att-1041"><img src="http://tjun.jp/blog/wp-content/uploads/2011/11/Import-300x263.jpg" alt="" title="Import" width="300" height="263" class="aligncenter size-medium wp-image-1041" /></a>
+<a href="http://tjun.jp/blog/2011/11/storm_localmode/import/" rel="attachment wp-att-1041"><img src="http://tjun.jp/blog/img/2011/11/Import-300x263.jpg" alt="" title="Import" width="300" height="263" class="aligncenter size-medium wp-image-1041" /></a>
 次に、project のトップに storm-starter/multilang/resoucesをimportします。
 
 
 
 こんな感じになるはず。
 
-<img src="http://tjun.jp/blog/wp-content/uploads/2012/02/storm-starter.jpg" alt="Storm starter" title="storm-starter.jpg" border="0" width="255" height="466" />
+<img src="http://tjun.jp/blog/img/2012/02/storm-starter.jpg" alt="Storm starter" title="storm-starter.jpg" border="0" width="255" height="466" />
 
 
 ここでエラーが出ている場合、stormが最新版じゃない可能性があります。
@@ -75,7 +75,7 @@ projectの src に import > general > FileSystem で先ほどダウンロード�
 そして、このprojectをJARファイルに固めます。
 
 Export > Java > JAR fileから、StormStarterプロジェクトを.classpathや.projectを除いてJARにします。
-<a href="http://tjun.jp/blog/2011/11/storm_localmode/jar-export/" rel="attachment wp-att-1045"><img src="http://tjun.jp/blog/wp-content/uploads/2011/11/JAR-Export-246x300.jpg" alt="" title="JAR Export" width="246" height="300" class="aligncenter size-medium wp-image-1045" /></a>
+<a href="http://tjun.jp/blog/2011/11/storm_localmode/jar-export/" rel="attachment wp-att-1045"><img src="http://tjun.jp/blog/img/2011/11/JAR-Export-246x300.jpg" alt="" title="JAR Export" width="246" height="300" class="aligncenter size-medium wp-image-1045" /></a>
 
 warningが出るけど気にしない。
 

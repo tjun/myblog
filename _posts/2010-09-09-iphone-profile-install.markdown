@@ -33,14 +33,14 @@ iPhoneでFonの回線を使えるらしいということで、
 変なページになりました。
 
 safariでここから
-<a href="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_BC1CFFA2-149A-4865-AFF7-6136AE091F98.jpeg"><img src="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_BC1CFFA2-149A-4865-AFF7-6136AE091F98-200x300.jpg" alt="" title="インストールの前" width="200" height="300" class="aligncenter size-medium wp-image-602" /></a>
+<a href="http://tjun.jp/blog/img/2010/09/p_480_320_BC1CFFA2-149A-4865-AFF7-6136AE091F98.jpeg"><img src="http://tjun.jp/blog/img/2010/09/p_480_320_BC1CFFA2-149A-4865-AFF7-6136AE091F98-200x300.jpg" alt="" title="インストールの前" width="200" height="300" class="aligncenter size-medium wp-image-602" /></a>
 
 正しくいくとこんな感じなのに
-<a href="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_B0C86A82-CC1A-4300-97D7-0DCE25D56C18.jpeg"><img src="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_B0C86A82-CC1A-4300-97D7-0DCE25D56C18-200x300.jpg" alt="" title="install画面" width="200" height="300" class="aligncenter size-medium wp-image-603" /></a>
+<a href="http://tjun.jp/blog/img/2010/09/p_480_320_B0C86A82-CC1A-4300-97D7-0DCE25D56C18.jpeg"><img src="http://tjun.jp/blog/img/2010/09/p_480_320_B0C86A82-CC1A-4300-97D7-0DCE25D56C18-200x300.jpg" alt="" title="install画面" width="200" height="300" class="aligncenter size-medium wp-image-603" /></a>
 
 
 自分はこの画面に行っちゃって、プロファイルがインストールできない。
-<a href="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_7E6D8A9F-BE19-4751-9993-038587D583E7.jpeg"><img src="http://tjun.jp/blog/wp-content/uploads/2010/09/p_480_320_7E6D8A9F-BE19-4751-9993-038587D583E7-200x300.jpg" alt="" title="失敗画面" width="200" height="300" class="aligncenter size-medium wp-image-604" /></a>
+<a href="http://tjun.jp/blog/img/2010/09/p_480_320_7E6D8A9F-BE19-4751-9993-038587D583E7.jpeg"><img src="http://tjun.jp/blog/img/2010/09/p_480_320_7E6D8A9F-BE19-4751-9993-038587D583E7-200x300.jpg" alt="" title="失敗画面" width="200" height="300" class="aligncenter size-medium wp-image-604" /></a>
 
 
 いろいろ試してもだめなので、調べてみると

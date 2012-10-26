@@ -7,13 +7,15 @@ end
 
 # Usage: rake post["title"]
 desc "Create a new post file with title"
-task :post, [:title] do |t, args|
+task :post do
+  print 'title :'
+  title = STDIN.gets.strip
   dirname = File.join(".", "_posts")
   if not FileTest.directory?(dirname)
     abort("rake aborted: #{dirname} directory not found.")
   end
   date = Time.now.strftime('%Y-%m-%d')
-  slug = args.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   filename = "#{date}-#{slug}.md"
   fullpath = File.join(dirname, filename)
 
@@ -25,13 +27,13 @@ task :post, [:title] do |t, args|
     post.puts "---"
     post.puts "layout: post"
     post.puts "category: "
-    post.puts "title: #{args.title}"
+    post.puts "title: #{title}"
     post.puts "date: #{date}"
     post.puts "summary: "
     post.puts "---"
   end
   #puts "Open #{fullpath} in an editor."
-  sh "open -a MarkdownNote #{fullpath}"
+  sh "open -a Mou #{fullpath}"
 end
 
 #Usage: rake sass
@@ -44,11 +46,11 @@ end
 namespace :rsync do
   desc "--dry-run rsunc"
   task :dryrun do
-    system('rsync -avr -e "ssh -p 22222" --dry-run --delete _site/ [user]@[host]:/var/www/')
+    system('rsync -avr -e ssh --dry-run --delete _site/ [user]@[host]:/var/www/')
   end
   desc "rsync"
   task :live do
-    system('rsync -avr -e "ssh -p 22222" --delete _site/ [user]@[host]:/var/www/')
+    system('rsync -avr -e ssh --delete _site/ [user]@[host]:/var/www/')
   end
 end
 

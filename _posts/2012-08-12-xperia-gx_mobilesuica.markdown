@@ -15,6 +15,8 @@ categories:
 - android
 tags:
 - xperia
+keywords:
+- xperia, suica, android
 comments: []
 ---
 Xperia GXちょっと前に買いました。

@@ -57,6 +57,7 @@ To                         Action      From
 
 以上です。
 
-参考：<ul>
-	<li><a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0077">Ubuntu Weekly Recipe：第77回　Ubuntuのソフトウェアファイアウォール：ufwの利用（2）｜gihyo.jp &hellip; 技術評論社</a></li>
-</ul>
+参考：
+
+* <a href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0077">Ubuntu Weekly Recipe：第77回　Ubuntuのソフトウェアファイアウォール：ufwの利用（2）｜gihyo.jp &hellip; 技術評論社</a>
+

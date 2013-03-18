@@ -45,53 +45,53 @@ VPSコントロールパネルから、OS再インストール -> カスタムOS
 
 <h3>ディスクサイズの確認</h3>
 一度いろいろ設定したあとにディスクサイズが10Gくらいしか割り当てられてないっていうことがあったので、ちゃんと確認します。
-<pre>
-$ df -h
-Filesystem            Size  Used Avail Use% Mounted on
-/dev/vda1              96G  820M   90G   1% /
-none                  498M  176K  497M   1% /dev
-(以下略)
-</pre>
+
+    $ df -h
+    Filesystem            Size  Used Avail Use% Mounted on
+    /dev/vda1              96G  820M   90G   1% /
+    none                  498M  176K  497M   1% /dev
+    (以下略)
+
 今回はよさそう。
 
 <h3>とりあえず</h3>
 とりあえず入れとくか、というものを入れる。
-<pre>sudo aptitude install vim screen zsh curl git-core build-essential</pre>
+
+    sudo aptitude install vim screen zsh curl git-core build-essential
 
 <h3>ssh関連の設定</h3>
 rootログインを禁止して、パスワードでのログインも止めて、ポートも変えておきます。
 
 ローカルから公開鍵をscpでサーバへ。
-<pre>
-(手元のpcで実行)
-macbookair $ scp ~/.ssh/id_dsa.pub [username]@[ip]:
-</pre>
+
+    (手元のpcで実行)
+    macbookair $ scp ~/.ssh/id_dsa.pub [username]@[ip]:
+
 
 vpsにログインして
-<pre>
-$ mkdir .ssh
-$ cat id_dsa.pub >> .ssh/authorized_keys
-</pre>
+
+    $ mkdir .ssh
+    $ cat id_dsa.pub >> .ssh/authorized_keys
+
 
 これで、ログイン時にパスワードが聞かれないことを確認。
 
 次にsshサーバの設定。
-<pre>
-$ sudo vim /etc/ssh/sshd_config
-</pre>
 
-<pre>
+    $ sudo vim /etc/ssh/sshd_config
+
 変えた箇所の例
+
 Port 23456 などに変える 
-PermitRootLogin no
-PasswordAuthentication no
-UsePAM no
-</pre>
+
+    PermitRootLogin no
+    PasswordAuthentication no
+    UsePAM no
+
 
 sshdの再起動
-<pre>
-$ sudo service ssh restart
-</pre>
+
+    $ sudo service ssh restart
 
 
 <h3>ファイアウォールの設定</h3>
@@ -101,23 +101,19 @@ ubuntuはufwっていうのを使って設定します。
 設定ミスるとログインできなくなるので気をつけて。
 
 今の状態を確認。
-<pre>
-$ sudo ufw status
-Status: inactive
-</pre>
 
-<pre>
-sudo ufw default deny
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
-sudo ufw allow <sshのport>
-</pre>
+    $ sudo ufw status
+    Status: inactive
+
+
+    sudo ufw default deny
+    sudo ufw allow 80/tcp
+    sudo ufw allow 443/tcp
+    sudo ufw allow <sshのport>
 
 ufwを有効にする。
-<pre>
-sudo ufw enable
-</pre>
 
+    sudo ufw enable
 
 
 他には、

@@ -23,7 +23,7 @@ twitterのRSSを<a href="http://tjun.jp">自分のウェブページ</a>に表�
 なので、正規表現でリプライだけ取り除いて表示するようにしました。
 RTはそのまま表示してます。
 
-{% highlight PHP linenos %}
+{% highlight php linenos %}
 require_once 'lib/rss_fetch.inc';
 
 $twit_feed = 'http://twitter.com/statuses/user_timeline/********.rss';

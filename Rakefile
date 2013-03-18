@@ -1,14 +1,18 @@
 # Usage: rake preview
 desc "Build files and launch preview server"
 task :preview do
-  sh "open -a 'Google\ Chrome' 'http://localhost:4000'"
   sh "jekyll --server --auto"
+end
+
+desc "Convert markdown to html"
+task :convert do
+  sh "jekyll --auto --no-server"
 end
 
 # Usage: rake post["title"]
 desc "Create a new post file with title"
 task :post do
-  print 'title :'
+  print 'title : '
   title = STDIN.gets.strip
   dirname = File.join(".", "_posts")
   if not FileTest.directory?(dirname)
@@ -16,24 +20,28 @@ task :post do
   end
   date = Time.now.strftime('%Y-%m-%d')
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  filename = "#{date}-#{slug}.md"
+  filename = "#{date}-#{slug}.markdown"
   fullpath = File.join(dirname, filename)
 
   if File.exist?(fullpath)
     abort("rake aborted: #{fullpath} already exists.")
   end
 
-  File.open(fullpath, 'w') do |post|
+  post = File.open(fullpath, 'w', 0666)
+  begin
     post.puts "---"
     post.puts "layout: post"
     post.puts "category: "
     post.puts "title: #{title}"
     post.puts "date: #{date}"
-    post.puts "summary: "
+    post.puts "description: "
+    post.puts "keywords: "
     post.puts "---"
+  ensure
+    post.close
   end
   #puts "Open #{fullpath} in an editor."
-  sh "open -a Mou #{fullpath}"
+  #sh "open -a MarkdownNote #{fullpath}"
 end
 
 #Usage: rake sass
@@ -46,11 +54,11 @@ end
 namespace :rsync do
   desc "--dry-run rsunc"
   task :dryrun do
-    system('rsync -avr -e ssh --dry-run --delete _site/ [user]@[host]:/var/www/')
+    system('rsync -avr -e "ssh -p 22222" --dry-run --delete _site/ tjun@tjun.org:/var/www/tjun.org/')
   end
   desc "rsync"
   task :live do
-    system('rsync -avr -e ssh --delete _site/ [user]@[host]:/var/www/')
+    system('rsync -avr -e "ssh -p 22222" --delete _site/ tjun@tjun.org:/var/www/tjun.org/')
   end
 end
 

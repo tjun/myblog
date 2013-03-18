@@ -1,8 +1,8 @@
 permalink: /blog/:year/:month/:title
-exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md"]
+exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md", "Rakefile"]
 auto: true
 pygments: true
 markdown: kramdown
 name: "tjun memo"
 description: "tjunのメモ"
-url: http://tjun.jp
+url: http://tjun.org

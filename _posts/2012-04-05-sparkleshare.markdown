@@ -76,9 +76,8 @@ sudo chown -R git:git /home/git
 <img src="http://tjun.jp/blog/img/2012/04/Skitch.jpg" alt="sparkleIcon" title="Skitch.jpg" border="0" width="144" height="46" />
 
 で、そこに今のサーバのアドレスと、先程サーバ側で作ったプロジェクトへのpathを入力します。
-sshでデフォルトの22以外を使う場合は、以下のようにアドレスに続いてportを指定します。
-<img src="http://tjun.jp/blog/img/2012/04/SparkleShare3.jpg" alt="SparkleShare3" title="SparkleShare3.jpg" border="0" width="464" height="77" />
-
+sshでデフォルトの22以外を使う場合はアドレスに続いてportを指定します。
+（たしか[host]:[port]のように書けばOKだったと思います）
 これで、今までの設定があっていれば、うまく設定が完了します。
 
 あとは、ファイルを~/SparkleShare/MyProjectに追加すれば、自動的にアップされます。

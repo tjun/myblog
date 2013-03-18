@@ -35,11 +35,10 @@ dstatをfluentdにつなぐのに、<a href="https://github.com/shun0102/fluent-
 できれば元のものをうまい具合にparseして繋ぎたいのだけど、やり方がよく分からなかった。。
 
 設定はこんな感じ
-<pre>
-  type dstat
-  tag dstat
-  option -cmdn delay 5
-</pre>
+
+    type dstat
+    tag dstat
+    option -cmdn delay 5
 
 
 <h3>growthforecast</h3>
@@ -50,37 +49,39 @@ growthforecastは、APIに投げたデータをグラフィカルにしてくれ
 fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を使います。
 
 設定はこんな感じ。
-<pre><match dstat>
-  type copy
-  <store>
-    type growthforecast
-    gfapi_url http://localhost:5000/api/
-    service dstat
-    section cpu
-    name_key_pattern cpu-.*
-  </store>
-  <store>
-    type growthforecast
-    gfapi_url http://localhost:5000/api/
-    service dstat
-    section mem
-    name_key_pattern mem-.*
-  </store>
-  <store>
-    type growthforecast
-    gfapi_url http://localhost:5000/api/
-    service dstat
-    section dsk
-    name_key_pattern dsk-.*
-  </store>
-  <store>
-    type growthforecast
-    gfapi_url http://localhost:5000/api/
-    service dstat
-    section net
-    name_key_pattern net-.*
-  </store>
-</match></pre>
+
+    <match dstat>
+      type copy
+      <store>
+        type growthforecast
+        gfapi_url http://localhost:5000/api/
+        service dstat
+        section cpu
+        name_key_pattern cpu-.*
+      </store>
+      <store>
+        type growthforecast
+        gfapi_url http://localhost:5000/api/
+        service dstat
+        section mem
+        name_key_pattern mem-.*
+      </store>
+      <store>
+        type growthforecast
+        gfapi_url http://localhost:5000/api/
+        service dstat
+        section dsk
+        name_key_pattern dsk-.*
+      </store>
+      <store>
+        type growthforecast
+        gfapi_url http://localhost:5000/api/
+        service dstat
+        section net
+        name_key_pattern net-.*
+      </store>
+    </match>
+
 すると、以下のような感じでCPU使用率やメモリ使用量が表示できるようになりました。
 
 <a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-cpu/" rel="attachment wp-att-1150"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full wp-image-1150" /></a>
@@ -99,63 +100,62 @@ fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を�
 データの集計には、<a href="https://github.com/tagomoris/fluent-plugin-datacounter">tagomoris/fluent-plugin-datacounter</a>を使いました。
 
 fluentdの設定は以下のような感じ。
-<pre>
-  type tail
-  format /^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<reqtime>[^\]]*)\] "(?<method>[^ ]*) (?<path>[^ ]*) [^\"]*" (?<code>[^ ]*) (?<size>[^ ]*) "(?<referer>[^\"]*)" "(?<agent>[^\"]*)" (?<response_time>[^ ]*)$/
-  path /var/log/nginx/access.log
-  tag nginx.access
-  pos_file /etc/fluent/nginx_pos
 
+    type tail
+    format /^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<reqtime>[^\]]*)\] "(?<method>[^ ]*) (?<path>[^ ]*) [^\"]*" (?<code>[^ ]*) (?<size>[^ ]*) "(?<referer>[^\"]*)" "(?<agent>[^\"]*)" (?<response_time>[^ ]*)$/
+    path /var/log/nginx/access.log
+    tag nginx.access
+    pos_file /etc/fluent/nginx_pos
 
-# counter
-<match nginx.access>
-  type copy
-  <store>
-    type file
-    path /var/log/fluent/access
-  </store>
-  <store>
-    type datacounter
-    #unit hour
-    count_interval 10m
+    # counter
+    <match nginx.access>
+      type copy
+      <store>
+        type file
+        path /var/log/fluent/access
+      </store>
+      <store>
+        type datacounter
+        #unit hour
+        count_interval 10m
 
-    count_key code
-    aggregate all
-    tag nginx.datacount.web
-    pattern1 2xx 2\d\d
-    pattern2 3xx 3\d\d
-    pattern3 4xx 4\d\d
-    pattern4 5xx 5\d\d
-  </store>
-  <store>
-    type datacounter
-    #unit hour
-    count_interval 10m
-    count_key response_time
-    outcast_unmatched true
-    aggregate all
-    tag nginx.datacount.response
-    pattern1 0_10ms 0\.00\d+$
-    pattern2 10_100ms 0\.0[1-9]\d+$
-    pattern3 100_500ms 0\.[1-4]\d+$
-    pattern4 500_1000ms 0\.[5-9]\d+$
-    pattern5 1_1.99s 1\.\d+$
-    pattern6 2_4.99s [2-4]\.\d+$
-    pattern7 5_9.99s [5-9]\.\d+$
-    pattern8 10s_over \d{2,}\.\d+$
-  </store>
-</match>
+        count_key code
+        aggregate all
+        tag nginx.datacount.web
+        pattern1 2xx 2\d\d
+        pattern2 3xx 3\d\d
+        pattern3 4xx 4\d\d
+        pattern4 5xx 5\d\d
+      </store>
+      <store>
+        type datacounter
+        #unit hour
+        count_interval 10m
+        count_key response_time
+        outcast_unmatched true
+        aggregate all
+        tag nginx.datacount.response
+        pattern1 0_10ms 0\.00\d+$
+        pattern2 10_100ms 0\.0[1-9]\d+$
+        pattern3 100_500ms 0\.[1-4]\d+$
+        pattern4 500_1000ms 0\.[5-9]\d+$
+        pattern5 1_1.99s 1\.\d+$
+        pattern6 2_4.99s [2-4]\.\d+$
+        pattern7 5_9.99s [5-9]\.\d+$
+        pattern8 10s_over \d{2,}\.\d+$
+      </store>
+    </match>
 
-#growthforecast
-<match nginx.datacount.**>
-  type growthforecast
-  gfapi_url http://localhost:5000/api/
-  service nginx
-  tag_for section
-  remove_prefix nginx.datacount
-  name_key_pattern .*_(rate|count|percentage)$
-</match>
-</pre>
+    #growthforecast
+    <match nginx.datacount.**>
+      type growthforecast
+      gfapi_url http://localhost:5000/api/
+      service nginx
+      tag_for section
+      remove_prefix nginx.datacount
+      name_key_pattern .*_(rate|count|percentage)$
+    </match>
+
 
 リクエストタイムの割合の変化
 <a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-request/" rel="attachment wp-att-1152"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-request.jpg" alt="" title="GrowthForecast-request" width="467" height="281" class="aligncenter size-full wp-image-1152" /></a>

@@ -1,26 +1,31 @@
 <!doctype html>
 <html lang="ja-JP">
 <head>
-  <title>{{ page.title }} | {{site.name}}</title>
+  <title>{{ page.title }} - {{site.name}}</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" value="{{ page.description }}" />
   <meta name="keywords" value="{{ page.keywords }}" />
   <meta name="Robots" content="index,follow" />
   <meta name="author" content="Junichiro Takagi" />
+  <link href="//fonts.googleapis.com/css?family=Play:400" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
-  <link rel="canonical" href="{{site.url}}{{page.url}}" />
-  <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" />
-  <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.jp/blog/feed.rss" />
+  <link rel="canonical" href="{{site.url}}{{page.url}}/" />
+  <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.org/blog/feed.rss" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:site_name" content="{{ site.name }}" />
   <meta property="og:description" content="" />
   <meta property="og:type" content="blog" />
-  <meta property="og:url" content="{{ page.url }}" />
-  <meta property="og:image" content="http://tjun.jp/apple-touch-icon.png" />
+  <meta property="og:url" content="{{site.url}}{{ page.url }}/" />
+  <meta property="og:image" content="http://tjun.org/apple-touch-icon.png" />
   <meta property="fb:admins" content="1261372973" />
   <meta property="fb:app_id" content="146534425377418" />
+  <meta name=twitter:creator content="@tjun">
+  <meta name=twitter:site content=tjun>
+  <meta name=twitter:url content="{{site.url}}{{ page.url }}/">
+  <meta name=twitter:title content="{{ page.title}}">
   <meta name="msvalidate.01" content="B810A86B781E0ADE74E7DB82A9DCC016" />
   <meta name="y_key" content="d1f4b50cd2c2039a" />
 
@@ -38,6 +43,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=146534425377418";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <div id="outer">
     <div class="wrapper">
@@ -46,7 +59,7 @@
 
       <div id="main">
         <span>{{ page.date | date_to_string }}</span><br />
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
 
         <br />
         {{ content }}
@@ -65,9 +78,8 @@
           {% endif %}
         </div>
       </div><!-- id:main -->
-	  <div class="fb-comments" data-href="{{ page.url }}" data-num-posts="4" data-width="600"></div>
+      <div class="fb-comments" data-href="{{site.url}}{{ page.url }}/" data-num-posts="4" data-width="600"></div>
 	  <script defer="defer" type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	  <div id="fb-root"></div>
 	  {% include footer.html %}
 
     </div><!-- class:wrapper -->
@@ -77,20 +89,7 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=146534425377418";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
-<script>(function() {
-var form = document.getElementById('search');
-form.addEventListener('submit', function() {
-var query = document.getElementById('query');
-query.value += (' ' + 'site:tjun.jp/blog/');
-}, false);
-})();</script>
+
 </body>
 </html>

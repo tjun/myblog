@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja-JP">
+<head>
+  <title>debian(ubuntu)で弱いパスワードの人を見つける(LDAP編) | tjun memo</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" value="" />
+  <meta name="keywords" value="" />
+  <meta name="Robots" content="index,follow" />
+  <meta name="author" content="Junichiro Takagi" />
+  <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <link rel="canonical" href="http://tjun.org/blog/2010/02/debian_john_ldap" />
+  <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.org/blog/feed.rss" />
+
+  <meta property="og:title" content="debian(ubuntu)で弱いパスワードの人を見つける(LDAP編)" />
+  <meta property="og:site_name" content="tjun memo" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="/blog/2010/02/debian_john_ldap" />
+  <meta property="og:image" content="http://tjun.org/apple-touch-icon.png" />
+  <meta property="fb:admins" content="1261372973" />
+  <meta property="fb:app_id" content="146534425377418" />
+  <meta name="msvalidate.01" content="B810A86B781E0ADE74E7DB82A9DCC016" />
+  <meta name="y_key" content="d1f4b50cd2c2039a" />
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4498443-4']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body>
+
+  <div id="outer">
+    <div class="wrapper">
+
+<div id="header" class="group">
+
+  <h1><a href="/" alt="tjun memo">tjun memo</a></h1>
+
+  <div id="nav">
+	<ul>
+	  <li><a href="/" alt="Top">Top</a></li>
+	  <li><a href="/blog/feed.rss" alt="rss">Feed</a></li>
+	  <li>
+		<form action="http://google.com/search" class="btn-group" id="search">
+		  <input type="text" name="q" class="input-search" id="query">
+		  <input type="button" class="btn btn-round" value="search" onclick="this.form.submit();">
+		</form>
+	  </li>
+	</ul>
+  </div>
+
+</div>
+
+
+      <div id="main">
+        <span>09 Feb 2010</span><br />
+        <h2>debian(ubuntu)で弱いパスワードの人を見つける(LDAP編)</h2>
+
+        <br />
+        <p>とあるサーバでユーザアカウントが乗っ取られて攻撃の踏み台に使われるという被害にあったので、対策のためパスワードの強度のチェックを行いました。</p>
+
+<p>LDAPで複数サーバのアカウントを管理するシステムだったので、作業はLDAPのmasterで行いました。</p>
+
+<p>まず、パスワードチェックに用いるのは<a href="http://www.openwall.com/john/">johnというソフト</a>
+aptで入ります。</p>
+<pre>$sudo apt-get install john</pre>
+
+<p>LDAPを使っていないならば、あとは</p>
+<ul>
+	<li><a href="http://www.usupi.org/sysad/168.html">John the Ripper でパスワードをチェックする - いますぐ実践! Linuxシステム管理 / Vol.168</a></li>
+</ul>
+<p>を参考にするとできると思います。</p>
+
+<p>で、LDAP使ってる場合、パスワードファイルを引いてこなければならないので、まずはLDAPの情報を
+/etc/ldap/ldap.conf　か　/etc/ldap/slapd.conf　と　/etc/ldap.secret
+あたりを参照して、baseDNとadminDNとldappasswdを取得します。</p>
+
+<pre>
+base: dc=test,dc=example,dc=com
+admin: dn=ldapadmin,dc=test,dc=example,dc=com
+passwd: *******
+</pre>
+<p>のような感じです。</p>
+
+<p>次に（もしかしたら必要ないかもしれませんが）</p>
+<pre>$sudo apt-get install libnet-ldap-perl </pre>
+<p>をやって、perlからldapを扱うライブラリを入れます。</p>
+
+<p>そして、</p>
+<ul>
+	<li><a href="http://people.binf.ku.dk/~hanne/blog/?postid=37">Getting John the ripper to run with LDAP SSHA passwords - Hanne's Blog - Bastard Operator in Heaven</a></li>
+</ul>
+
+<p>からスクリプトをコピーして、先ほどメモしたbaseやpasswdを埋め、適当な名前で保存します。</p>
+
+<p>（同じ動作をすると思われるプログラムが/usr/share/doc/john/examples/ldap-extractにもありますが、引数でパスワードを渡すのは嫌なので、使いませんでした。）</p>
+
+<p>そのプログラムを使って</p>
+<pre>$ ./ldap-extract.pl &gt; ldap_passwd</pre>
+<p>のようにしてやると、うまくいけばldap_passwdの中に</p>
+<pre>user1:{crypt}abcdefghi...:
+user2:{crypt}123456778...:</pre>
+<p>のような感じの文字列が並びます。</p>
+
+<p>こうしてできたファイルをjohnで解析します。</p>
+
+<ul>
+	<li><strong>シンプルなチェック</strong></li>
+これで引っかかる人はかなり弱いパスワードだと思われます。
+<pre>$ john -single ldap_passwd</pre>
+
+	<li><strong>辞書を用いたチェック</strong></li>
+辞書はデフォルトのやつがたぶん /usr/share/john/password.lst　にあると思うのですが、日本用の辞書もどこからか入手できます（どこから持ってきたのか忘れてしまいました）
+<pre>$ john -wordfile=/usr/share/john/password.lst ldap_passwd</pre>
+
+	<li><strong>徹底的に調べる</strong></li>
+どうしても知りたいなら、時間をかけてこれをやるのがいいらしいですが、時間がかかるのでユーザ名を指定した方がよさそうです。
+<pre>$ john -incremental -users=[user1] ldap_passwd</pre>
+</ul>
+
+<p>解析にてパスワードが分かると、</p>
+<pre>john -show ldap_passwd</pre>
+<p>で見ることができるようです。</p>
+
+<p>悪用しないように。</p>
+
+        <div class="share">
+  <ul>
+	<li>
+	  <a href="http://b.hatena.ne.jp/entry/tjun.jp/blog/blog/2010/02/debian_john_ldap" class="hatena-bookmark-button" data-hatena-bookmark-title="debian(ubuntu)で弱いパスワードの人を見つける(LDAP編) | tjun memo"  data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+	  </a>
+	</li>
+	<li>
+	  <a href="http://twitter.com/share" class="twitter-share-button" data-via="tjun" data-count="horizontal">Tweet</a>
+	</li>
+	<li>
+	  <iframe src="http://www.facebook.com/plugins/like.php?href=/blog/2010/02/debian_john_ldap&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:20px;" allowTransparency="true"></iframe>
+	</li>
+  </ul>
+</div>
+
+        <div id="bottom-nav" class="row">
+          
+          <div class="twofifth">
+            &laquo;&nbsp;<a href="/blog/2010/02/yurex" rel="previous">YUREX</a>
+          </div><!-- third -->
+          
+
+          
+          <div class="twofifth push-fifth">
+            <a href="/blog/2010/03/%25e3%2581%25aa%25e3%2581%2599%25e3%2581%258a%25e3%2582%2584%25e3%2581%2598%25e3%2581%25ae%25e3%2582%25ab%25e3%2583%25ac%25e3%2583%25bc" rel="next">なすおやじのカレー</a>&nbsp;&raquo;
+          </div><!-- third -->
+          
+        </div>
+      </div><!-- id:main -->
+	  <div class="fb-comments" data-href="/blog/2010/02/debian_john_ldap" data-num-posts="4" data-width="600"></div>
+	  <script defer="defer" type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	  <div id="fb-root"></div>
+	  
+<hr />
+<div id="footer">
+  <div id="footer-icons" class="row footer">
+    <div class="threefifth push-fifth">
+      <ul class="block-five">
+        <li><a href="http://tjun.org/blog/feed.rss" alt="rss">
+          <img src="/img/rss.png" alt="rss" />
+		</a></li>
+		<li><a href="http://twitter.com/tjun" alt="twitter">
+          <img src="/img/twitter.png" alt="twitter" />
+		</a></li>
+		<li><a href="http://www.facebook.com/takajun" alt="facebook">
+          <img src="/img/facebook.png" alt="facebook" />
+		</a></li>
+		<li><a href="http://github.com/tjun" alt="github">
+          <img src="/img/github.png" alt="github" />
+		</a></li>
+		<li><a href="http://www.linkedin.com/in/junichiro" alt="linkedin">
+          <img src="/img/linkedin.png" alt="linkedin" />
+		</a></li>
+      </ul>
+	</div>
+  </div>
+  <div class="row footer">
+    <div class="third push-third">
+      &copy; 2008-2013 Junichiro Takagi.
+    </div>
+  </div>
+</div>
+
+
+    </div><!-- class:wrapper -->
+  </div><!-- id:outer -->
+
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=146534425377418";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
+<script>(function() {
+var form = document.getElementById('search');
+form.addEventListener('submit', function() {
+var query = document.getElementById('query');
+query.value += (' ' + 'site:tjun.org/blog/');
+}, false);
+})();</script>
+</body>
+</html>

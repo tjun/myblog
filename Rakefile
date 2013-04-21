@@ -42,6 +42,7 @@ task :post do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
+  emacs #{fullpath} &
 end
 
 #Usage: rake sass

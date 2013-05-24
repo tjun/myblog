@@ -42,7 +42,51 @@ task :post do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
-  emacs #{fullpath} &
+  sh "emacs #{fullpath}"
+end
+
+desc "create a new slide with title"
+task :slide do
+  print 'title : '
+  title = STDIN.gets.strip
+  dirname = File.join(".", "slide")
+  if not FileTest.directory?(dirname)
+    abort("rake aborted: #{dirname} directory not found.")
+  end
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  filename = "#{slug}.markdown"
+  fullpath = File.join(dirname, filename)
+  if File.exist?(fullpath)
+    abort("rake aborted: #{fullpath} already exists.")
+  end
+
+  post = File.open(fullpath, 'w', 0666)
+  begin
+    post.puts "---"
+    post.puts "layout: slide"
+    post.puts "title: #{title}"
+    post.puts "# you can choose style from [swiss, neon, web-2.0]"
+    post.puts "style: swiss"
+    post.puts "# you can choose transition from [fade, horizontal-slide, vertical-slide]"
+    post.puts "transition: horizontal-slide"
+    post.puts "---"
+    post.puts ""
+    post.puts "<section class=\"slide\">"
+    post.puts ""
+    post.puts "##{title} <br /> <em>@tjun</em>"
+    post.puts "</section>"
+    post.puts ""
+    post.puts "<section class=\"slide\">"
+    post.puts ""
+    post.puts "## title2"
+    post.puts ""
+    post.puts "</section>"
+  ensure
+    post.close
+  end
+  #puts "Open #{fullpath} in an editor."
+  #sh "open -a MarkdownNote #{fullpath}"
+  sh "emacs #{fullpath}"
 end
 
 #Usage: rake sass

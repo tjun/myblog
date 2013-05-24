@@ -56,7 +56,7 @@ module Jekyll
   # Custom variable names for changefreq and priority elements
   # These names are used within the YAML Front Matter of pages or posts
   # for which you want to include these properties
-  CHANGE_FREQUENCY_CUSTOM_VARIABLE_NAME = "change_frequency"
+  CHANGE_FREQUENCY_CUSTOM_VARIABLE_NAME = "weekly"
   PRIORITY_CUSTOM_VARIABLE_NAME = "priority"
 
   class Post

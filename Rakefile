@@ -1,12 +1,12 @@
 # Usage: rake preview
 desc "Build files and launch preview server"
 task :preview do
-  sh "jekyll --server --auto"
+  sh "jekyll server -w"
 end
 
 desc "Convert markdown to html"
-task :convert do
-  sh "jekyll --auto --no-server"
+task :build do
+  sh "jekyll build"
 end
 
 # Usage: rake post["title"]

@@ -13,7 +13,7 @@ body {
 
 
 .main-sub h2 {
-  font-family: 'Play', cursive;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 hr{
@@ -31,7 +31,7 @@ hr{
 
 .wrapper{
   margin: auto;
-  max-width: 700px;
+  max-width: 900px;
   padding: 0 10px;
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -41,14 +41,13 @@ hr{
   overflow: hidden;
   color: #ffffff;
   height: 85px;
-  padding-top: 25px;
-  font-family: 'Play',sans-serif, cursive;
+  padding-top: 18px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
   #blogtitle {
-    margin:5px 0 0 10px;
-    font-size: 26px;
-    font-size: 2.6rem;
+    margin: 25px 0 0 10px;
+    font-size: 3.6rem;
 	float: left;
-	font-family: 'Play', cursive;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
     text-shadow: 1px -1px 0 rgba(50, 50, 50, 1);
 	a {
       text-decoration: none;
@@ -56,10 +55,9 @@ hr{
     }
   }
   #nav {
-    margin: 25px 15px 0 0;
+    margin: 35px 85px 15px 0;
 	float:right;
 
-	font-size: 20px;
 	font-size: 2.0rem;
 	ul {
 	  list-style: none;
@@ -81,7 +79,7 @@ hr{
 
 #main {
   margin:auto;
-  max-width: 660px;
+  max-width: 860px;
   padding: 10px 0;
 
   h1 {
@@ -151,15 +149,14 @@ hr{
 }
 
 .top-list {
-  margin: 0 0 30px 5px;
+  margin: 0 0 50px 5px;
   list-style: none;
-  padding: 0 50px 0 10px;
-  font-family: 'Play', cursive;
+  padding: 0 50px 20px 10px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
   font-size: 2.4rem;
 
   li {
-    border-bottom: 1px solid #e5e5e5;
     a, span {
       padding:7px 0;
       display: block;
@@ -183,7 +180,7 @@ hr{
 #right {
   h1 {
     font-size: 1.9em;
-    font-family: 'Play', cursive;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'TeXGyreHerosRegular', Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-top:0;
     margin-bottom:15px;
   }

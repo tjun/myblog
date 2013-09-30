@@ -1,4 +1,5 @@
 User-Agent : *
-Disallow : /barepa/*
-Disallow : /blog/*-jpg/
-Sitemap : http://tjun.org/sitemap.xml
+Disallow: /barepa/
+Disallow: /slide/
+Disallow: /blog/*-jpg/
+Disallow: /blog/img/

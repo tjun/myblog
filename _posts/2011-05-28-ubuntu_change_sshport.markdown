@@ -29,26 +29,28 @@ comments:
 sshポートをデフォルトの22にしていると攻撃を受けるので、変えましょう。
 
 変える先のポート番号は、10000~65534の間で適当な番号がよいと思います。
-また、<pre>
-$ netstat -an
-</pre>
+また、
+
+    $ netstat -an
+
 を見て、使われていないポートにしましょう。
 
 設定の変更
-<pre>
-$ vi /etc/ssh/sshd_config
-</pre>
+
+    $ vi /etc/ssh/sshd_config
+
 で、新たなポート番号を設定します。
-<pre>
-# What ports, IPs and protocols we listen for
-#Port 22
-Port 24242
-</pre>
+
+    # What ports, IPs and protocols we listen for
+    #Port 22
+    Port 24242
 
 そして、sshdを再起動して設定を反映
-<pre>
-$ sudo /etc/init.d/ssh restart</pre>
+
+    $ sudo /etc/init.d/ssh restart
 
 次回からssh接続するときは
-<pre>$ ssh xxx.xxx.xxx.xxx -p 24242</pre>
+
+    $ ssh xxx.xxx.xxx.xxx -p 24242
+
 のようにポートを指定します。

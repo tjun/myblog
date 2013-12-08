@@ -42,7 +42,7 @@ task :post do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
-  sh "emacs #{fullpath}"
+  sh "emacs #{fullpath} &"
 end
 
 desc "create a new slide with title"

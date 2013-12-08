@@ -52,7 +52,7 @@ comments:
   date_gmt: '2012-04-03 15:11:41 +0900'
   content: ! '[...] twitterが発表したリアルタイム分散処理フレームワークStorm | tjun memo [...]'
 ---
-<a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="" target="_blank"><img src="http://farm7.static.flickr.com/6161/6203090442_56094700ae_m.jpg" alt="" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by/2.0/" title="Attribution License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="CoreBurn" target="_blank">CoreBurn</a></small>
+<a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="" target="_blank"><img src="http://farm7.static.flickr.com/6161/6203090442_56094700ae_m.jpg" alt="" border="0" /></a><br /><small><a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/65765645@N00/6203090442/" title="CoreBurn" target="_blank">CoreBurn</a></small>
 
 twitterが先日stormというリアルタイムな分散処理フレームワークstormを公開しました。
 （ここでいうリアルタイムとは、すぐに、とか連続的に、というニュアンスで使っています）

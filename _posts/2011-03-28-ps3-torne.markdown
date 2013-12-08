@@ -16,7 +16,7 @@ tags:
 - Diary
 comments: []
 ---
-<a href="http://www.flickr.com/photos/50007612@N00/4445153003/" title="DSC_2469" target="_blank"><img src="http://farm3.static.flickr.com/2757/4445153003_de2d8fabaf_m.jpg" alt="DSC_2469" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-sa/2.0/" title="Attribution-ShareAlike License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/50007612@N00/4445153003/" title="matsubokkuri" target="_blank">matsubokkuri</a></small>
+<a href="http://www.flickr.com/photos/50007612@N00/4445153003/" title="DSC_2469" target="_blank"><img src="http://farm3.static.flickr.com/2757/4445153003_de2d8fabaf_m.jpg" alt="DSC_2469" border="0" /></a><br /><small> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/50007612@N00/4445153003/" title="matsubokkuri" target="_blank">matsubokkuri</a></small>
 
 結構前のことになりますが修論が終わった勢いで、PS3とTorneを買いました。
 今までMac MiniがつながっていたディスプレイにHDMIでつないで、切り替えられるようにしました。

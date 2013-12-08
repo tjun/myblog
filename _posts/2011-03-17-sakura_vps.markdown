@@ -19,7 +19,7 @@ tags:
 - wordpress
 comments: []
 ---
-<a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Sakura" target="_blank"><img src="http://farm6.static.flickr.com/5299/5526129241_37cf9c65a8_m.jpg" alt="Sakura" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-nd/2.0/" title="Attribution-NoDerivs License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Windslash" target="_blank">Windslash</a></small>
+<a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Sakura" target="_blank"><img src="http://farm6.static.flickr.com/5299/5526129241_37cf9c65a8_m.jpg" alt="Sakura" border="0" /></a><br /><small> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/12336536@N03/5526129241/" title="Windslash" target="_blank">Windslash</a></small>
 
 そういえば、結構前になりますがこのブログとかをレンタルサーバからさくらのVPSに移行しました。
 <ul>

@@ -18,7 +18,7 @@ tags:
 - wordpress
 comments: []
 ---
-<a href="http://www.flickr.com/photos/51035743246@N01/5419191480/" title="Google Supply Chain Operations" target="_blank"><img src="http://farm6.static.flickr.com/5293/5419191480_0c225bb14a_m.jpg" alt="Google Supply Chain Operations" border="0" /></a><br /><small><a href="http://creativecommons.org/licenses/by-sa/2.0/" title="Attribution-ShareAlike License" target="_blank"><img src="http://tjun.jp/blog/wp-content/plugins/photo-dropper/images/cc.png" alt="Creative Commons License" border="0" width="16" height="16" align="absmiddle" /></a> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/51035743246@N01/5419191480/" title="Dawn Endico" target="_blank">Dawn Endico</a></small>
+<a href="http://www.flickr.com/photos/51035743246@N01/5419191480/" title="Google Supply Chain Operations" target="_blank"><img src="http://farm6.static.flickr.com/5293/5419191480_0c225bb14a_m.jpg" alt="Google Supply Chain Operations" border="0" /></a><br /><small> <a href="http://www.photodropper.com/photos/" target="_blank">photo</a> credit: <a href="http://www.flickr.com/photos/51035743246@N01/5419191480/" title="Dawn Endico" target="_blank">Dawn Endico</a></small>
 <a href="http://www.google.com/+1/button/">googleの+1ボタン</a>をwordpressのブログに設置しよう！
 
 <a href="http://www.google.com/webmasters/+1/button/index.html">google+1のwebmaster向けサイト</a>からコードをコピーして使います。

@@ -18,19 +18,23 @@ tags:
 - linux
 comments: []
 ---
+
 ubuntuサーバを使っていて
-<pre>$ sudo apt-get update
-$ sudo apt-get upgrade
-</pre>
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
 をやると，
 「以下のパッケージは保留されます」
 と出ていくつかインストールできないことがあります．
 
 これは，再起動が必要であったり依存関係で削除されるファイルや設定があったり，ということで保留されるようです。
 でもサーバ再起動する前などにインストールしちゃいたい時は，
-<pre>$ sudo apt-get -s dist-upgrade
-</pre>
+
+    $ sudo apt-get -s dist-upgrade
+
 で確認できて
-<pre>$ sudo apt-get dist-upgrade
-</pre>
+
+    $ sudo apt-get dist-upgrade
+
 でインストールできます．

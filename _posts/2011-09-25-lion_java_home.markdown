@@ -35,9 +35,9 @@ $ java -version
 が出来れば入っていると思います。
 
 その場合、~/.bashrcなどに
-[bash]
-export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-[/bash]
+
+    export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
 を追記して再読み込みすれば、JAVA_HOMEが反映されます。
 <pre>
 $ source ~/.bashrc

@@ -1,0 +1,27 @@
+---
+layout: post
+category: webservice
+title: showtermを試す
+date: 2013-11-09
+description: ターミナルでの作業を記録して公開できるshowtermというサービスを使ってみたメモ
+keywords: showterm,web,terminal,ターミナル,コマンド,記録,公開
+---
+
+[showterm](http://showterm.io/)というのを知りました。
+
+ターミナルの操作を記録して、webで公開できる、というサービス。
+少し試してみた↓  
+
+<iframe src="http://showterm.io/f306e43c96064a1e4e5c5" width="640" height="480"></iframe>  
+
+
+インストールは、[showtermのページ](http://showterm.io/) にある通りにやってすぐできます。
+`showterm`コマンドで記録が始まって、exitを打つと終了。
+そのまま自動的にuploadされるので注意。
+
+ネットワークがないところだと、一時的にファイルに保存してあとでuploadすることもできる。
+
+たまたま見たprestoというfacebookの分散SQLエンジンのサイトに載っていて知りました。
+
+* [Presto | Distributed SQL Query Engine for Big Data](http://prestodb.io/)
+

@@ -23,56 +23,69 @@ comments: []
 
 
 さて，ubuntuにおいて，いつものようにapt-get updateしようとしたらエラーがでました．
-<pre>E: ロック /var/lib/apt/lists/lock が取得できませんでした 
-- open (11 Resource temporarily unavailable)
-E: list ディレクトリをロックできません
 
-（英語だと）
-Could not get lock /var/lib/dpkg/lock
-  - open (11 Resource temporarily unavailable)
-</pre>
+    E: ロック /var/lib/apt/lists/lock が取得できませんでした
+    - open (11 Resource temporarily unavailable)
+    E: list ディレクトリをロックできません
+    
+    （英語だと）
+    Could not get lock /var/lib/dpkg/lock
+      - open (11 Resource temporarily unavailable)
+
 これは，前回のapt-get や aptitude が正常に終了されていない可能性があります．ということで，apt関係のプロセスがまた動いていないかを調べて，動いていたら，終了させましょう．
 
 まず，ターミナルで，プロセスをみるコマンドをうちます．
-<pre>$ ps ax | grep apt</pre>
+
+    $ ps ax | grep apt
+
 ps　というのは，プロセスを表示する，ということ．オプションのaxをつけているので，全て表示する　ということを意味します．その中からaptに関するものだけを表示します．
 
 これをやると，
-<pre>11675 pts/0    T      0:00 apt-get update
-</pre>
+
+    11675 pts/0    T      0:00 apt-get update
+
 あるいは
-<pre>
-4064 ?        Sl     0:02 aptitude install *******
-</pre>
+
+    4064 ?        Sl     0:02 aptitude install *******
+
 こんな感じの部分がないですか?
 
 これがあったらまだapt関係のプロセスが終了されていない，ということです．
 荒療治ですが，強制的に終わらせます．
-<pre>11675 pts/0    T      0:00 apt-get update</pre>
+
+    11675 pts/0    T      0:00 apt-get update
+
 この一番左の 11675　はプロセスの番号を表しています．この番号のプロセスを終了するには
-<pre>$ sudo kill -KILL 11675</pre>
+
+    $ sudo kill -KILL 11675
+
 でok．
 
 これでまたapt-get updateできるようになるはずです．
-<pre>$ sudo apt-get update</pre>
+
+    $ sudo apt-get update
 
 <strong>--以下追記(2010/12/03)--</strong>
 
 しかし，packageインストール中にプロセスの強制終了をやると，中途半端な状態が発生して，インストールしたかったパッケージを再びインストールしようとしたときにはまる場合があります。
 
 その場合，まずは
-<pre>$ sudo dpkg --audit</pre>
+
+    $ sudo dpkg --audit
+
 でインストールが中断してしまっているパッケージを調べて，
-<pre>
-$ sudo apt-get -f install ******  
-$ sudo dpkg --configure -a
-</pre>
+
+    $ sudo apt-get -f install ******
+    $ sudo dpkg --configure -a
+
 を行ってから，再びインストールしてみてください。
 
 それでもだめなら
 
-<pre>$ sudo dpkg --remove *******</pre>
+    $ sudo dpkg --remove *******
 で削除してから，再び
-<pre>$ sudo apt-get update
-$ sudo apt-get install ******</pre>
+
+    $ sudo apt-get update
+    $ sudo apt-get install ******
+
 を試してみてください。

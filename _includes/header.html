@@ -1,16 +1,37 @@
-<div id="header" class="group">
+    <div class="navbar navbar-inverse navbar-static-top header" role="navigation">
+      
+      <div class="container">
 
-  <header>
-    <div id="blogtitle">
-    <a href="/" alt="tjun memo">{{ site.name }}</a>
-  </div>
-  </header>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" alt="tjun memo">{{ site.name }}</a>
+        </div>
+      
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" alt="Top">Top</a></li>
+            <li><a href="/blog/feed.rss" alt="rss">Feed</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Link <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/archive.html">archives</a></li>
+                <li><a href="/about.html">about tjun.org</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">tjun on</li>
+                <li><a href="http://twitter.com/tjun">twitter</a></li>
+                <li><a href="http://tumblr.tjun.org/">tumblr</a></li>
+                <li><a href="http://github.com/tjun">github</a></li>
+                <li><a href="http://www.linkedin.com/in/junichiro">linkedin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-  <div id="nav">
-	<ul>
-	  <li><a href="/" alt="Top">Top</a></li>
-	  <li><a href="/blog/feed.rss" alt="rss">Feed</a></li>
-	</ul>
-  </div>
+      </div>
 
-</div>
+    </div>

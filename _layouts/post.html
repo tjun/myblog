@@ -7,7 +7,17 @@
   <meta name="keywords" value="{{ page.keywords }}" />
   <meta name="Robots" content="index,follow" />
   <meta name="author" content="Junichiro Takagi" />
-  <link rel="stylesheet" href="/css/kube.min.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
   <link rel="canonical" href="{{site.url}}{{page.url}}/" />
   <link rel="alternate" type="application/rss+xml" title="tjun memo" href="http://tjun.org/blog/feed.rss" />
@@ -44,57 +54,60 @@
 
 <body>
 
-  <div id="outer">
-    <div class="wrapper">
-
 {% include header.html %}
 
-      <div id="main">
-        <span>{{ page.date | date_to_string }}</span><br />
-        <h1>{{ page.title }}</h1>
+  <div class="container">
+    <div id="main">
+      <span>{{ page.date | date_to_string }}</span><br />
+      <h1>{{ page.title }}</h1>
 
-        <br />
-        {{ content }}
-        {% include share-buttons.html %}
-        <div id="bottom-nav" class="row">
-          {% if page.previous.url %}
-          <div class="twofifth">
-            &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous">{{ page.previous.title }}</a>
-          </div><!-- third -->
-          {% endif %}
+      <br />
+      {{ content }}
 
-          {% if page.next.url %}
-          <div class="twofifth push-fifth">
-            <a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a>&nbsp;&raquo;
-          </div><!-- third -->
-          {% endif %}
-        </div>
-      </div><!-- id:main -->
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname = 'tjunmemo';
+{% include share-buttons.html %}
 
-            (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-             })();
-           </script>
-           <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      <div id="bottom-nav" class="row">
+        {% if page.previous.url %}
+        <div class="col-md-5">
+          &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous">{{ page.previous.title }}</a>
+        </div><!-- third -->
+        {% endif %}
 
+        {% if page.next.url %}
+        <div class="col-md-5 col-md-offset-2">
+          <a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a>&nbsp;&raquo;
+        </div><!-- third -->
+        {% endif %}
+      </div>
+    </div><!-- id:main -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    var disqus_shortname = 'tjunmemo';
 
-<script defer="defer" type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	  {% include footer.html %}
-
-    </div><!-- class:wrapper -->
-  </div><!-- id:outer -->
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
+    <script defer="defer" type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% include footer.html %}
 
-<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
+  </div><!-- class:container -->
 
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button_wo_al.js" charset="utf-8" async="async"></script>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </body>
 </html>

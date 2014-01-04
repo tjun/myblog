@@ -90,9 +90,15 @@ task :slide do
 end
 
 #Usage: rake sass
-desc "convert scss to css"
-task :sass do
-  sh "sass --style compressed _scss/style.scss:css/style.css"
+#desc "convert scss to css"
+#task :sass do
+#  sh "sass --style compressed _scss/style.scss:css/style.css"
+#end
+
+#Usage: rake sass
+desc "convert less to css"
+task :less do
+  sh "lessc -x _less/style.less css/style.css"
 end
 
 #Usage rake rsync:dryrun | rake rsync:live

@@ -14,19 +14,9 @@ set :tmp,       '/tmp'
 set :deploy_to, '/var/www/tjun.org'
 set :source,    '_site'
 set :archive_name, 'site.tar.gz'
+set :url,       'http://tjun.org'
 
-# Default branch is :master
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
-
-# Default deploy_to directory is /var/www/my_app
-# set :deploy_to, '/var/www/my_app'
-
-# Default value for :scm is :git
-# set :scm, :git
-
-# Default value for :format is :pretty
-# set :format, :pretty
-
+# delete default tasks
 framework_tasks = [:starting, :started, :updating, :updated, :publishing, :published, :finishing, :finished]
 
 framework_tasks.each do |t|
@@ -35,17 +25,23 @@ end
 
 Rake::Task[:deploy].clear
 
+
 task :update do
   desc 'Run jekyll to update site before uploading'
   run_locally do
     source = fetch :source
     archive_name = fetch :archive_name
     if test "[ -d #{source} ]"
-      execute "rm -rf #{source}/* && rm -f #{archive_name} && jekyll build"
-      info "build jekyll finished"
+      execute "rm -rf #{source}/*"
     else
       error "You are in wrong directory?"
+      raise "in wrong dir"
     end
+    if test "[ -e #{archive_name} ]"
+      execute "rm -f #{archive_name}"
+    end
+    execute "jekyll build"
+    info "build jekyll finished"
   end
 end
 
@@ -78,3 +74,30 @@ task :deploy => :archive do
   end
 end
 
+task :check do
+  desc 'check recent post uploaded'
+  url = fetch :url
+  run_locally do
+    info 'show uploaded recent posts'
+    html = Nokogiri::HTML(open(url))
+    html.css("li").css("a").each do |l|
+      if l.attr("href").slice(1,4) == "blog"
+        unless l.attr("href").slice(-3,3) == "rss"
+          puts l
+        end
+      end
+    end
+  end
+end
+
+task :cleanup do
+  source = fetch :source
+  archive_name = fetch :archive_name
+  run_locally do
+    execute "rm -rf #{source}/*"
+    execute "rm -f #{archive_name}"
+  end
+end
+
+after 'deploy', 'check'
+after 'check', 'cleanup'

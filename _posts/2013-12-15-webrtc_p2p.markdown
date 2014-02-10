@@ -11,7 +11,7 @@ keywords: webrtc, p2p, stun, turn, ice, server, 接続, html5
 この記事は、[HTML5 Advent Calendar 2013 - Adventar](http://www.adventar.org/calendars/125)の15日目になります。
 
 WebRTCが少しずつ広まってきて、あまりこの辺りの情報を日本語では見たことがないので書きました。
-間違っている箇所、表現がおかしい箇所がありましたら、[@tjun](https://twitter.com/tjun)まで教えていただけると助かります。  
+間違っている箇所、表現がおかしい箇所がありましたら、[@tjun](https://twitter.com/tjun)まで教えていただけると助かります。
 もっと詳しく知りたいという人は一番最後のリンクにあるページを見るとよいと思います。
 
 ## はじめに
@@ -135,6 +135,8 @@ Candidateには、IPアドレスとポート番号の他に、優先度などの
 WebRTCでクライアント同士がどのように接続するか見てきました。
 WebRTCを利用するサービスを作る場合には、STUNやTURNサーバを使う必要があります。
 サーバを自前で用意する場合にはもちろんですが、最近発表された[SkyWay](http://nttcom.github.io/skyway/)のようなサービスを利用する場合にも、どのような仕組みでどのようなサーバが使われるのか、ある程度は知っておくとよいと思います。
+
+今回の記事はいろいろと省略しています、本当はもうちょっといろいろな仕組みがあります。
 
 ## 参考にしたページ
 - [WebRTC in the real world: STUN, TURN and signaling - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/)

@@ -43,7 +43,8 @@ transition: horizontal-slide
 ## YAML
 
 markdownの先頭では、以下のようなパラメータを指定します。
-laytoutは、自分でつくりました。
+laytoutは、自分でつくりました。[\[_layouts/slide.html\]](https://github.com/tjun/myblog/blob/master/_layouts/slide.html)
+
 styleとtransitionはdeck.jsに含まれるテーマが使えます。
 titleは、htmlのタイトルになるだけなので、スライドには登場しません。
 
@@ -56,3 +57,12 @@ titleは、htmlのタイトルになるだけなので、スライドには登�
 
 
 </section>
+<section class="slide">
+
+## おわり
+
+githubに置きました。
+
+* [github](https://github.com/tjun/myblog/tree/master/slide)
+
+</section >

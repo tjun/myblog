@@ -98,7 +98,7 @@ end
 #Usage: rake sass
 desc "convert less to css"
 task :less do
-  sh "lessc -x _less/style.less css/style.css"
+  sh "lessc -x _less/style.less > css/style.css"
 end
 
 #Usage rake rsync:dryrun | rake rsync:live

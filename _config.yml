@@ -1,5 +1,5 @@
 permalink: /blog/:year/:month/:title
-exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md", "Rakefile"]
+exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md", "Rakefile", "Gemfile", "Gemfile.lock", "Capfile"]
 pygments: true
 #markdown: kramdown
 markdown: redcarpet

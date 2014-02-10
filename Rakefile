@@ -101,15 +101,9 @@ task :less do
   sh "lessc -x _less/style.less > css/style.css"
 end
 
-#Usage rake rsync:dryrun | rake rsync:live
-namespace :rsync do
-  desc "--dry-run rsunc"
-  task :dryrun do
-    system('rsync -avr -e "ssh -p 22222" --dry-run --delete _site/ tjun@tjun.org:/var/www/tjun.org/')
-  end
-  desc "rsync"
-  task :live do
-    system('rsync -avr -e "ssh -p 22222" --delete _site/ tjun@tjun.org:/var/www/tjun.org/')
-  end
+#Usage rake deploy
+desc "deploy with capistrano"
+task :deploy do
+  system('bundle exec cap production deploy')
 end
 

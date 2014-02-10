@@ -78,7 +78,7 @@ task :check do
   desc 'check recent post uploaded'
   url = fetch :url
   run_locally do
-    info 'show uploaded recent posts'
+    info 'show recent posts on toppage'
     html = Nokogiri::HTML(open(url))
     html.css("li").css("a").each do |l|
       if l.attr("href").slice(1,4) == "blog"

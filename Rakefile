@@ -86,16 +86,10 @@ task :slide do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
-  sh "emacs #{fullpath}"
+  sh "subl #{fullpath} &"
 end
 
-#Usage: rake sass
-#desc "convert scss to css"
-#task :sass do
-#  sh "sass --style compressed _scss/style.scss:css/style.css"
-#end
-
-#Usage: rake sass
+#Usage: rake less
 desc "convert less to css"
 task :less do
   sh "lessc -x _less/style.less > css/style.css"

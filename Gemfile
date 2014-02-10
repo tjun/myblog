@@ -7,3 +7,4 @@ gem 'therubyracer'
 
 gem 'capistrano', '~> 3.1.0'
 gem 'capistrano_colors'
+gem 'nokogiri'

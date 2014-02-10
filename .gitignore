@@ -4,4 +4,5 @@ _site
 Rakefile
 site.tar.gz
 _drafts
+config/deploy/
 

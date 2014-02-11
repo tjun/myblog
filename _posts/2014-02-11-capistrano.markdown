@@ -21,7 +21,7 @@ rubyだとcapistranoを使うのが普通らしい。capistranoが設定をruby�
 
 config/deploy.rbは次のような感じ。
 ドキュメントをちゃんと読めていないので、この書き方が正しいのかわかってないですが、一応ちゃんと動いてます。
-本来はcapistranoのデフォルトタスクに合わせるべきだと思うのですが、裏で何が動くのかまだよくわからないのが嫌で、全部clearして自分で書いてます。
+本来はcapistranoのデフォルトタスクに合わせるべきだと思うのですが、裏で何が動くのかまだよくわからないのが嫌で、全部clearして自分で書いてます。設定さえ直せば、checkのところ以外は他のjekyllでも使えると思う。
 
 {% highlight ruby linenos %}
 # config valid only for Capistrano 3.1

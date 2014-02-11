@@ -13,7 +13,7 @@ keywords: blog, capistrano
 この数日風邪で寝込んでいて暇だったので、勉強を兼ねてデプロイに[capistrano](https://github.com/capistrano/capistrano)を使うようにしました。
 
 capistranoというのはいわゆるデプロイツールと言われるやつで、デプロイの作業を自動化するためのツールです。
-rubyだとcapistranoを使うのが普通らしい。昔はシェルスクリプト書いてやっていたようなことを、capistranoの設定を書くことで実現できます。
+rubyだとcapistranoを使うのが普通らしい。capistranoが設定をrubyで書けるというだけで、扱うファイルの言語はなんでもよいです。以前はシェルスクリプト書いてやっていたようなことを、capistranoの設定を書くことで実現できます。
 
 今capistranoはver.3 になっているので、[入門 Capistrano 3 ~ 全ての手作業を生まれる前に消し去りたい | GREE Engineers' Blog](http://labs.gree.jp/blog/2013/12/10084/) を参考にしました。[公式のドキュメント](http://capistranorb.com/)も少し読みました。
 

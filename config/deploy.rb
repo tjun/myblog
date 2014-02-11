@@ -2,10 +2,6 @@
 lock '3.1.0'
 
 set :application,       'tjun.org'
-set :repo_url,          'git@github.com:tjun/myblog.git'
-set :scm,               :git
-set :deploy_via,        :copy
-set :copy_compression,  :gzip
 set :use_sudo,          false
 
 set :user,      'tjun'
@@ -16,7 +12,9 @@ set :source,    '_site'
 set :archive_name, 'site.tar.gz'
 set :url,       'http://tjun.org'
 
-# delete default tasks
+##
+## delete default tasks
+##
 framework_tasks = [:starting, :started, :updating, :updated, :publishing, :published, :finishing, :finished]
 
 framework_tasks.each do |t|
@@ -26,36 +24,46 @@ end
 Rake::Task[:deploy].clear
 
 
+##
+## build jekyll
+##
 task :update do
   desc 'Run jekyll to update site before uploading'
+  source = fetch :source
+  archive_name = fetch :archive_name
+
   run_locally do
-    source = fetch :source
-    archive_name = fetch :archive_name
     if test "[ -d #{source} ]"
       execute "rm -rf #{source}/*"
     else
-      error "You are in wrong directory?"
-      raise "in wrong dir"
+      execute "mkdir -p #{source}"
     end
     if test "[ -e #{archive_name} ]"
       execute "rm -f #{archive_name}"
     end
+    info "clean old files finished"
     execute "jekyll build"
     info "build jekyll finished"
   end
 end
 
+##
+## create tar.gz
+##
 task :archive => :update do
   desc 'archive file in tar.gz'
-  run_locally do
-    source = fetch :source
-    archive_name = fetch :archive_name
+  source = fetch :source
+  archive_name = fetch :archive_name
 
+  run_locally do
     execute "tar zcf #{archive_name} #{source}"
     info "create #{archive_name}"
   end
 end
 
+##
+## upload and deploy
+##
 task :deploy => :archive do
   archive_file = fetch :archive_name
   deploy_to = fetch :deploy_to
@@ -69,14 +77,19 @@ task :deploy => :archive do
       info "No previous release exists"
     end
 
+    info "upload #{archive_file}"
     upload! archive_file, tmp
     execute "cd #{tmp} && tar zxf #{archive_file} && mv #{source}/* #{deploy_to} && ls #{deploy_to}"
   end
 end
 
+##
+## check the recent post on top page
+##
 task :check do
   desc 'check recent post uploaded'
   url = fetch :url
+
   run_locally do
     info 'show recent posts on toppage'
     html = Nokogiri::HTML(open(url))
@@ -90,12 +103,23 @@ task :check do
   end
 end
 
+##
+## clean up files on local and remote
+##
 task :cleanup do
   source = fetch :source
   archive_name = fetch :archive_name
+  tmp = fetch :tmp
+
   run_locally do
+    info "clean up local build"
     execute "rm -rf #{source}/*"
     execute "rm -f #{archive_name}"
+  end
+
+  on roles(:web) do
+    info "clean up remote tmp file"
+    execute "cd #{tmp} && rm -f #{archive_name} && rm -rf #{source}"
   end
 end
 

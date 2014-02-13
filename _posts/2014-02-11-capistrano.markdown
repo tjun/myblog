@@ -1,10 +1,10 @@
 ---
 layout: post
-category:
-title: capistranoでデプロイ
+category: ruby
+title: capistranoでjekyllのデプロイ
 date: 2014-02-11
-description:
-keywords: blog, capistrano
+description: capistranoを使ってjekyllのデプロイをやります
+keywords: blog, capistrano, jekyll
 ---
 
 このblogは[jekyll](https://github.com/jekyll/jekyll)を使って作っているんだけど、今までは手元でビルドしてからサーバへrsync使ってアップロードしてました。

@@ -1,0 +1,36 @@
+---
+layout: post
+category: bigdata
+title: SAMOAについて
+date: 2014-02-14
+description: SAMOAというYahooが作って公開しているやつがあるらしい
+keywords: samoa, storm
+---
+
+Yahooが作って公開している[SAMOA](http://yahoo.github.io/samoa/)というやつを今日知った。
+
+> SAMOA is a platform for mining on big data streams. It is a distributed streaming machine learning (ML) framework that contains a programing abstraction for distributed streaming ML algorithms.
+
+とある。
+
+StormかS4と合わせて使うらしい。HadoopにおけるMahoutのような位置づけのフレームワークなのかな。
+YahooはS4をまだ使い続けていたのか。
+[Storm-YARN](http://developer.yahoo.com/blogs/ydn/storm-yarn-released-open-source-143745133.html)とかもそうだけど、yahooはこのあたりのコントリビューションが結構多い  
+
+  
+
+
+ググると情報が出てくるけど、いくつか載せておく
+
+* [Introducing SAMOA, an open source platform for mining big data streams.](http://yahooeng.tumblr.com/post/65453012905/introducing-samoa-an-open-source-platform-for-mining)
+ * Yahoo Engineeringのブログで紹介されてる
+* [SAMOA: A Platform for Mining Big Data Streams // Speaker Deck](https://speakerdeck.com/gdfm/samoa-a-platform-for-mining-big-data-streams)
+ * Yahooの人のプレゼン資料
+* [SAMOA: A Platform for Mining Big Data Streams // Speaker Deck](https://speakerdeck.com/gdfm/samoa-a-platform-for-mining-big-data-streams-1)
+ * 上と同じタイトルだけど中身が少し違う資料
+* [Executing SAMOA with Apache Storm · yahoo/samoa Wiki](https://github.com/yahoo/samoa/wiki/Executing-SAMOA-with-Apache-Storm)
+ * Githubのwikiも結構充実してる。これはStorm上でSAMOAを実行する方法
+
+  
+
+

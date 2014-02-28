@@ -1,7 +1,7 @@
 # Usage: rake preview
 desc "Build files and launch preview server"
 task :preview do
-  sh "jekyll server -w"
+  sh "jekyll serve"
 end
 
 desc "Convert markdown to html"
@@ -93,6 +93,12 @@ end
 desc "convert less to css"
 task :less do
   sh "lessc -x _less/style.less > css/style.css"
+end
+
+#Usage: rake elasticsearch
+desc "update elasticsearch"
+task :elasticsearch do
+  sh "jekyll build -p _esplugin"
 end
 
 #Usage rake deploy

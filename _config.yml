@@ -6,3 +6,9 @@ markdown: redcarpet
 name: "tjun memo"
 description: "tjunのメモ"
 url: http://tjun.org
+
+elasticsearch:
+    host: "localhost:9200"
+    index: "blog"
+    type: "post"
+    analyzer: "kuromoji"

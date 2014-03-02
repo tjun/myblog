@@ -26,17 +26,15 @@ $(document).ready(function() {
         post.date.match(/^(\d+)-(\d+)-(\d+)/);
         str += RegExp.$1 + "/" +  RegExp.$2 + "/" + RegExp.$3;
         str += "</small></li>\n";
-//        $("div#search-result").append("</li>");
       }
       str += "</ul>";
       $("div#search-result").append(str);
-      console.log(str);
     }
   }
 
   function showError() {
     $("div#search-result").empty();
-    $("div#search-result").append("Search system error.<br /><br />");
+    $("div#search-result").append("Search system error.");
   }
   var query = getQueryParams(document.location.search);
   $("div#query").text("search \"" + query.q +"\"");
@@ -90,14 +88,12 @@ $(document).ready(function() {
         url:   url,
         date:  date
       };
-      console.log(post);
       posts.push(post);
     }
     // show result
     showResult(posts);
   }, function (err) {
     console.trace(err.message);
-      showError();
+    showError();
   });
-
 })

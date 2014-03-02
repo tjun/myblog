@@ -105,5 +105,11 @@ end
 desc "deploy with capistrano"
 task :deploy do
   system('bundle exec cap production deploy')
+  system('bundle exec cap production update_es')
 end
 
+#Usage rake deploy
+desc "deploy with capistrano without elasticsearch update"
+task :deploy_wo_es do
+  system('bundle exec cap production deploy')
+end

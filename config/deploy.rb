@@ -6,11 +6,13 @@ set :use_sudo,          false
 
 set :user,      'tjun'
 set :group,     'tjun'
-set :tmp,       '/tmp'
 set :deploy_to, '/var/www/tjun.org'
-set :source,    '_site'
-set :archive_name, 'site.tar.gz'
+set :target,    '_site'
 set :url,       'http://tjun.org'
+
+set :repo_url,   'https://github.com/tjun/myblog'
+set :repo_name,  'blog'
+set :repo_dir,   (fetch :tmp_dir) + '/blog'
 
 ##
 ## delete default tasks
@@ -25,50 +27,49 @@ Rake::Task[:deploy].clear
 
 
 ##
+## fetch from github
+##
+task :fetch do
+  desc 'fetch from github'
+  source = fetch :source
+  repo_dir = fetch :repo_dir
+
+  on roles(:web) do
+    if test "[ -d #{repo_dir} ]"
+      info "pull from github"
+      execute "cd #{repo_dir}; git pull"
+    else
+      info "clone from github"
+      execute "cd #{fetch :tmp_dir}; git clone #{fetch :repo_url} #{fetch :repo_name}"
+    end
+  end
+end
+
+##
 ## build jekyll
 ##
-task :update do
-  desc 'Run jekyll to update site before uploading'
-  source = fetch :source
-  archive_name = fetch :archive_name
+task :build => :fetch do
+  desc 'build jekyll'
+  repo_dir = fetch :repo_dir
+  build_dir = repo_dir + "/" + (fetch :target)
 
-  run_locally do
-    if test "[ -d #{source} ]"
-      execute "rm -rf #{source}/*"
-    else
-      execute "mkdir -p #{source}"
+  on roles(:web) do
+    if test "[ -d #{build_dir} ]"
+      execute "rm -rf #{build_dir}"
     end
-    if test "[ -e #{archive_name} ]"
-      execute "rm -f #{archive_name}"
-    end
-    info "clean old files finished"
-    execute "jekyll build"
-    info "build jekyll finished"
+    execute "mkdir -p #{build_dir}"
+    info "build jekyll"
+    execute "source ~/.zshrc; cd #{repo_dir}; rake build"
   end
 end
 
 ##
-## create tar.gz
+## deploy to www dir
 ##
-task :archive => :update do
-  desc 'archive file in tar.gz'
-  source = fetch :source
-  archive_name = fetch :archive_name
-
-  run_locally do
-    execute "tar zcf #{archive_name} #{source}"
-    info "create #{archive_name}"
-  end
-end
-
-##
-## upload and deploy
-##
-task :deploy => :archive do
-  archive_file = fetch :archive_name
+task :deploy => :build do
   deploy_to = fetch :deploy_to
-  tmp = fetch :tmp
-  source = fetch :source
+  repo_dir = fetch :repo_dir
+  target = fetch :target
 
   on roles(:web) do
     begin
@@ -76,10 +77,8 @@ task :deploy => :archive do
     rescue => e
       info "No previous release exists"
     end
-
-    info "upload #{archive_file}"
-    upload! archive_file, tmp
-    execute "cd #{tmp} && tar zxf #{archive_file} && mv #{source}/* #{deploy_to} && ls #{deploy_to}"
+    info "move files to #{deploy_to}"
+    execute "cd #{repo_dir}; mv #{target}/* #{deploy_to} && ls #{deploy_to}"
   end
 end
 
@@ -107,21 +106,28 @@ end
 ## clean up files on local and remote
 ##
 task :cleanup do
-  source = fetch :source
-  archive_name = fetch :archive_name
-  tmp = fetch :tmp
-
-  run_locally do
-    info "clean up local build"
-    execute "rm -rf #{source}/*"
-    execute "rm -f #{archive_name}"
-  end
+  target = fetch :target
+  repo_dir = fetch :repo_dir
 
   on roles(:web) do
-    info "clean up remote tmp file"
-    execute "cd #{tmp} && rm -f #{archive_name} && rm -rf #{source}"
+    info "clean up remote file"
+    execute "cd #{repo_dir} && rm -rf #{target}"
   end
 end
 
 after 'deploy', 'check'
 after 'check', 'cleanup'
+
+##
+## update elasticsearch
+##
+task :update_es do
+  desc 'update elasticsearch'
+  repo_dir = fetch :repo_dir
+  build_dir = repo_dir + "/" + (fetch :target)
+
+  on roles(:web) do
+    info "update elasticseaarch"
+    execute "source ~/.zshrc; cd #{repo_dir}; rake elasticsearch"
+  end
+end

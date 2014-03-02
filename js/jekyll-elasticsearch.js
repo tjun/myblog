@@ -40,7 +40,7 @@ $(document).ready(function() {
   $("div#query").text("search \"" + query.q +"\"");
 
   var client = new $.es.Client({
-    host: 'localhost:9200',
+    host: 'tjun.org/es',
     log:  'trace',
     apiVersion: '1.0'
   });

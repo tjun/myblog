@@ -90,7 +90,7 @@ module Jekyll
       @es.exists index:"#{@index}", type: "#{@type}", id: "#{post_id}"
     end
 
-    def delete_old_post(date)
+    def delete_old_posts(date)
       res = @es.delete_by_query index:"#{@index}", type: "#{@type}", body: {
         query: {
           range: {
@@ -100,7 +100,6 @@ module Jekyll
           }
         }
       }
-      puts res
     end
 
     def refresh
@@ -156,16 +155,12 @@ module Jekyll
       if analyzer != nil
         es.set_analyzer analyzer
       end
-      begin
-#        es.delete_index
-      rescue => e
-        puts e
-      end
 
       # if db is not exists, create one.
       unless es.type_exists
         es.create_index
-        sleep 1
+        # wait index created
+        sleep 2
       end
 
       now = Time.now
@@ -187,9 +182,8 @@ module Jekyll
       end
       # delete removed post from elasticsearch
       es.refresh
-      es.delete_old_post (now - 1).strftime("%FT%T%z")
+      es.delete_old_posts (now - 1).strftime("%FT%T%z")
 
-#      es.delete_index
     end
 
   end

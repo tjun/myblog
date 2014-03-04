@@ -113,3 +113,5 @@ desc "deploy with capistrano without elasticsearch update"
 task :deploy_wo_es do
   system('bundle exec cap production deploy')
 end
+
+task :default => [:build]

@@ -58,6 +58,8 @@ task :build => :fetch do
       execute "rm -rf #{build_dir}"
     end
     execute "mkdir -p #{build_dir}"
+    info "bundle install"
+    execute "source ~/.zshrc; cd #{repo_dir}; bundle install"
     info "build jekyll"
     execute "source ~/.zshrc; cd #{repo_dir}; rake build"
   end

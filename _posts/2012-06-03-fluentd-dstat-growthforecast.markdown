@@ -32,7 +32,13 @@ dstatというのは、CPU使用率やメモリ使用量などなどの情報を
 
 dstatをfluentdにつなぐのに、<a href="https://github.com/shun0102/fluent-plugin-dstat">shun0102/fluent-plugin-dstat</a> を利用します。
 ただ、outputのフォーマットがそのままgrowthforecastに入れるのにうまくつなげなかったので、少しいじって使いました。<a href="https://github.com/tjun/fluent-plugin-dstat">tjun/fluent-plugin-dstat</a>
-できれば元のものをうまい具合にparseして繋ぎたいのだけど、やり方がよく分からなかった。。
+
+### 追記
+しかし、以下の記事のようにやればいじることなくdstatからgrowthforecastに投入できるので、このようにやることをおすすめします。
+
+* [dstatをfluentd + GrowthForecastで可視化する - Qiita](http://qiita.com/mzp/items/f5f39499ca0079d123f4)
+
+追記終わり。
 
 設定はこんな感じ
 

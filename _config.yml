@@ -12,3 +12,6 @@ elasticsearch:
     index: "blog"
     type: "post"
     analyzer: "kuromoji"
+
+gems:
+ - jemoji

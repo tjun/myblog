@@ -90,8 +90,8 @@ fluentdのpluginは<a href="http://fluentd.org/plugin/">Fluentd plugins</a> を�
 
 すると、以下のような感じでCPU使用率やメモリ使用量が表示できるようになりました。
 
-<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-cpu/" rel="attachment wp-att-1150"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full wp-image-1150" /></a>
-<a href="http://tjun.jp/blog/2012/06/fluentd-dstat-growthforecast/growthforecast-mem/" rel="attachment wp-att-1151"><img src="http://tjun.jp/blog/img/2012/06/GrowthForecast-mem.jpg" alt="" title="GrowthForecast-mem" width="473" height="224" class="aligncenter size-full wp-image-1151" /></a>
+<a href="http://tjun.org/blog/img/2012/06/GrowthForecast-cpu.jpg" rel="attachment"><img src="http://tjun.org/blog/img/2012/06/GrowthForecast-cpu.jpg" alt="" title="GrowthForecast-cpu" width="472" height="208" class="aligncenter size-full" /></a>
+<a href="http://tjun.org/blog/img/2012/06/GrowthForecast-mem.jpg" rel="attachment"><img src="http://tjun.org/blog/img/2012/06/GrowthForecast-mem.jpg" alt="" title="GrowthForecast-mem" width="473" height="224" class="aligncenter size-full" /></a>
 
 同時に、nginxのアクセスログの集計もやって、アクセス数のグラフやリクエストタイムの割合のグラフも出してみました。
 

@@ -18,7 +18,7 @@ tags:
 - Diary
 comments: []
 ---
-<a href="http://tjun.jp/blog/2012/07/sell_and_get_macbookair/img_1354/" rel="attachment wp-att-1235"><img src="http://tjun.jp/blog/img/2012/07/IMG_1354.jpg" alt="macbookair" title="mba" width="384" height="512" class="aligncenter size-full wp-image-1235" /></a>
+<a href="http://tjun.jp/blog/img/2012/07/IMG_1354.jpg" rel="attachment"><img src="http://tjun.jp/blog/img/2012/07/IMG_1354.jpg" alt="macbookair" title="mba" width="384" height="512" class="aligncenter size-full" /></a>
 
 新しいMacBook Airが欲しかったので、古いMacBook Air（と古いMac Mini)を売りました。
 

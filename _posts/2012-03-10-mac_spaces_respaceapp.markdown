@@ -22,7 +22,7 @@ snow leopardの頃のように、上下左右にspacesを作りたい、とい�
 <a href="http://switchstep.com/ReSpaceApp">ReSpaceApp - bringing grid spaces to OSX Lion</a>
 
 こんな感じの設定画面でショートカットキーなどを選べます。
-<a href="http://tjun.jp/blog/2012/03/mac_spaces_respaceapp/respaceapp/" rel="attachment wp-att-1112"><img src="http://tjun.jp/blog/img/2012/03/ReSpaceApp-512x464.jpg" alt="" title="ReSpaceApp" width="512" height="464" class="aligncenter size-large wp-image-1112" /></a>
+<a href="http://tjun.jp/blog/img/2012/03/ReSpaceApp-512x464.jpg" rel="attachment wp-att-1112"><img src="http://tjun.jp/blog/img/2012/03/ReSpaceApp-512x464.jpg" alt="" title="ReSpaceApp" width="512" height="464" class="aligncenter size-large wp-image-1112" /></a>
 
 
 思い通りに動いて満足。

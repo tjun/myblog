@@ -1,7 +1,7 @@
 # Usage: rake preview
 desc "Build files and launch preview server"
 task :preview do
-  sh "jekyll serve"
+  sh "jekyll serve --watch"
 end
 
 desc "Convert markdown to html"

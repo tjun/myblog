@@ -42,7 +42,7 @@ task :post do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
-  sh "subl #{fullpath} &"
+  sh "emacsclient #{fullpath} &"
 end
 
 desc "create a new slide with title"
@@ -86,7 +86,7 @@ task :slide do
   end
   #puts "Open #{fullpath} in an editor."
   #sh "open -a MarkdownNote #{fullpath}"
-  sh "subl #{fullpath} &"
+  sh "emacsclient #{fullpath} &"
 end
 
 #Usage: rake elasticsearch

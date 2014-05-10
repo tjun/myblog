@@ -89,12 +89,6 @@ task :slide do
   sh "subl #{fullpath} &"
 end
 
-#Usage: rake less
-desc "convert less to css"
-task :less do
-  sh "lessc -x _less/style.less > css/style.css"
-end
-
 #Usage: rake elasticsearch
 desc "update elasticsearch"
 task :elasticsearch do

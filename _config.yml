@@ -1,7 +1,7 @@
 permalink: /blog/:year/:month/:title
 exclude: [".gitignore", "README.md", ".sass-cache", ".DS_Store","changelog.md", "Rakefile", "Gemfile", "Gemfile.lock", "Capfile", "config"]
-pygments: true
-#markdown: kramdown
+#highlighter: rouge
+highlighter: pygments
 markdown: redcarpet
 name: "tjun memo"
 description: "tjunのメモ"

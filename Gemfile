@@ -5,7 +5,7 @@ gem 'redcarpet'
 gem 'rouge'
 gem 'therubyracer'
 
-gem 'capistrano', '~> 3.1.0'
+gem 'capistrano'
 gem 'capistrano_colors'
 gem 'nokogiri'
 gem 'elasticsearch', '~> 1.0.0'

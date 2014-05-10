@@ -7,6 +7,9 @@ name: "tjun memo"
 description: "tjunのメモ"
 url: http://tjun.org
 
+sass:
+    style: :compressed
+
 elasticsearch:
     host: "localhost:9200"
     index: "blog"

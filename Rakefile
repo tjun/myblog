@@ -1,12 +1,12 @@
 # Usage: rake preview
 desc "Build files and launch preview server"
 task :preview do
-  sh "jekyll serve --watch"
+  sh "bundle exec jekyll serve --watch"
 end
 
 desc "Convert markdown to html"
 task :build do
-  sh "jekyll build"
+  sh "bundle exec jekyll build"
 end
 
 # Usage: rake post["title"]

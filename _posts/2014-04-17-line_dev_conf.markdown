@@ -19,6 +19,9 @@ LINEに行くのは初めて。ヒカリエのきれいなオフィスでした�
 いろいろ聞いたけど、特に興味があったPlatformの部分だけ書きます。
 間違っている箇所があるかもしれません。
 
+また、図がないと分かりにくいと思いますが
+[LINE Developer Conferenceまとめリポート（前編）- ＠IT](http://www.atmarkit.co.jp/ait/articles/1404/23/news034.html)
+に図が出ているので、こちらも読むと良いと思います。
 
 ## LINEのPlatform
 

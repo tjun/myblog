@@ -34,14 +34,14 @@ WebRTCのRTC=Real Time Communicationで、「リアルタイムな通信」の�
 一般的なブラウザ-Webサーバ間の通信ではサーバがパブリックなIPアドレスを持っているので、そのIPアドレスのポート80番を宛先として通信が開始できます。
 このとき、基本的にブラウザはどこかのNATの下のネットワークにいて、プライベートなIPアドレスを持つマシンで動いています。
 サーバからブラウザへの通信は、サーバへの問い合わせへの返答であることをNATが判断できるので、サーバからブラウザへのデータの通信もNATを経由して実現できます。
-その仕組みについてはここでは説明しません。  
+その仕組みについてはここでは説明しません。
 一方、ブラウザ-ブラウザ間で通信しようと思っても、どちらもどこかのNATの下のプライベートなIPアドレスを持つマシンで動いているので、そのままでは相手がどこにいるのか分かりません。
 サーバ-ブラウザ間の場合は、片方がパブリックなIPアドレスを持っていたので通信が開始できましたが、お互いが異なるNATの下にいる場合には、NATを通してその先のマシンへ通信を開始することができません。
 
 ![NAT](/blog/img/2013/12/nat.png)
 
 そこで、まず通信するブラウザでお互いに、さあこれから通信をしましょう、とコミュニケーションして、通信に必要なメタデータの交換などを行う必要があります。このことをシグナリング、といいます。
-次に、２つのクライアントが異なるNATの下にいる場合やfirewallがある場合、それらを越えて通信する仕組みが必要です。  
+次に、２つのクライアントが異なるNATの下にいる場合やfirewallがある場合、それらを越えて通信する仕組みが必要です。
 以下では、シグナリングと、NATを越える技術について説明します。
 
 
@@ -88,13 +88,13 @@ Candidateには、IPアドレスとポート番号の他に、優先度などの
 以下でICEの流れを順に説明していきます。
 以下でアドレスと書いているところは、IPアドレスとポート番号であると読み替えてください。
 
-1. まずICEを開始したそれぞれのクライアントは、1つ目のCandidateとしてOSから取得できるデバイス自身のアドレスを送ります。もし複数のインターフェース（有線と無線、など）があれば、複数のCandidateとなります。相手側も同様にローカルのアドレスを送ってくるので、それぞれの自身のローカルアドレスと相手側のローカルアドレスを使って接続を試します。同じネットワークにいればこれで繋がることができて、ここで終了、となる場合もあります。
+* まずICEを開始したそれぞれのクライアントは、1つ目のCandidateとしてOSから取得できるデバイス自身のアドレスを送ります。もし複数のインターフェース（有線と無線、など）があれば、複数のCandidateとなります。相手側も同様にローカルのアドレスを送ってくるので、それぞれの自身のローカルアドレスと相手側のローカルアドレスを使って接続を試します。同じネットワークにいればこれで繋がることができて、ここで終了、となる場合もあります。
 
  ![Candidate1](/blog/img/2013/12/c1.png)
 
  ここでダメな場合、次へいきます。
 
-2. 次にそれぞれのクライアントは、STUNサーバを利用して外側のアドレスを取得します。
+* 次にそれぞれのクライアントは、STUNサーバを利用して外側のアドレスを取得します。
   クライアントがSTUNサーバに通信するとSTUNサーバはそのときの送信元であるアドレスとポート番号を教えてくれます。
   STUNサーバからはそのとき通ったNATが送信元に見えるため、外側のアドレスとはつまり、NATの外側アドレスになります。
   （もしSTUNサーバとクライアントの間にNATがなければクライアントのアドレスになります）
@@ -113,7 +113,7 @@ Candidateには、IPアドレスとポート番号の他に、優先度などの
   （以前はNATの区別をするためにフルコーン、シンメトリックなどの分類が使われてましたが、その分類は不十分なのでちゃんとポートマッピングとフィルタリングの特性を見ましょう、ということが[RFC4787](http://tools.ietf.org/html/rfc4787)で書かれています。）
 
 
-3. STUNを使っても接続ができなかった場合は、TURNサーバを使って通信します。
+* STUNを使っても接続ができなかった場合は、TURNサーバを使って通信します。
   それぞれのクライアントはTURNサーバへ接続し、TURNサーバのアドレスと、確保されたポート番号を取得します。
   このTURNサーバのアドレスとポート番号を3つめのCandidate(C3)として相手へ教えます。
   
@@ -143,10 +143,12 @@ WebRTCを利用するサービスを作る場合には、STUNやTURNサーバを
  - この記事に近い内容が詳しく載っています
 - [WebRTC Data Black Magic // Speaker Deck](https://speakerdeck.com/feross/webrtc-data-black-magic)
  -  図がわかりやすいです。
-* [High Performance Browser Networking のWebRTCの章](http://chimera.labs.oreilly.com/books/1230000000545/ch18.html)
-* [Getting Started with WebRTC - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/webrtc/basics/)
- - WebRTCについて
-* [WebRTC 1.0: Real-time Communication Between Browsers](http://www.w3.org/TR/webrtc/)
-* [RFC 5245 - Interactive Connectivity Establishment (ICE): A Methodology for Network Address Translator (NAT) Traversal for Offer/Answer Protocols](http://tools.ietf.org/html/rfc5245)
-* [RFC 4787 - Network Address Translation (NAT) Behavioral Requirements for Unicast UDP](http://tools.ietf.org/html/rfc4787)
+- [High Performance Browser Networking のWebRTCの章](http://chimera.labs.oreilly.com/books/1230000000545/ch18.html)
+ - 最近日本語の本も出ましたね
+ <div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873116767/tjun-22/ref=nosim/" name="amazletlink" target="_blank"><img src="http://ecx.images-amazon.com/images/I/51x2sA8N%2BTL._SL160_.jpg" alt="ハイパフォーマンス ブラウザネットワーキング ―ネットワークアプリケーションのためのパフォーマンス最適化" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873116767/tjun-22/ref=nosim/" name="amazletlink" target="_blank">ハイパフォーマンス ブラウザネットワーキング ―ネットワークアプリケーションのためのパフォーマンス最適化</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 14.05.24</div></div><div class="amazlet-detail">Ilya Grigorik <br />オライリージャパン <br />売り上げランキング: 1,019<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873116767/tjun-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
+- [Getting Started with WebRTC - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/webrtc/basics/)
+ - WebRTCについて
+- [WebRTC 1.0: Real-time Communication Between Browsers](http://www.w3.org/TR/webrtc/)
+- [RFC 5245 - Interactive Connectivity Establishment (ICE): A Methodology for Network Address Translator (NAT) Traversal for Offer/Answer Protocols](http://tools.ietf.org/html/rfc5245)
+- [RFC 4787 - Network Address Translation (NAT) Behavioral Requirements for Unicast UDP](http://tools.ietf.org/html/rfc4787)

@@ -1,0 +1,50 @@
+---
+layout: post
+category:
+title: InfluxDBがよさそう
+date: 2014-07-06
+description:
+keywords: db, influxdb, develdb
+---
+
+先日、InfluxDB勉強会に参加しました。
+InfluxDBという時系列データのためのデータベースがあるらしい、くらいの知識しかなかったのですが、
+いろいろ話を聞けてよかったです。
+
+以下にスライドと発表動画がありました。
+
+* [天下一InfluxDB勉強会開催してきました | GREE Engineers' Blog](http://labs.gree.jp/blog/2014/06/10939/)
+
+
+### InfluxDB
+
+influxDBについては、以下の２つの発表資料を見ればだいたい分かります。
+
+* [InfluxDB の概要](http://www.slideshare.net/sonots/influxdb-study-20140627)
+* [InfluxDB Internals](https://speakerdeck.com/chobie/influxdb-internals-1)
+
+時系列のデータが`series`という単位で蓄積します(RDBMSでいうtableのようなもの)が、複数の
+seriesに対するクエリを投げたり、ダウンサンプリングするクエリを投げたり、いろいろな集約関数が使えたり、
+またContinuous Queryを使って予め仕込んだクエリに対応するseriesを作成したり、ということができます。
+
+まだクラスタで使うには不安があったり、古いデータを自動削除することなどはできないらしいですが、
+将来的にはその辺りも解決して、クエリの結果のsubscribeなどもできるようになるということなので、
+時系列データを扱うのにとてもよさそうな感じがしました。
+
+最近はElasticsearch + Kibanaみたいな構成をよく聞きますが、時系列のデータを扱うにはElasticsearch
+よりもInfluxDBの方が向いているところが多いと思うので、いずれInfluxDB+何かに置き換わるんじゃないかな
+と思います。
+勉強会ではKibanaのフォークのGrafanaからInfluxDBを使う、という発表もありました。
+
+### LevelDB
+
+InfluxDBの内部で使われているLevelDBについても紹介がありました。
+
+* [LevelDB入門](https://speakerdeck.com/yosuke_furukawa/leveldbru-men)
+
+LevelDBはデータがキーでソートされたKVSで、特徴的なのはSorted String Tableと呼ばれる
+データが格納される部分が階層化されてることです。
+
+### まとめ
+
+InfluxDBよさそうなので、今後も見ておこうと思います。
